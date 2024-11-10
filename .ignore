@@ -1,1 +1,33 @@
+# Archivos auxiliares de LaTeX
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.nav
+*.snm
+*.vrb
+*.bcf
+*.run.xml
 
+# Archivos temporales de LaTeX
+*.dvi
+*.ps
+
+# Archivos de compilación
+*.pdf
+*.pdfsync
+
+# Carpetas temporales y de compilación
+build/
+out/
+*.bak
+*.tmp
+
+# Archivos generados por editores de texto
+*~ 
+*.swp
