@@ -1,0 +1,777 @@
+\begin{thebibliography}{71}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\href}[2]{#2}
+\providecommand{\path}[1]{#1}
+\providecommand{\DOIprefix}{doi:}
+\providecommand{\ArXivprefix}{arXiv:}
+\providecommand{\URLprefix}{URL: }
+\providecommand{\Pubmedprefix}{pmid:}
+\providecommand{\doi}[1]{\href{http://dx.doi.org/#1}{\path{#1}}}
+\providecommand{\Pubmed}[1]{\href{pmid:#1}{\path{#1}}}
+\providecommand{\bibinfo}[2]{#2}
+\ifx\xfnm\relax \def\xfnm[#1]{\unskip,\space#1}\fi
+%Type = Misc
+\bibitem[{Dia(2021)}]{Diagram2023Software}
+, \bibinfo{year}{2021}.
+\newblock \bibinfo{title}{Diagram software and flowchart maker}.
+\newblock \URLprefix \url{https://www.diagrams.net/}. \bibinfo{note}{accessed
+  on March 02, 2023}.
+%Type = Article
+\bibitem[{Aaron~Bangor and Miller(2008)}]{Bangor2008AnEmpirical}
+\bibinfo{author}{Aaron~Bangor, P.T.K.}, \bibinfo{author}{Miller, J.T.},
+  \bibinfo{year}{2008}.
+\newblock \bibinfo{title}{An empirical evaluation of the system usability
+  scale}.
+\newblock \bibinfo{journal}{International Journal of Human–Computer
+  Interaction} \bibinfo{volume}{24}, \bibinfo{pages}{574--594}.
+\newblock \URLprefix \url{https://doi.org/10.1080/10447310802205776},
+  \DOIprefix\doi{10.1080/10447310802205776},
+  \href{http://arxiv.org/abs/https://doi.org/10.1080/10447310802205776}{\tt
+  arXiv:https://doi.org/10.1080/10447310802205776}.
+%Type = Article
+\bibitem[{Adebisi et~al.(2023)Adebisi, Adejumobi, Durodola and
+  Jim}]{Adebisi2023development}
+\bibinfo{author}{Adebisi, O.I.}, \bibinfo{author}{Adejumobi, I.A.},
+  \bibinfo{author}{Durodola, F.O.}, \bibinfo{author}{Jim, H.A.},
+  \bibinfo{year}{2023}.
+\newblock \bibinfo{title}{Development of a microcontroller based automobile
+  speed limiting device and alarm control system}.
+\newblock \bibinfo{journal}{International Journal of Electrical and Computer
+  Engineering (IJECE)} \bibinfo{volume}{13}, \bibinfo{pages}{195--206}.
+\newblock \DOIprefix\doi{10.11591/ijece.v13i1}.
+%Type = Article
+\bibitem[{Akter et~al.(2021)Akter, Ali, Khan, Satu, Uddin, Alyami, Ali, Azad
+  and Moni}]{Akter2021}
+\bibinfo{author}{Akter, T.}, \bibinfo{author}{Ali, M.H.},
+  \bibinfo{author}{Khan, M.I.}, \bibinfo{author}{Satu, M.S.},
+  \bibinfo{author}{Uddin, M.J.}, \bibinfo{author}{Alyami, S.A.},
+  \bibinfo{author}{Ali, S.}, \bibinfo{author}{Azad, A.K.},
+  \bibinfo{author}{Moni, M.A.}, \bibinfo{year}{2021}.
+\newblock \bibinfo{title}{Improved transfer-learning-based facial recognition
+  framework to detect autistic children at an early stage}.
+\newblock \bibinfo{journal}{Brain Sciences} \bibinfo{volume}{11}.
+\newblock \DOIprefix\doi{10.3390/brainsci11060734}.
+%Type = Article
+\bibitem[{Al-Gburi et~al.(2023)Al-Gburi, Al-Sammak, Marghescu and
+  Oprea}]{Al-Gburi2023}
+\bibinfo{author}{Al-Gburi, S.H.}, \bibinfo{author}{Al-Sammak, K.A.},
+  \bibinfo{author}{Marghescu, I.}, \bibinfo{author}{Oprea, C.C.},
+  \bibinfo{year}{2023}.
+\newblock \bibinfo{title}{State of the art in drivers' attention monitoring - a
+  systematic literature review}.
+\newblock \bibinfo{journal}{Karbala International Journal of Modern Science}
+  \bibinfo{volume}{9}, \bibinfo{pages}{14--26}.
+\newblock \DOIprefix\doi{10.33640/2405-609X.3278}.
+%Type = Article
+\bibitem[{Albrecht et~al.(2014)Albrecht, Foster, Joosten, Falkmer, Tang, Leung,
+  Ordqvist and Falkmer}]{Albrecht2014}
+\bibinfo{author}{Albrecht, M.A.}, \bibinfo{author}{Foster, J.K.},
+  \bibinfo{author}{Joosten, A.}, \bibinfo{author}{Falkmer, M.},
+  \bibinfo{author}{Tang, J.}, \bibinfo{author}{Leung, D.},
+  \bibinfo{author}{Ordqvist, A.}, \bibinfo{author}{Falkmer, T.},
+  \bibinfo{year}{2014}.
+\newblock \bibinfo{title}{Visual search strategies during facial recognition in
+  children with asd}.
+\newblock \bibinfo{journal}{Research in Autism Spectrum Disorders}
+  \bibinfo{volume}{8}, \bibinfo{pages}{559--569}.
+\newblock \DOIprefix\doi{10.1016/j.rasd.2014.01.014}.
+%Type = Article
+\bibitem[{Altameem et~al.(2021)Altameem, Kumar, Poonia, Kumar and
+  Saudagar}]{Altameem2021Early}
+\bibinfo{author}{Altameem, A.}, \bibinfo{author}{Kumar, A.},
+  \bibinfo{author}{Poonia, R.C.}, \bibinfo{author}{Kumar, S.},
+  \bibinfo{author}{Saudagar, A.K.J.}, \bibinfo{year}{2021}.
+\newblock \bibinfo{title}{Early identification and detection of driver
+  drowsiness by hybrid machine learning}.
+\newblock \bibinfo{journal}{IEEE Access} \bibinfo{volume}{9},
+  \bibinfo{pages}{162805--162819}.
+\newblock \DOIprefix\doi{10.1109/access.2021.3131601}.
+%Type = Article
+\bibitem[{Alvear-Puertas et~al.(2017)Alvear-Puertas, Rosero-Montalvo,
+  Peluffo-Ordóñez and Pijal-Rojas}]{Alvear-Puertas2017}
+\bibinfo{author}{Alvear-Puertas, V.}, \bibinfo{author}{Rosero-Montalvo, P.},
+  \bibinfo{author}{Peluffo-Ordóñez, D.}, \bibinfo{author}{Pijal-Rojas, J.},
+  \bibinfo{year}{2017}.
+\newblock \bibinfo{title}{Internet de las cosas y visión artificial,
+  funcionamiento y aplicaciones: Revisión de literatura (internet of things
+  and artificial vision, performance and applications: Literature review)}.
+\newblock \bibinfo{journal}{Enfoque UTE} \bibinfo{volume}{8},
+  \bibinfo{pages}{244--256}.
+\newblock \URLprefix \url{http://ingenieria.ute.edu.ec/enfoqueute/},
+  \DOIprefix\doi{10.29019/enfoqueute.v8n1.121}.
+%Type = Article
+\bibitem[{Asish et~al.(2022)Asish, Kulshreshth and Borst}]{Asish2022Detecting}
+\bibinfo{author}{Asish, S.M.}, \bibinfo{author}{Kulshreshth, A.K.},
+  \bibinfo{author}{Borst, C.W.}, \bibinfo{year}{2022}.
+\newblock \bibinfo{title}{Detecting distracted students in educational vr
+  environments using machine learning on eye gaze data}.
+\newblock \bibinfo{journal}{Computers \& Graphics} \bibinfo{volume}{109},
+  \bibinfo{pages}{75--87}.
+\newblock \URLprefix
+  \url{https://www.sciencedirect.com/science/article/pii/S0097849322001856},
+  \DOIprefix\doi{10.1016/j.cag.2022.10.007}.
+%Type = Inproceedings
+\bibitem[{Barai et~al.(2019)Barai, Rysul Kibria~Badhon, Zhora and
+  Rahman}]{Barai2019}
+\bibinfo{author}{Barai, A.R.}, \bibinfo{author}{Rysul Kibria~Badhon, M.},
+  \bibinfo{author}{Zhora, F.}, \bibinfo{author}{Rahman, M.R.},
+  \bibinfo{year}{2019}.
+\newblock \bibinfo{title}{Comparison between noninvasive heart rate monitoring
+  systems using gsm module and esp8266 wi-fi module}, in:
+  \bibinfo{booktitle}{2019 3rd International Conference on Electrical, Computer
+  \& Telecommunication Engineering (ICECTE)}, \bibinfo{publisher}{IEEE}. pp.
+  \bibinfo{pages}{45--48}.
+\newblock \URLprefix
+  \url{https://ieeexplore.ieee.org/abstract/document/9303572},
+  \DOIprefix\doi{10.1109/icecte48615.2019.9303572}.
+%Type = Book
+\bibitem[{Beck(2002)}]{Beck2002TDD}
+\bibinfo{author}{Beck, K.}, \bibinfo{year}{2002}.
+\newblock \bibinfo{title}{Test Driven Development: By Example}.
+\newblock \bibinfo{publisher}{Addison-Wesley Professional}.
+%Type = Article
+\bibitem[{Berrezueta-Guzman et~al.(2021)Berrezueta-Guzman, Pau, Martín-Ruiz
+  and Máximo-Bocanegra}]{Berrezueta-Guzman2021}
+\bibinfo{author}{Berrezueta-Guzman, J.}, \bibinfo{author}{Pau, I.},
+  \bibinfo{author}{Martín-Ruiz, M.L.}, \bibinfo{author}{Máximo-Bocanegra,
+  N.}, \bibinfo{year}{2021}.
+\newblock \bibinfo{title}{Assessment of a robotic assistant for supporting
+  homework activities of children with adhd}.
+\newblock \bibinfo{journal}{IEEE Access} \bibinfo{volume}{9},
+  \bibinfo{pages}{93450--93465}.
+\newblock \DOIprefix\doi{10.1109/ACCESS.2021.3093233}.
+%Type = Inproceedings
+\bibitem[{Bikku et~al.(2022)Bikku, Viswanadha, Madhulatha, Jyothirgamai,
+  Shabana and Sreedevi}]{Bikku2022Emotion}
+\bibinfo{author}{Bikku, T.}, \bibinfo{author}{Viswanadha, L.},
+  \bibinfo{author}{Madhulatha, M.}, \bibinfo{author}{Jyothirgamai, P.},
+  \bibinfo{author}{Shabana, S.}, \bibinfo{author}{Sreedevi, S.S.},
+  \bibinfo{year}{2022}.
+\newblock \bibinfo{title}{Emotion detection and quotations using cnn}, in:
+  \bibinfo{booktitle}{2022 International Conference on Applied Artificial
+  Intelligence and Computing (ICAAIC)}, \bibinfo{publisher}{IEEE}. pp.
+  \bibinfo{pages}{251--258}.
+\newblock \DOIprefix\doi{10.1109/icaaic53929.2022.9793277}.
+%Type = Inproceedings
+\bibitem[{Boumiza et~al.(2017)Boumiza, Bekiarski, Souilem and
+  Pleshkova}]{Boumiza2017}
+\bibinfo{author}{Boumiza, S.}, \bibinfo{author}{Bekiarski, A.},
+  \bibinfo{author}{Souilem, D.}, \bibinfo{author}{Pleshkova, S.},
+  \bibinfo{year}{2017}.
+\newblock \bibinfo{title}{Development of model for automatic tutor in
+  e-learning environment based on student reactions extraction using facial
+  recognition}, in: \bibinfo{booktitle}{2017 15th International Conference on
+  Electrical Machines, Drives and Power Systems (ELMA)},
+  \bibinfo{publisher}{IEEE}. pp. \bibinfo{pages}{488--492}.
+\newblock \DOIprefix\doi{10.1109/ELMA.2017.7955493}.
+%Type = Article
+\bibitem[{Cai et~al.(2005)Cai, Langtangen and Moe}]{Cai2005OnThePerformance}
+\bibinfo{author}{Cai, X.}, \bibinfo{author}{Langtangen, H.P.},
+  \bibinfo{author}{Moe, H.}, \bibinfo{year}{2005}.
+\newblock \bibinfo{title}{On the performance of the python programming language
+  for serial and parallel scientific computations}.
+\newblock \bibinfo{journal}{Scientific Programming} \bibinfo{volume}{13},
+  \bibinfo{pages}{31–56}.
+\newblock \URLprefix \url{https://doi.org/10.1155/2005/619804},
+  \DOIprefix\doi{10.1155/2005/619804}.
+%Type = Inproceedings
+\bibitem[{Casas~Sanchez et~al.(2022)Casas~Sanchez, Loayza~Apeña, Palomino and
+  Paiva-Peredo}]{CasasSanchez2022}
+\bibinfo{author}{Casas~Sanchez, H.}, \bibinfo{author}{Loayza~Apeña, J.},
+  \bibinfo{author}{Palomino, J.}, \bibinfo{author}{Paiva-Peredo, E.},
+  \bibinfo{year}{2022}.
+\newblock \bibinfo{title}{Design of a people access control system using the
+  esp32 module and internet of things for a sanitory facility in a shopping
+  mall}, in: \bibinfo{booktitle}{2022 IEEE Engineering International Research
+  Conference (EIRCON)}, \bibinfo{publisher}{IEEE}. pp. \bibinfo{pages}{1--4}.
+\newblock \DOIprefix\doi{10.1109/eircon56026.2022.9934094}.
+%Type = Inproceedings
+\bibitem[{Cruz et~al.(2013)Cruz, Dimaala, Francisco, Franco, Bandala and
+  Dadios}]{Cruz2013}
+\bibinfo{author}{Cruz, J.P.N.}, \bibinfo{author}{Dimaala, M.L.},
+  \bibinfo{author}{Francisco, L.G.L.}, \bibinfo{author}{Franco, E.J.S.},
+  \bibinfo{author}{Bandala, A.A.}, \bibinfo{author}{Dadios, E.P.},
+  \bibinfo{year}{2013}.
+\newblock \bibinfo{title}{Object recognition and detection by shape and color
+  pattern recognition utilizing artificial neural networks}, in:
+  \bibinfo{booktitle}{International Conference of Information and Communication
+  Technology, ICoICT 2013}, \bibinfo{publisher}{IEEE}. pp.
+  \bibinfo{pages}{140--144}.
+\newblock \DOIprefix\doi{10.1109/ICoICT.2013.6574562}.
+%Type = Inproceedings
+\bibitem[{Darapaneni et~al.(2020)Darapaneni, Evoori, Vemuri, Arichandrapandian,
+  Karthikeyan, Paduri, Babu and Madhavan}]{Darapaneni2020Automatic}
+\bibinfo{author}{Darapaneni, N.}, \bibinfo{author}{Evoori, A.K.},
+  \bibinfo{author}{Vemuri, V.B.}, \bibinfo{author}{Arichandrapandian, T.},
+  \bibinfo{author}{Karthikeyan, G.}, \bibinfo{author}{Paduri, A.R.},
+  \bibinfo{author}{Babu, D.}, \bibinfo{author}{Madhavan, J.},
+  \bibinfo{year}{2020}.
+\newblock \bibinfo{title}{Automatic face detection and recognition for
+  attendance maintenance}, in: \bibinfo{booktitle}{2020 IEEE 15th International
+  Conference on Industrial and Information Systems (ICIIS)},
+  \bibinfo{publisher}{IEEE}. pp. \bibinfo{pages}{236--241}.
+\newblock \DOIprefix\doi{10.1109/ICIIS51140.2020.9342670}.
+%Type = Inproceedings
+\bibitem[{Enadula et~al.(2021)Enadula, Sriram~Enadula and Burri}]{Enadula2021}
+\bibinfo{author}{Enadula, S.M.}, \bibinfo{author}{Sriram~Enadula, A.},
+  \bibinfo{author}{Burri, R.D.}, \bibinfo{year}{2021}.
+\newblock \bibinfo{title}{Recognition of student emotions in an online
+  education system}, in: \bibinfo{booktitle}{Fourth International Conference on
+  Electrical, Computer and Communication Technologies, ICECCT 2021}, pp.
+  \bibinfo{pages}{1--4}.
+\newblock \DOIprefix\doi{10.1109/ICECCT52121.2021.9616788}.
+%Type = Article
+\bibitem[{Farsani et~al.(2020)Farsani, Breda and Sebastiá}]{Farsani2020}
+\bibinfo{author}{Farsani, D.}, \bibinfo{author}{Breda, A.},
+  \bibinfo{author}{Sebastiá, G.S.}, \bibinfo{year}{2020}.
+\newblock \bibinfo{title}{¿cómo los gestos de los maestros afectan a la
+  atención visual de las estudiantes durante el discurso matemático?}
+\newblock \bibinfo{journal}{Journal of Research in Mathematics Education}
+  \bibinfo{volume}{9}, \bibinfo{pages}{220}.
+\newblock \DOIprefix\doi{10.17583/redimat.2020.5185}.
+%Type = Inproceedings
+\bibitem[{Garcia et~al.(2021)Garcia, Lacayanga and
+  Cruz}]{Garcia2021Application}
+\bibinfo{author}{Garcia, R.A.C.}, \bibinfo{author}{Lacayanga, R.P.},
+  \bibinfo{author}{Cruz, F.R.G.}, \bibinfo{year}{2021}.
+\newblock \bibinfo{title}{Application of artificial intelligence in adaptive
+  face recognition system}, in: \bibinfo{booktitle}{2021 IEEE 11th
+  International Conference on System Engineering and Technology (ICSET)},
+  \bibinfo{publisher}{IEEE}. pp. \bibinfo{pages}{263--268}.
+\newblock \DOIprefix\doi{10.1109/ICSET53708.2021.9612439}.
+%Type = Inproceedings
+\bibitem[{Girmay et~al.(2021)Girmay, Samsom and Khattak}]{Girmay2021AI}
+\bibinfo{author}{Girmay, S.}, \bibinfo{author}{Samsom, F.},
+  \bibinfo{author}{Khattak, A.M.}, \bibinfo{year}{2021}.
+\newblock \bibinfo{title}{Ai based login system using facial recognition}, in:
+  \bibinfo{booktitle}{2021 5th Cyber Security in Networking Conference
+  (CSNet)}, \bibinfo{publisher}{IEEE}. pp. \bibinfo{pages}{107--109}.
+\newblock \DOIprefix\doi{10.1109/CSNet52717.2021.9614281}.
+%Type = Inproceedings
+\bibitem[{Goel and Agarwal(2012)}]{Priyanka2012Hybrid}
+\bibinfo{author}{Goel, P.}, \bibinfo{author}{Agarwal, S.},
+  \bibinfo{year}{2012}.
+\newblock \bibinfo{title}{Hybrid approach of haar cascade classifiers and
+  geometrical properties of facial features applied to illumination invariant
+  gender classification system}, in: \bibinfo{booktitle}{2012 International
+  Conference on Computing Sciences}, \bibinfo{publisher}{IEEE}. pp.
+  \bibinfo{pages}{132--136}.
+\newblock \DOIprefix\doi{10.1109/ICCS.2012.40}.
+%Type = Article
+\bibitem[{Guerrero-Ulloa et~al.(2023a)Guerrero-Ulloa, Andrango-Catota,
+  Abad-Alay, Hornos and Rodríguez-Domínguez}]{Guerrero-Ulloa2023DevIdeAir}
+\bibinfo{author}{Guerrero-Ulloa, G.}, \bibinfo{author}{Andrango-Catota, A.},
+  \bibinfo{author}{Abad-Alay, M.}, \bibinfo{author}{Hornos, M.J.},
+  \bibinfo{author}{Rodríguez-Domínguez, C.}, \bibinfo{year}{2023}a.
+\newblock \bibinfo{title}{Development and assessment of an indoor air quality
+  control iot-based system}.
+\newblock \bibinfo{journal}{Electronics} \bibinfo{volume}{12},
+  \bibinfo{pages}{608--628}.
+\newblock \URLprefix \url{https://www.mdpi.com/2079-9292/12/3/608/htm
+  https://www.mdpi.com/2079-9292/12/3/608},
+  \DOIprefix\doi{10.3390/ELECTRONICS12030608}.
+%Type = Article
+\bibitem[{Guerrero-Ulloa et~al.(2023b)Guerrero-Ulloa, Andrango-Catota,
+  Abad-Alay, Hornos and Rodríguez-Domínguez}]{Guerrero-Ulloa2023IdeAir}
+\bibinfo{author}{Guerrero-Ulloa, G.}, \bibinfo{author}{Andrango-Catota, A.},
+  \bibinfo{author}{Abad-Alay, M.}, \bibinfo{author}{Hornos, M.J.},
+  \bibinfo{author}{Rodríguez-Domínguez, C.}, \bibinfo{year}{2023}b.
+\newblock \bibinfo{title}{Ideair: Iot-based system for indoor air quality
+  control}.
+\newblock \bibinfo{journal}{13th International Symposium on Ambient
+  Intelligence - ISAmI 2022} \bibinfo{volume}{603}, \bibinfo{pages}{197--206}.
+\newblock \URLprefix
+  \url{https://link.springer.com/chapter/10.1007/978-3-031-22356-3_19},
+  \DOIprefix\doi{10.1007/978-3-031-22356-3_19/FIGURES/3}.
+%Type = Article
+\bibitem[{Guerrero-Ulloa et~al.(2023c)Guerrero-Ulloa, Fernández-Loor, Moreira,
+  Novais, Rodríguez-Domínguez and Hornos}]{Guerrero-Ulloa2023Nawi}
+\bibinfo{author}{Guerrero-Ulloa, G.}, \bibinfo{author}{Fernández-Loor, A.},
+  \bibinfo{author}{Moreira, F.}, \bibinfo{author}{Novais, P.},
+  \bibinfo{author}{Rodríguez-Domínguez, C.}, \bibinfo{author}{Hornos, M.J.},
+  \bibinfo{year}{2023}c.
+\newblock \bibinfo{title}{Validation of a development methodology and tool for
+  iot-based systems through a case study for visually impaired people}.
+\newblock \bibinfo{journal}{Internet of Things} \bibinfo{volume}{23},
+  \bibinfo{pages}{100900}.
+\newblock \DOIprefix\doi{10.1016/J.IOT.2023.100900}.
+%Type = Article
+\bibitem[{Guerrero-Ulloa et~al.(2020)Guerrero-Ulloa, Hornos and
+  Rodríguez-Domínguez}]{Guerrero-Ulloa2020TDDM4IoTS}
+\bibinfo{author}{Guerrero-Ulloa, G.}, \bibinfo{author}{Hornos, M.J.},
+  \bibinfo{author}{Rodríguez-Domínguez, C.}, \bibinfo{year}{2020}.
+\newblock \bibinfo{title}{Tddm4iots: A test-driven development methodology for
+  internet of things (iot)-based systems}.
+\newblock \bibinfo{journal}{Communications in Computer and Information Science}
+  \bibinfo{volume}{1193 CCIS}, \bibinfo{pages}{41--55}.
+\newblock \URLprefix
+  \url{https://link.springer.com/chapter/10.1007/978-3-030-42517-3_4},
+  \DOIprefix\doi{10.1007/978-3-030-42517-3_4}.
+%Type = Article
+\bibitem[{Guerrero-Ulloa et~al.(2023d)Guerrero-Ulloa, Méndez-García,
+  Torres-Lindao, Zamora-Mecías, Rodríguez-Domínguez and
+  Hornos}]{Guerrero-Ulloa2023SP4}
+\bibinfo{author}{Guerrero-Ulloa, G.}, \bibinfo{author}{Méndez-García, A.},
+  \bibinfo{author}{Torres-Lindao, V.}, \bibinfo{author}{Zamora-Mecías, V.},
+  \bibinfo{author}{Rodríguez-Domínguez, C.}, \bibinfo{author}{Hornos, M.},
+  \bibinfo{year}{2023}d.
+\newblock \bibinfo{title}{Internet of things (iot)-based indoor plant care
+  system}.
+\newblock \bibinfo{journal}{Journal of Ambient Intelligence and Smart
+  Environments} \bibinfo{volume}{15}, \bibinfo{pages}{47--62}.
+\newblock \URLprefix
+  \url{https://www.medra.org/servlet/aliasResolver?alias=iospress&doi=10.3233/AIS-220483},
+  \DOIprefix\doi{10.3233/AIS-220483}.
+%Type = Article
+\bibitem[{Guerrero-Ulloa et~al.(2023e)Guerrero-Ulloa, Rodríguez-Domínguez and
+  Hornos}]{Guerrero-Ulloa2023Review}
+\bibinfo{author}{Guerrero-Ulloa, G.}, \bibinfo{author}{Rodríguez-Domínguez,
+  C.}, \bibinfo{author}{Hornos, M.J.}, \bibinfo{year}{2023}e.
+\newblock \bibinfo{title}{Agile methodologies applied to the development of
+  internet of things (iot)-based systems: A review}.
+\newblock \bibinfo{journal}{Sensors} \bibinfo{volume}{23},
+  \bibinfo{pages}{790}.
+\newblock \URLprefix \url{https://www.mdpi.com/1424-8220/23/2/790/htm
+  https://www.mdpi.com/1424-8220/23/2/790}, \DOIprefix\doi{10.3390/S23020790}.
+%Type = Inproceedings
+\bibitem[{Hachad et~al.(2020)Hachad, Sadiq and Ghanimi}]{Hachad2020}
+\bibinfo{author}{Hachad, T.}, \bibinfo{author}{Sadiq, A.},
+  \bibinfo{author}{Ghanimi, F.}, \bibinfo{year}{2020}.
+\newblock \bibinfo{title}{Student's attendance management using deep facial
+  recognition}, in: \bibinfo{booktitle}{IEEE 2nd International Conference on
+  Electronics, Control, Optimization and Computer Science, ICECOCS 2020},
+  \bibinfo{publisher}{Institute of Electrical and Electronics Engineers Inc.}
+\newblock \DOIprefix\doi{10.1109/ICECOCS50124.2020.9314403}.
+%Type = Inproceedings
+\bibitem[{Ilić et~al.(2021)Ilić, Batić, Mirković, Vukmirović, Ćulibrk,
+  Bosakov and Popović}]{Ilic2021Automatic}
+\bibinfo{author}{Ilić, V.}, \bibinfo{author}{Batić, D.},
+  \bibinfo{author}{Mirković, M.}, \bibinfo{author}{Vukmirović, S.},
+  \bibinfo{author}{Ćulibrk, D.}, \bibinfo{author}{Bosakov, G.},
+  \bibinfo{author}{Popović, I.}, \bibinfo{year}{2021}.
+\newblock \bibinfo{title}{Automatic emotion detection as a teaching aid in
+  online knowledge assessment}, in: \bibinfo{booktitle}{2021 20th International
+  Symposium INFOTEH-JAHORINA (INFOTEH)}, \bibinfo{publisher}{IEEE}. pp.
+  \bibinfo{pages}{1--5}.
+\newblock \DOIprefix\doi{10.1109/infoteh51037.2021.9400699}.
+%Type = Inproceedings
+\bibitem[{Jaiswal et~al.(2020)Jaiswal, Krishnama~Raju and
+  Deb}]{Jaiswal2020Facial}
+\bibinfo{author}{Jaiswal, A.}, \bibinfo{author}{Krishnama~Raju, A.},
+  \bibinfo{author}{Deb, S.}, \bibinfo{year}{2020}.
+\newblock \bibinfo{title}{Facial emotion detection using deep learning}, in:
+  \bibinfo{booktitle}{2020 International Conference for Emerging Technology
+  (INCET)}, \bibinfo{publisher}{IEEE}. pp. \bibinfo{pages}{1--5}.
+\newblock \DOIprefix\doi{10.1109/INCET49848.2020.9154121}.
+%Type = Inproceedings
+\bibitem[{James and Nettikadan(2019)}]{James2019}
+\bibinfo{author}{James, C.}, \bibinfo{author}{Nettikadan, D.},
+  \bibinfo{year}{2019}.
+\newblock \bibinfo{title}{Student monitoring system for school bus using facial
+  recognition}, in: \bibinfo{booktitle}{2019 3rd International Conference on
+  Trends in Electronics and Informatics (ICOEI)}, \bibinfo{publisher}{IEEE}.
+  pp. \bibinfo{pages}{659--663}.
+\newblock \DOIprefix\doi{10.1109/ICOEI.2019.8862534}.
+%Type = Inproceedings
+\bibitem[{Jung et~al.(2015)Jung, Youn, Bae and Choi}]{Jung2015AStudy}
+\bibinfo{author}{Jung, M.G.}, \bibinfo{author}{Youn, S.A.},
+  \bibinfo{author}{Bae, J.}, \bibinfo{author}{Choi, Y.L.},
+  \bibinfo{year}{2015}.
+\newblock \bibinfo{title}{A study on data input and output performance
+  comparison of mongodb and postgresql in the big data environment}, in:
+  \bibinfo{booktitle}{2015 8th International Conference on Database Theory and
+  Application (DTA)}, \bibinfo{publisher}{IEEE}. pp. \bibinfo{pages}{14--17}.
+\newblock \DOIprefix\doi{10.1109/DTA.2015.14}.
+%Type = Inproceedings
+\bibitem[{Kedari et~al.(2021)Kedari, Kapile, Kadole and
+  Jaikar}]{Kedari2021Face}
+\bibinfo{author}{Kedari, P.}, \bibinfo{author}{Kapile, M.},
+  \bibinfo{author}{Kadole, D.}, \bibinfo{author}{Jaikar, S.},
+  \bibinfo{year}{2021}.
+\newblock \bibinfo{title}{Face emotion detection using deep learning}, in:
+  \bibinfo{booktitle}{2021 2nd International Conference on Advances in
+  Computing, Communication, Embedded and Secure Systems (ACCESS)},
+  \bibinfo{publisher}{IEEE}. pp. \bibinfo{pages}{118--123}.
+\newblock \DOIprefix\doi{10.1109/access51619.2021.9563343}.
+%Type = Inproceedings
+\bibitem[{Kulkarni et~al.(2023)Kulkarni, Anjali, Rohith, Nadagouda and
+  Veeresh}]{Kulkarni2023}
+\bibinfo{author}{Kulkarni, R.N.}, \bibinfo{author}{Anjali, T.S.},
+  \bibinfo{author}{Rohith, B.}, \bibinfo{author}{Nadagouda, R.},
+  \bibinfo{author}{Veeresh, S.}, \bibinfo{year}{2023}.
+\newblock \bibinfo{title}{Novel approach to record the attendance of students
+  using facial recognition}, \bibinfo{publisher}{Institute of Electrical and
+  Electronics Engineers Inc.}
+\newblock \DOIprefix\doi{10.1109/icdcece57866.2023.10150539}.
+%Type = Inproceedings
+\bibitem[{Kumar and Srivastava(2021)}]{Kumar2021Emotion}
+\bibinfo{author}{Kumar, M.}, \bibinfo{author}{Srivastava, S.},
+  \bibinfo{year}{2021}.
+\newblock \bibinfo{title}{Emotion detection through facial expression using
+  deeplearning}, in: \bibinfo{booktitle}{2021 5th International Conference on
+  Information Systems and Computer Networks (ISCON)},
+  \bibinfo{publisher}{IEEE}. pp. \bibinfo{pages}{1--4}.
+\newblock \DOIprefix\doi{10.1109/iscon52037.2021.9702451}.
+%Type = Inproceedings
+\bibitem[{Lalitha et~al.(2021)Lalitha, Aishwarya, Shivakumar, Srilekha and
+  Kartheek}]{Lalitha2021ADeep}
+\bibinfo{author}{Lalitha, S.K.}, \bibinfo{author}{Aishwarya, J.},
+  \bibinfo{author}{Shivakumar, N.}, \bibinfo{author}{Srilekha, T.},
+  \bibinfo{author}{Kartheek, G.C.R.}, \bibinfo{year}{2021}.
+\newblock \bibinfo{title}{A deep learning model for face expression detection},
+  in: \bibinfo{booktitle}{2021 International Conference on Recent Trends on
+  Electronics, Information, Communication \& Technology (RTEICT)},
+  \bibinfo{publisher}{IEEE}. pp. \bibinfo{pages}{647--650}.
+\newblock \DOIprefix\doi{10.1109/RTEICT52294.2021.9573626}.
+%Type = Inproceedings
+\bibitem[{Le and Mohd(2022)}]{Le2022Facial}
+\bibinfo{author}{Le, C.}, \bibinfo{author}{Mohd, T.K.}, \bibinfo{year}{2022}.
+\newblock \bibinfo{title}{Facial detection in low light environments using
+  opencv}, in: \bibinfo{booktitle}{2022 IEEE World AI IoT Congress (AIIoT)},
+  \bibinfo{publisher}{IEEE}. pp. \bibinfo{pages}{624--628}.
+\newblock \DOIprefix\doi{10.1109/AIIoT54504.2022.9817372}.
+%Type = Inproceedings
+\bibitem[{Liu et~al.(2021)Liu, Liao, Chou and Fan}]{Liu2021Objetcs}
+\bibinfo{author}{Liu, F.Y.}, \bibinfo{author}{Liao, C.L.},
+  \bibinfo{author}{Chou, P.W.}, \bibinfo{author}{Fan, Y.C.},
+  \bibinfo{year}{2021}.
+\newblock \bibinfo{title}{Objects detection deep learning system based on 2-d
+  winograd convolutional neural network}, in: \bibinfo{booktitle}{2021 IEEE
+  10th Global Conference on Consumer Electronics (GCCE)},
+  \bibinfo{publisher}{IEEE}. pp. \bibinfo{pages}{454--455}.
+\newblock \DOIprefix\doi{10.1109/gcce53005.2021.9750962}.
+%Type = Inproceedings
+\bibitem[{Minh et~al.(2021)Minh, Mai and Minh}]{Minh2021Performance}
+\bibinfo{author}{Minh, H.T.}, \bibinfo{author}{Mai, L.}, \bibinfo{author}{Minh,
+  T.V.}, \bibinfo{year}{2021}.
+\newblock \bibinfo{title}{Performance evaluation of deep learning models on
+  embedded platform for edge ai-based real time traffic tracking and detecting
+  applications}, in: \bibinfo{booktitle}{2021 15th International Conference on
+  Advanced Computing and Applications (ACOMP)}, \bibinfo{publisher}{IEEE}. pp.
+  \bibinfo{pages}{128--135}.
+\newblock \DOIprefix\doi{10.1109/acomp53746.2021.00024}.
+%Type = Inproceedings
+\bibitem[{Narkhede et~al.(2023)Narkhede, Menon, Mathane, Nikam and
+  Dange}]{Narkhede2023}
+\bibinfo{author}{Narkhede, N.}, \bibinfo{author}{Menon, A.},
+  \bibinfo{author}{Mathane, I.}, \bibinfo{author}{Nikam, S.},
+  \bibinfo{author}{Dange, S.}, \bibinfo{year}{2023}.
+\newblock \bibinfo{title}{Facial recognition and machine learning-based student
+  attendance monitoring system}, in: \bibinfo{booktitle}{2023 3rd International
+  Conference on Intelligent Technologies, CONIT 2023},
+  \bibinfo{publisher}{Institute of Electrical and Electronics Engineers Inc.}
+\newblock \DOIprefix\doi{10.1109/CONIT59222.2023.10205631}.
+%Type = Inproceedings
+\bibitem[{Nguyen et~al.(2019)Nguyen, Binh, Bui and N.T.}]{Nguyen2019}
+\bibinfo{author}{Nguyen, Q.T.}, \bibinfo{author}{Binh, H.T.},
+  \bibinfo{author}{Bui, T.D.}, \bibinfo{author}{N.T., P.D.},
+  \bibinfo{year}{2019}.
+\newblock \bibinfo{title}{Student postures and gestures recognition system for
+  adaptive learning improvement}, in: \bibinfo{booktitle}{6th NAFOSTED
+  Conference on Information and Computer Science, NICS 2019},
+  \bibinfo{publisher}{IEEE}. pp. \bibinfo{pages}{494--499}.
+\newblock \DOIprefix\doi{10.1109/NICS48868.2019.9023896}.
+%Type = Article
+\bibitem[{Ozdamli et~al.(2022)Ozdamli, Aljarrah, Karagozlu and
+  Ababneh}]{Ozdamli2022}
+\bibinfo{author}{Ozdamli, F.}, \bibinfo{author}{Aljarrah, A.},
+  \bibinfo{author}{Karagozlu, D.}, \bibinfo{author}{Ababneh, M.},
+  \bibinfo{year}{2022}.
+\newblock \bibinfo{title}{Facial recognition system to detect student emotions
+  and cheating in distance learning}.
+\newblock \bibinfo{journal}{Sustainability (Switzerland)} \bibinfo{volume}{14}.
+\newblock \DOIprefix\doi{10.3390/su142013230}.
+%Type = Article
+\bibitem[{Pabba and Kumar(2022)}]{Pabba2022AnIntelligent}
+\bibinfo{author}{Pabba, C.}, \bibinfo{author}{Kumar, P.}, \bibinfo{year}{2022}.
+\newblock \bibinfo{title}{An intelligent system for monitoring students'
+  engagement in large classroom teaching through facial expression
+  recognition}.
+\newblock \bibinfo{journal}{Expert Systems} \bibinfo{volume}{39},
+  \bibinfo{pages}{12839}.
+\newblock \URLprefix
+  \url{https://onlinelibrary.wiley.com/doi/full/10.1111/exsy.12839},
+  \DOIprefix\doi{10.1111/exsy.12839}.
+%Type = Article
+\bibitem[{Pelc et~al.(2006)Pelc, Kornreich, Foisy and Dan}]{Pelc2006}
+\bibinfo{author}{Pelc, K.}, \bibinfo{author}{Kornreich, C.},
+  \bibinfo{author}{Foisy, M.L.}, \bibinfo{author}{Dan, B.},
+  \bibinfo{year}{2006}.
+\newblock \bibinfo{title}{Recognition of emotional facial expressions in
+  attention-deficit hyperactivity disorder}.
+\newblock \bibinfo{journal}{Pediatric Neurology} \bibinfo{volume}{35},
+  \bibinfo{pages}{93--97}.
+\newblock \DOIprefix\doi{10.1016/j.pediatrneurol.2006.01.014}.
+%Type = Inproceedings
+\bibitem[{Perumal et~al.(2021)Perumal, A, M, C, Deny and
+  Rajasudharsan}]{Perumal2021Detection}
+\bibinfo{author}{Perumal, B.}, \bibinfo{author}{A, S.B.}, \bibinfo{author}{M,
+  V.D.}, \bibinfo{author}{C, A.}, \bibinfo{author}{Deny, J.},
+  \bibinfo{author}{Rajasudharsan, R.}, \bibinfo{year}{2021}.
+\newblock \bibinfo{title}{Detection of food adulteration using arduino ide},
+  in: \bibinfo{booktitle}{2021 Second International Conference on Electronics
+  and Sustainable Communication Systems (ICESC)}, \bibinfo{publisher}{IEEE}.
+  pp. \bibinfo{pages}{262--267}.
+\newblock \DOIprefix\doi{10.1109/ICESC51422.2021.9532720}.
+%Type = Article
+\bibitem[{Popescu(2015)}]{Popescu2015South}
+\bibinfo{author}{Popescu, F.}, \bibinfo{year}{2015}.
+\newblock \bibinfo{title}{South african globalization strategies and higher
+  education}.
+\newblock \bibinfo{journal}{Procedia - Social and Behavioral Sciences}
+  \bibinfo{volume}{209}, \bibinfo{pages}{411--418}.
+\newblock \URLprefix
+  \url{https://www.sciencedirect.com/science/article/pii/S1877042815055597},
+  \DOIprefix\doi{https://doi.org/10.1016/j.sbspro.2015.11.212}.
+  \bibinfo{note}{the 3rd International Conference "EDUCATION, REFLECTION,
+  DEVELOPMENT", 3th - 4th July, 2015}.
+%Type = Article
+\bibitem[{Raúl~Navarro and Víllora(2024)}]{Navarro2024}
+\bibinfo{author}{Raúl~Navarro, Elisa~Larrañaga, S.Y.},
+  \bibinfo{author}{Víllora, B.}, \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{Preschool aggression and victimization: A short-term
+  longitudinal analysis of the immediate social environment}.
+\newblock \bibinfo{journal}{Psychology Research and Behavior Management}
+  \bibinfo{volume}{17}, \bibinfo{pages}{827--851}.
+\newblock \URLprefix
+  \url{https://www.tandfonline.com/doi/abs/10.2147/PRBM.S453572},
+  \DOIprefix\doi{10.2147/PRBM.S453572},
+  \href{http://arxiv.org/abs/https://www.tandfonline.com/doi/pdf/10.2147/PRBM.S453572}{\tt
+  arXiv:https://www.tandfonline.com/doi/pdf/10.2147/PRBM.S453572}.
+%Type = Article
+\bibitem[{Riquelme et~al.(2013)Riquelme, Munita, Jara and
+  Montero}]{Riquelme2013}
+\bibinfo{author}{Riquelme, E.}, \bibinfo{author}{Munita, F.},
+  \bibinfo{author}{Jara, E.}, \bibinfo{author}{Montero, I.},
+  \bibinfo{year}{2013}.
+\newblock \bibinfo{title}{Reconocimiento facial de emociones y desarrollo de la
+  empatía mediante la lectura mediada de literatura infantil}.
+\newblock \bibinfo{journal}{Cultura y Educación} \bibinfo{volume}{25},
+  \bibinfo{pages}{375--388}.
+\newblock \DOIprefix\doi{10.1174/113564013807749704}.
+%Type = Inproceedings
+\bibitem[{Rocha et~al.(2023)Rocha, Souza, Cardoso, Vijaykumar, Araujo and
+  Frances}]{DaCosta2023}
+\bibinfo{author}{Rocha, J.D.C.}, \bibinfo{author}{Souza, M.A.D.},
+  \bibinfo{author}{Cardoso, E.H.S.}, \bibinfo{author}{Vijaykumar, N.},
+  \bibinfo{author}{Araujo, J.P.L.D.}, \bibinfo{author}{Frances, R.L.},
+  \bibinfo{year}{2023}.
+\newblock \bibinfo{title}{A platform for monitoring student commuting in the
+  use of school transport in smart cities - a facial recognition based
+  approach}, in: \bibinfo{booktitle}{2023 International Conference on Smart
+  Applications, Communications and Networking, SmartNets 2023},
+  \bibinfo{publisher}{Institute of Electrical and Electronics Engineers Inc.}
+\newblock \DOIprefix\doi{10.1109/SmartNets58706.2023.10216190}.
+%Type = Article
+\bibitem[{Sabina~Åke and Antonsson(2023)}]{Ake2023}
+\bibinfo{author}{Sabina~Åke, Lena~Hartelius, A.S.J.},
+  \bibinfo{author}{Antonsson, M.}, \bibinfo{year}{2023}.
+\newblock \bibinfo{title}{Experiences of language and communication after
+  brain-tumour treatment: A long-term follow-up after glioma surgery}.
+\newblock \bibinfo{journal}{Neuropsychological Rehabilitation}
+  \bibinfo{volume}{33}, \bibinfo{pages}{1225--1261}.
+\newblock \URLprefix \url{https://doi.org/10.1080/09602011.2022.2080720},
+  \DOIprefix\doi{10.1080/09602011.2022.2080720},
+  \href{http://arxiv.org/abs/https://doi.org/10.1080/09602011.2022.2080720}{\tt
+  arXiv:https://doi.org/10.1080/09602011.2022.2080720}. \bibinfo{note}{pMID:
+  35653603}.
+%Type = Article
+\bibitem[{Seidu et~al.(2022)Seidu, Arthur-Holmes, Agbaglo and
+  Ahinkorah}]{Abdul-Aziz2022}
+\bibinfo{author}{Seidu, A.A.}, \bibinfo{author}{Arthur-Holmes, F.},
+  \bibinfo{author}{Agbaglo, E.}, \bibinfo{author}{Ahinkorah, B.O.},
+  \bibinfo{year}{2022}.
+\newblock \bibinfo{title}{Truancy: How food insecurity, parental supervision,
+  and other factors influence school attendance of adolescents in seychelles}.
+\newblock \bibinfo{journal}{Children and Youth Services Review}
+  \bibinfo{volume}{135}, \bibinfo{pages}{106377}.
+\newblock \URLprefix
+  \url{https://www.sciencedirect.com/science/article/pii/S0190740922000135},
+  \DOIprefix\doi{https://doi.org/10.1016/j.childyouth.2022.106377}.
+%Type = Inproceedings
+\bibitem[{Shanmugam et~al.(2022)Shanmugam, Badruddin and
+  Asirvadam}]{Shanmugam2022Comparative}
+\bibinfo{author}{Shanmugam, K.S.}, \bibinfo{author}{Badruddin, N.},
+  \bibinfo{author}{Asirvadam, V.S.}, \bibinfo{year}{2022}.
+\newblock \bibinfo{title}{Comparative study of state-of-the-art face landmark
+  detectors for eye state classification in subjects with face occlusion}, in:
+  \bibinfo{booktitle}{2022 IEEE 4th Eurasia Conference on Biomedical
+  Engineering, Healthcare and Sustainability (ECBIOS)},
+  \bibinfo{publisher}{IEEE}. pp. \bibinfo{pages}{24--27}.
+\newblock \DOIprefix\doi{10.1109/ecbios54627.2022.9945018}.
+%Type = Inproceedings
+\bibitem[{Sharma et~al.(2021)Sharma, Bux, Varshney and
+  Tomar}]{Sharma2021Real-Time}
+\bibinfo{author}{Sharma, R.}, \bibinfo{author}{Bux, T.U.},
+  \bibinfo{author}{Varshney, B.}, \bibinfo{author}{Tomar, K.},
+  \bibinfo{year}{2021}.
+\newblock \bibinfo{title}{Real-time student management application using google
+  firebase and android studio}, in: \bibinfo{booktitle}{2021 International
+  Conference on Intelligent Technologies (CONIT)}, \bibinfo{publisher}{IEEE}.
+  pp. \bibinfo{pages}{1--6}.
+\newblock \URLprefix
+  \url{https://ieeexplore.ieee.org/abstract/document/9498494},
+  \DOIprefix\doi{10.1109/conit51480.2021.9498494}.
+%Type = Inproceedings
+\bibitem[{Silva et~al.(2021)Silva, Sudasinghe, Hansika, Gamage and
+  Gamage}]{Silva2021AI}
+\bibinfo{author}{Silva, P.}, \bibinfo{author}{Sudasinghe, S.A.V.D.},
+  \bibinfo{author}{Hansika, P.D.U.}, \bibinfo{author}{Gamage, M.P.},
+  \bibinfo{author}{Gamage, M.P.A.W.}, \bibinfo{year}{2021}.
+\newblock \bibinfo{title}{Ai base e-learning solution to motivate and assist
+  primary school students}, in: \bibinfo{booktitle}{2021 3rd International
+  Conference on Advancements in Computing (ICAC)}, \bibinfo{publisher}{IEEE}.
+  pp. \bibinfo{pages}{294--299}.
+\newblock \DOIprefix\doi{10.1109/icac54203.2021.9671209}.
+%Type = Inproceedings
+\bibitem[{Singh and Nasoz(2020)}]{Singh2020Facial}
+\bibinfo{author}{Singh, S.}, \bibinfo{author}{Nasoz, F.}, \bibinfo{year}{2020}.
+\newblock \bibinfo{title}{Facial expression recognition with convolutional
+  neural networks}, in: \bibinfo{booktitle}{2020 10th Annual Computing and
+  Communication Workshop and Conference (CCWC)}, \bibinfo{publisher}{IEEE}. pp.
+  \bibinfo{pages}{0324--0328}.
+\newblock \DOIprefix\doi{10.1109/ccwc47524.2020.9031283}.
+%Type = Inproceedings
+\bibitem[{Softić and Vejzović(2022)}]{Softic2022Windows}
+\bibinfo{author}{Softić, J.}, \bibinfo{author}{Vejzović, Z.},
+  \bibinfo{year}{2022}.
+\newblock \bibinfo{title}{Windows 10 operating system: Vulnerability assessment
+  and exploitation}, in: \bibinfo{booktitle}{2022 21st International Symposium
+  INFOTEH-JAHORINA (INFOTEH)}, \bibinfo{publisher}{IEEE}. pp.
+  \bibinfo{pages}{1--5}.
+\newblock \DOIprefix\doi{10.1109/INFOTEH53737.2022.9751274}.
+%Type = Misc
+\bibitem[{Studio(2021)}]{Android2022Android}
+\bibinfo{author}{Studio, A.}, \bibinfo{year}{2021}.
+\newblock \bibinfo{title}{Android mobile app development tools | android
+  developers}.
+\newblock \URLprefix \url{https://developer.android.com/}.
+  \bibinfo{note}{accessed on June 28, 2022}.
+%Type = Inproceedings
+\bibitem[{Sudharshan and Raj(2018)}]{Sudharshan2018Object}
+\bibinfo{author}{Sudharshan, D.P.}, \bibinfo{author}{Raj, S.},
+  \bibinfo{year}{2018}.
+\newblock \bibinfo{title}{Object recognition in images using convolutional
+  neural network}, in: \bibinfo{booktitle}{2018 2nd International Conference on
+  Inventive Systems and Control (ICISC)}, \bibinfo{publisher}{IEEE}. pp.
+  \bibinfo{pages}{718--722}.
+\newblock \DOIprefix\doi{10.1109/icisc.2018.8398893}.
+%Type = Inproceedings
+\bibitem[{Teja and Kumar(2021)}]{Teja2021Real}
+\bibinfo{author}{Teja, K.B.R.}, \bibinfo{author}{Kumar, T.},
+  \bibinfo{year}{2021}.
+\newblock \bibinfo{title}{Real-time smart drivers drowsiness detection using
+  dnn}, in: \bibinfo{booktitle}{2021 5th International Conference on Trends in
+  Electronics and Informatics (ICOEI)}, \bibinfo{publisher}{IEEE}. pp.
+  \bibinfo{pages}{1026--1030}.
+\newblock \DOIprefix\doi{10.1109/icoei51242.2021.9452938}.
+%Type = Article
+\bibitem[{Terraza~Arciniegas et~al.(2022)Terraza~Arciniegas, Amaya,
+  Piedrahita~Carvajal, Rodriguez-Marin, Duque-Muñoz and
+  Martinez-Vargas}]{Terraza2022}
+\bibinfo{author}{Terraza~Arciniegas, D.F.}, \bibinfo{author}{Amaya, M.},
+  \bibinfo{author}{Piedrahita~Carvajal, A.}, \bibinfo{author}{Rodriguez-Marin,
+  P.A.}, \bibinfo{author}{Duque-Muñoz, L.}, \bibinfo{author}{Martinez-Vargas,
+  J.D.}, \bibinfo{year}{2022}.
+\newblock \bibinfo{title}{Students' attention monitoring system in learning
+  environments based on artificial intelligence}.
+\newblock \bibinfo{journal}{IEEE Latin America Transactions}
+  \bibinfo{volume}{20}, \bibinfo{pages}{126--132}.
+\newblock \DOIprefix\doi{10.1109/TLA.2022.9662181}.
+%Type = Inproceedings
+\bibitem[{Upender et~al.(2020)Upender, Reddy and Santoshini}]{Upender2020}
+\bibinfo{author}{Upender, P.}, \bibinfo{author}{Reddy, G.N.},
+  \bibinfo{author}{Santoshini, G.}, \bibinfo{year}{2020}.
+\newblock \bibinfo{title}{Arduino based accident prevention system with eye
+  twitch and alcohol sensor}, in: \bibinfo{booktitle}{2020 12th International
+  Conference on Computational Intelligence and Communication Networks (CICN)},
+  \bibinfo{publisher}{IEEE}. pp. \bibinfo{pages}{130--134}.
+\newblock \DOIprefix\doi{10.1109/CICN49253.2020.9242577}.
+%Type = Inproceedings
+\bibitem[{V et~al.(2022)V, P, K, P, Khan and Krishna}]{Puneet2022ADjango}
+\bibinfo{author}{V, P.}, \bibinfo{author}{P, V.}, \bibinfo{author}{K, R.K.},
+  \bibinfo{author}{P, S.}, \bibinfo{author}{Khan, O.},
+  \bibinfo{author}{Krishna, C.N.}, \bibinfo{year}{2022}.
+\newblock \bibinfo{title}{A django web application to promote local service
+  providers}, in: \bibinfo{booktitle}{2022 6th International Conference on
+  Computing Methodologies and Communication (ICCMC)},
+  \bibinfo{publisher}{IEEE}. pp. \bibinfo{pages}{1517--1521}.
+\newblock \DOIprefix\doi{10.1109/iccmc53470.2022.9754099}.
+%Type = Inproceedings
+\bibitem[{Vahlbrock et~al.(2022)Vahlbrock, Guddat and
+  Vierjahn}]{Vahlbrock2022VSCode}
+\bibinfo{author}{Vahlbrock, T.}, \bibinfo{author}{Guddat, M.},
+  \bibinfo{author}{Vierjahn, T.}, \bibinfo{year}{2022}.
+\newblock \bibinfo{title}{Vscode migrate: Semi-automatic migrations for low
+  coverage projects}, in: \bibinfo{booktitle}{2022 IEEE International
+  Conference on Software Maintenance and Evolution (ICSME)},
+  \bibinfo{publisher}{IEEE}. pp. \bibinfo{pages}{514--518}.
+\newblock \DOIprefix\doi{10.1109/icsme55016.2022.00070}.
+%Type = Inproceedings
+\bibitem[{Vettivel et~al.(2018)Vettivel, Jeyaratnam, Ravindran, Sumathipala and
+  Amarakecrthi}]{Vettivel2018System}
+\bibinfo{author}{Vettivel, N.}, \bibinfo{author}{Jeyaratnam, N.},
+  \bibinfo{author}{Ravindran, V.}, \bibinfo{author}{Sumathipala, S.},
+  \bibinfo{author}{Amarakecrthi, S.}, \bibinfo{year}{2018}.
+\newblock \bibinfo{title}{System for detecting student attention pertaining and
+  alerting}, in: \bibinfo{booktitle}{2018 3rd International Conference on
+  Information Technology Research (ICITR)}, \bibinfo{publisher}{IEEE}. pp.
+  \bibinfo{pages}{1--6}.
+\newblock \DOIprefix\doi{10.1109/ICITR.2018.8736145}.
+%Type = Article
+\bibitem[{de~Villiers~Rader et~al.(2021)de~Villiers~Rader, Zukow-Goldring and
+  Alhanti}]{VilliersRader2021}
+\bibinfo{author}{de~Villiers~Rader, N.}, \bibinfo{author}{Zukow-Goldring, P.},
+  \bibinfo{author}{Alhanti, T.}, \bibinfo{year}{2021}.
+\newblock \bibinfo{title}{Show gestures direct attention to word–object
+  relations in typically developing and autistic spectrum disorder children}.
+\newblock \bibinfo{journal}{Language Sciences} \bibinfo{volume}{87}.
+\newblock \DOIprefix\doi{10.1016/j.langsci.2021.101414}.
+%Type = Article
+\bibitem[{Warren et~al.(2015)Warren, Zheng, Das, Young, Swanson, Weitlauf and
+  Sarkar}]{Warren2015Brief}
+\bibinfo{author}{Warren, Z.}, \bibinfo{author}{Zheng, Z.},
+  \bibinfo{author}{Das, S.}, \bibinfo{author}{Young, E.M.},
+  \bibinfo{author}{Swanson, A.}, \bibinfo{author}{Weitlauf, A.},
+  \bibinfo{author}{Sarkar, N.}, \bibinfo{year}{2015}.
+\newblock \bibinfo{title}{Brief report: development of a robotic intervention
+  platform for young children with asd}.
+\newblock \bibinfo{journal}{Journal of autism and developmental disorders}
+  \bibinfo{volume}{45}, \bibinfo{pages}{3870--3876}.
+\newblock \DOIprefix\doi{10.1007/s10803-014-2334-0}.
+%Type = Inproceedings
+\bibitem[{Washington et~al.(2016)Washington, Voss, Haber, Tanaka, Daniels,
+  Feinstein, Winograd and Wall}]{Washington2016AWereable}
+\bibinfo{author}{Washington, P.}, \bibinfo{author}{Voss, C.},
+  \bibinfo{author}{Haber, N.}, \bibinfo{author}{Tanaka, S.},
+  \bibinfo{author}{Daniels, J.}, \bibinfo{author}{Feinstein, C.},
+  \bibinfo{author}{Winograd, T.}, \bibinfo{author}{Wall, D.},
+  \bibinfo{year}{2016}.
+\newblock \bibinfo{title}{A wearable social interaction aid for children with
+  autism}, in: \bibinfo{booktitle}{Conference on Human Factors in Computing
+  Systems - Proceedings}, \bibinfo{publisher}{Association for Computing
+  Machinery}. p. \bibinfo{pages}{2348 – 2354}.
+\newblock \URLprefix
+  \url{https://www.scopus.com/inward/record.uri?eid=2-s2.0-85014597852&doi=10.1145%2f2851581.2892282&partnerID=40&md5=ddba8a503f488f61222417e71883064a},
+  \DOIprefix\doi{10.1145/2851581.2892282}. \bibinfo{note}{cited by: 56;
+  Conference name: 34th Annual CHI Conference on Human Factors in Computing
+  Systems, CHI EA 2016; Conference date: 7 May 2016 through 12 May 2016;
+  Conference code: 125618}.
+%Type = Article
+\bibitem[{Zhang and Yu(2022)}]{Zhang2022}
+\bibinfo{author}{Zhang, J.}, \bibinfo{author}{Yu, H.}, \bibinfo{year}{2022}.
+\newblock \bibinfo{title}{Improving the facial expression recognition and its
+  interpretability via generating expression pattern-map}.
+\newblock \bibinfo{journal}{Pattern Recognition} \bibinfo{volume}{129},
+  \bibinfo{pages}{108737}.
+\newblock \DOIprefix\doi{10.1016/j.patcog.2022.108737}.
+%Type = Inproceedings
+\bibitem[{Zou and V(2022)}]{Zou2022Drone}
+\bibinfo{author}{Zou, J.T.}, \bibinfo{author}{V, R.G.}, \bibinfo{year}{2022}.
+\newblock \bibinfo{title}{Drone-based solar panel inspection with 5g and ai
+  technologies}, in: \bibinfo{booktitle}{2022 8th International Conference on
+  Applied System Innovation (ICASI)}, pp. \bibinfo{pages}{174--178}.
+\newblock \DOIprefix\doi{10.1109/icasi55125.2022.9774462}.
+
+\end{thebibliography}
