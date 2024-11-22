@@ -1,4 +1,4 @@
-\begin{thebibliography}{71}
+\begin{thebibliography}{76}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -11,6 +11,14 @@
 \providecommand{\Pubmed}[1]{\href{pmid:#1}{\path{#1}}}
 \providecommand{\bibinfo}[2]{#2}
 \ifx\xfnm\relax \def\xfnm[#1]{\unskip,\space#1}\fi
+%Type = Phdthesis
+\bibitem[{Adcroft(2018)}]{Adcroft2018Developing}
+\bibinfo{author}{Adcroft, S.K.}, \bibinfo{year}{2018}.
+\newblock \bibinfo{title}{Developing Self-Regulated Learning with Time
+  Management and Mindfulness Practice}.
+\newblock Ph.D. thesis. Fordham University.
+\newblock \URLprefix
+  \url{https://www.proquest.com/dissertations-theses/developing-self-regulated-learning-with-time/docview/2088102036/se-2}.
 %Type = Article
 \bibitem[{Adebisi et~al.(2023)Adebisi, Adejumobi, Durodola and
   Jim}]{Adebisi2023development}
@@ -139,6 +147,16 @@
 \bibinfo{author}{Beck, K.}, \bibinfo{year}{2002}.
 \newblock \bibinfo{title}{Test Driven Development: By Example}.
 \newblock \bibinfo{publisher}{Addison-Wesley Professional}.
+%Type = Article
+\bibitem[{Bembich et~al.(2016)Bembich, Cicognini, Paoletti
+  et~al.}]{Bembich2016Future}
+\bibinfo{author}{Bembich, C.}, \bibinfo{author}{Cicognini, M.E.},
+  \bibinfo{author}{Paoletti, G.}, et~al., \bibinfo{year}{2016}.
+\newblock \bibinfo{title}{How do future teachers study? distractions and
+  strategies of self-regulation in the seamless learning}.
+\newblock \bibinfo{journal}{QWERTY} \bibinfo{volume}{1},
+  \bibinfo{pages}{82--98}.
+\newblock \URLprefix \url{https://hdl.handle.net/11368/2883279}.
 %Type = Article
 \bibitem[{Berrezueta-Guzman et~al.(2021)Berrezueta-Guzman, Pau,
   Mart{\'\i}n-Ruiz and M{\'a}ximo-Bocanegra}]{Berrezueta-Guzman2021}
@@ -562,6 +580,15 @@
 \newblock \bibinfo{journal}{Pediatric Neurology} \bibinfo{volume}{35},
   \bibinfo{pages}{93--97}.
 \newblock \DOIprefix\doi{10.1016/j.pediatrneurol.2006.01.014}.
+%Type = Phdthesis
+\bibitem[{Peters(2003)}]{Peters2003Self}
+\bibinfo{author}{Peters, T.D.}, \bibinfo{year}{2003}.
+\newblock \bibinfo{title}{Self-regulated learning and the Internet: Volitional
+  control while searching for information in a hyper-based learning environment
+  that contains intentional distracters}.
+\newblock Ph.D. thesis. Walden University.
+\newblock \URLprefix
+  \url{https://www.proquest.com/dissertations-theses/self-regulated-learning-internet-volitional/docview/305276614/se-2}.
 %Type = Inproceedings
 \bibitem[{Puneet et~al.(2022)Puneet, Venkatesh, Ravi~Kiran, Surendra, Osman and
   Nanda}]{Puneet2022ADjango}
@@ -585,6 +612,15 @@
 \newblock \bibinfo{journal}{Cultura y Educaci{\'o}n} \bibinfo{volume}{25},
   \bibinfo{pages}{375--388}.
 \newblock \DOIprefix\doi{10.1174/113564013807749704}.
+%Type = Phdthesis
+\bibitem[{Roberts(2020)}]{Roberts2020Task}
+\bibinfo{author}{Roberts, E.}, \bibinfo{year}{2020}.
+\newblock \bibinfo{title}{Task Focused in the Age of Distraction: High School
+  AVID Students Use of Digital Learning Logs to Support Self-Regulated Learning
+  in a One-To-One Chromebook Setting}.
+\newblock Ph.D. thesis. University of South Carolina.
+\newblock \URLprefix
+  \url{https://www.proquest.com/dissertations-theses/task-focused-age-distraction-high-school-avid/docview/2430177672/se-2}.
 %Type = Inproceedings
 \bibitem[{Rocha et~al.(2023)Rocha, Souza, Cardoso, Vijaykumar, Araujo and
   Frances}]{DaCosta2023}
@@ -599,6 +635,14 @@
   \bibinfo{publisher}{Institute of Electrical and Electronics Engineers Inc.}.
   pp. \bibinfo{pages}{1--6}.
 \newblock \DOIprefix\doi{10.1109/smartnets58706.2023.10216190}.
+%Type = Phdthesis
+\bibitem[{Salter(2014)}]{Salter2014Exploring}
+\bibinfo{author}{Salter, P.E.}, \bibinfo{year}{2014}.
+\newblock \bibinfo{title}{Exploring a whole-school integrated approach to
+  developing students' self-regulated learning (SRL) skills}.
+\newblock Ph.D. thesis.
+\newblock \URLprefix
+  \url{https://www.proquest.com/docview/3039732343/$N?accountid=14542&sourcetype=Dissertations%20&%20Theses}.
 %Type = Article
 \bibitem[{Seidu et~al.(2022)Seidu, Arthur-Holmes, Agbaglo and
   Ahinkorah}]{Abdul-Aziz2022}
