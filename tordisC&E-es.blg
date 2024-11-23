@@ -6,45 +6,45 @@ Database file #1: torddisC&E-refs.bib
 Warning--I didn't find a database entry for "Mohamed201862"
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--missing school in Salter2014Exploring
-You've used 76 entries,
+You've used 80 entries,
             2990 wiz_defined-function locations,
-            1326 strings with 29666 characters,
-and the built_in function-call counts, 58937 in all, are:
-= -- 4583
-> -- 2485
-< -- 53
-+ -- 968
-- -- 874
-* -- 6577
-:= -- 8330
-add.period$ -- 268
-call.type$ -- 76
-change.case$ -- 667
-chr.to.int$ -- 72
-cite$ -- 77
-duplicate$ -- 4332
-empty$ -- 4119
-format.name$ -- 1107
-if$ -- 11334
+            1349 strings with 30783 characters,
+and the built_in function-call counts, 61413 in all, are:
+= -- 4766
+> -- 2605
+< -- 55
++ -- 1018
+- -- 916
+* -- 6845
+:= -- 8711
+add.period$ -- 282
+call.type$ -- 80
+change.case$ -- 700
+chr.to.int$ -- 76
+cite$ -- 81
+duplicate$ -- 4523
+empty$ -- 4280
+format.name$ -- 1161
+if$ -- 11780
 int.to.chr$ -- 5
 int.to.str$ -- 1
-missing$ -- 842
-newline$ -- 435
-num.names$ -- 306
-pop$ -- 1454
+missing$ -- 879
+newline$ -- 457
+num.names$ -- 322
+pop$ -- 1528
 preamble$ -- 1
-purify$ -- 593
+purify$ -- 623
 quote$ -- 0
-skip$ -- 1479
+skip$ -- 1533
 stack$ -- 0
-substring$ -- 2259
-swap$ -- 3364
+substring$ -- 2305
+swap$ -- 3494
 text.length$ -- 33
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 681
+type$ -- 717
 warning$ -- 1
-while$ -- 338
+while$ -- 351
 width$ -- 0
-write$ -- 1223
+write$ -- 1284
 (There were 2 warnings)

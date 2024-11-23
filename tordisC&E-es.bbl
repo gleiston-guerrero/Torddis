@@ -1,4 +1,4 @@
-\begin{thebibliography}{76}
+\begin{thebibliography}{80}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -234,6 +234,20 @@
   \bibinfo{pages}{140--144}.
 \newblock \DOIprefix\doi{10.1109/icoict.2013.6574562}.
 %Type = Inproceedings
+\bibitem[{Da~Costa~Rocha et~al.(2023)Da~Costa~Rocha, Alves De~Souza,
+  Silva~Cardoso, Vijaykumar, Leite De~Araujo and Lisboa~Frances}]{DaCosta2023}
+\bibinfo{author}{Da~Costa~Rocha, J.}, \bibinfo{author}{Alves De~Souza, M.},
+  \bibinfo{author}{Silva~Cardoso, E.H.}, \bibinfo{author}{Vijaykumar, N.},
+  \bibinfo{author}{Leite De~Araujo, J.P.}, \bibinfo{author}{Lisboa~Frances,
+  R.}, \bibinfo{year}{2023}.
+\newblock \bibinfo{title}{A platform for monitoring student commuting in the
+  use of school transport in smart cities - a facial recognition based
+  approach}, in: \bibinfo{booktitle}{2023 International Conference on Smart
+  Applications, Communications and Networking, SmartNets 2023},
+  \bibinfo{publisher}{Institute of Electrical and Electronics Engineers Inc.}.
+  pp. \bibinfo{pages}{1--6}.
+\newblock \DOIprefix\doi{10.1109/smartnets58706.2023.10216190}.
+%Type = Inproceedings
 \bibitem[{Darapaneni et~al.(2020)Darapaneni, Evoori, Vemuri, Arichandrapandian,
   Karthikeyan, Paduri, Babu and Madhavan}]{Darapaneni2020Automatic}
 \bibinfo{author}{Darapaneni, N.}, \bibinfo{author}{Evoori, A.K.},
@@ -405,6 +419,18 @@
   \bibinfo{publisher}{Institute of Electrical and Electronics Engineers Inc.}.
   pp. \bibinfo{pages}{1--6}.
 \newblock \DOIprefix\doi{10.1109/icecocs50124.2020.9314403}.
+%Type = Article
+\bibitem[{Hartley et~al.(2022)Hartley, Bendixen, Shreve and
+  Gianoutsos}]{Hartley2022Smartphone}
+\bibinfo{author}{Hartley, K.}, \bibinfo{author}{Bendixen, L.D.},
+  \bibinfo{author}{Shreve, E.}, \bibinfo{author}{Gianoutsos, D.},
+  \bibinfo{year}{2022}.
+\newblock \bibinfo{title}{Smartphone usage and studying: Investigating
+  relationships between type of use and self-regulatory skills}.
+\newblock \bibinfo{journal}{Multimodal Technologies and Interaction}
+  \bibinfo{volume}{6}.
+\newblock \URLprefix \url{https://www.mdpi.com/2414-4088/6/6/44},
+  \DOIprefix\doi{10.3390/mti6060044}.
 %Type = Inproceedings
 \bibitem[{Ili{\'c} et~al.(2021)Ili{\'c}, Bati{\'c}, Mirkovi{\'c},
   Vukmirovi{\'c}, {\'C}ulibrk, Bosakov and Popovi{\'c}}]{Ilic2021Automatic}
@@ -457,6 +483,15 @@
   system}, in: \bibinfo{booktitle}{International Conference on Intelligent
   Systems for Cybersecurity, ISCS 2024}, pp. \bibinfo{pages}{1--6}.
 \newblock \DOIprefix\doi{10.1109/iscs61804.2024.10581101}.
+%Type = Article
+\bibitem[{Labăr and Ţepordei(2019)}]{Labar2019Interplay}
+\bibinfo{author}{Labăr, A.V.}, \bibinfo{author}{Ţepordei, A.M.},
+  \bibinfo{year}{2019}.
+\newblock \bibinfo{title}{The interplay between time perspective, internet use
+  and smart phone in-class multitasking: A mediation analysis}.
+\newblock \bibinfo{journal}{Computers in Human Behavior} \bibinfo{volume}{93},
+  \bibinfo{pages}{33--39}.
+\newblock \DOIprefix\doi{10.1016/j.chb.2018.11.050}.
 %Type = Inproceedings
 \bibitem[{Lalitha et~al.(2021)Lalitha, Aishwarya, Shivakumar, Srilekha and
   Kartheek}]{Lalitha2021ADeep}
@@ -494,6 +529,13 @@
 \newblock \bibinfo{journal}{Computers \& Education} \bibinfo{volume}{124},
   \bibinfo{pages}{62--76}.
 \newblock \DOIprefix\doi{10.1016/j.compedu.2018.05.011}.
+%Type = Phdthesis
+\bibitem[{Muljana(2022)}]{Muljana2022Instructional}
+\bibinfo{author}{Muljana, P.S.}, \bibinfo{year}{2022}.
+\newblock \bibinfo{title}{Instructional Designers Conducting Professional
+  Learning Using Social Media: A Phenomenological Study of Their Experiences
+  Through a Self-regulated Learning Lens}.
+\newblock Ph.D. thesis. Old Dominion University.
 %Type = Inproceedings
 \bibitem[{M\"{u}ller et~al.(2018)M\"{u}ller, Eska, Sch\"{a}ffer, V\"{o}lkel,
   Braun, Wiegand and Alt}]{Muller2018ArchnSmile}
@@ -571,6 +613,16 @@
   \bibinfo{pages}{12839}.
 \newblock \DOIprefix\doi{10.1111/exsy.12839}.
 %Type = Article
+\bibitem[{Palmer et~al.(2022)Palmer, Moulton, Stone, Lavender, Fulford and
+  Phillips}]{Palmer2022impact}
+\bibinfo{author}{Palmer, R.H.}, \bibinfo{author}{Moulton, M.K.},
+  \bibinfo{author}{Stone, R.H.}, \bibinfo{author}{Lavender, D.L.},
+  \bibinfo{author}{Fulford, M.}, \bibinfo{author}{Phillips, B.B.},
+  \bibinfo{year}{2022}.
+\newblock \bibinfo{title}{The impact of synchronous hybrid instruction on
+  students' engagement in a pharmacotherapy course.}
+\newblock \bibinfo{journal}{Pharmacy Practice} \bibinfo{volume}{20}.
+%Type = Article
 \bibitem[{Pelc et~al.(2006)Pelc, Kornreich, Foisy and Dan}]{Pelc2006}
 \bibinfo{author}{Pelc, K.}, \bibinfo{author}{Kornreich, C.},
   \bibinfo{author}{Foisy, M.L.}, \bibinfo{author}{Dan, B.},
@@ -601,17 +653,6 @@
   Computing Methodologies and Communication (ICCMC)},
   \bibinfo{publisher}{IEEE}. pp. \bibinfo{pages}{1517--1521}.
 \newblock \DOIprefix\doi{10.1109/iccmc53470.2022.9754099}.
-%Type = Article
-\bibitem[{Riquelme et~al.(2013)Riquelme, Munita, Jara and
-  Montero}]{Riquelme2013}
-\bibinfo{author}{Riquelme, E.}, \bibinfo{author}{Munita, F.},
-  \bibinfo{author}{Jara, E.}, \bibinfo{author}{Montero, I.},
-  \bibinfo{year}{2013}.
-\newblock \bibinfo{title}{Reconocimiento facial de emociones y desarrollo de la
-  empat{\'\i}a mediante la lectura mediada de literatura infantil}.
-\newblock \bibinfo{journal}{Cultura y Educaci{\'o}n} \bibinfo{volume}{25},
-  \bibinfo{pages}{375--388}.
-\newblock \DOIprefix\doi{10.1174/113564013807749704}.
 %Type = Phdthesis
 \bibitem[{Roberts(2020)}]{Roberts2020Task}
 \bibinfo{author}{Roberts, E.}, \bibinfo{year}{2020}.
@@ -621,20 +662,6 @@
 \newblock Ph.D. thesis. University of South Carolina.
 \newblock \URLprefix
   \url{https://www.proquest.com/dissertations-theses/task-focused-age-distraction-high-school-avid/docview/2430177672/se-2}.
-%Type = Inproceedings
-\bibitem[{Rocha et~al.(2023)Rocha, Souza, Cardoso, Vijaykumar, Araujo and
-  Frances}]{DaCosta2023}
-\bibinfo{author}{Rocha, J.D.C.}, \bibinfo{author}{Souza, M.A.D.},
-  \bibinfo{author}{Cardoso, E.H.S.}, \bibinfo{author}{Vijaykumar, N.},
-  \bibinfo{author}{Araujo, J.P.L.D.}, \bibinfo{author}{Frances, R.L.},
-  \bibinfo{year}{2023}.
-\newblock \bibinfo{title}{A platform for monitoring student commuting in the
-  use of school transport in smart cities - a facial recognition based
-  approach}, in: \bibinfo{booktitle}{2023 International Conference on Smart
-  Applications, Communications and Networking, SmartNets 2023},
-  \bibinfo{publisher}{Institute of Electrical and Electronics Engineers Inc.}.
-  pp. \bibinfo{pages}{1--6}.
-\newblock \DOIprefix\doi{10.1109/smartnets58706.2023.10216190}.
 %Type = Phdthesis
 \bibitem[{Salter(2014)}]{Salter2014Exploring}
 \bibinfo{author}{Salter, P.E.}, \bibinfo{year}{2014}.
@@ -775,6 +802,17 @@
   relations in typically developing and autistic spectrum disorder children}.
 \newblock \bibinfo{journal}{Language Sciences} \bibinfo{volume}{87}.
 \newblock \DOIprefix\doi{10.1016/j.langsci.2021.101414}.
+%Type = Article
+\bibitem[{Wang et~al.(2022)Wang, Salisbury-Glennon, Dai, Lee and
+  Dong}]{wang2022empowering}
+\bibinfo{author}{Wang, C.H.}, \bibinfo{author}{Salisbury-Glennon, J.D.},
+  \bibinfo{author}{Dai, Y.}, \bibinfo{author}{Lee, S.}, \bibinfo{author}{Dong,
+  J.}, \bibinfo{year}{2022}.
+\newblock \bibinfo{title}{Empowering college students to decrease digital
+  distraction through the use of self-regulated learning strategies.}
+\newblock \bibinfo{journal}{Contemporary Educational Technology}
+  \bibinfo{volume}{14}.
+\newblock \DOIprefix\doi{10.30935/cedtech/12456}.
 %Type = Article
 \bibitem[{Warren et~al.(2015)Warren, Zheng, Das, Young, Swanson, Weitlauf and
   Sarkar}]{Warren2015Brief}
