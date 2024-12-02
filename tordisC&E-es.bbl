@@ -1,4 +1,4 @@
-\begin{thebibliography}{79}
+\begin{thebibliography}{80}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -361,6 +361,14 @@
 \newblock \bibinfo{journal}{13th International Symposium on Ambient
   Intelligence - ISAmI 2022} \bibinfo{volume}{603}, \bibinfo{pages}{197--206}.
 \newblock \DOIprefix\doi{10.1007/978-3-031-22356-3_19}.
+%Type = Article
+\bibitem[{Guerrero-Ulloa et~al.(2024)Guerrero-Ulloa, Carvajal-Su{\'a}rez,
+  Novais, Hornos and Rodr{\'\i}guez-Dom{\'\i}nguez}]{Guerrero2024Test}
+\bibinfo{author}{Guerrero-Ulloa, G.}, \bibinfo{author}{Carvajal-Su{\'a}rez,
+  D.}, \bibinfo{author}{Novais, P.}, \bibinfo{author}{Hornos, M.J.},
+  \bibinfo{author}{Rodr{\'\i}guez-Dom{\'\i}nguez, C.}, \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{Test-driven development tool for iot systems}.
+\newblock \bibinfo{journal}{IEEE Software} , \bibinfo{pages}{1--9}.
 %Type = Article
 \bibitem[{Guerrero-Ulloa et~al.(2023c)Guerrero-Ulloa, Fern{\'a}ndez-Loor,
   Moreira, Novais, Rodr{\'\i}guez-Dom{\'\i}nguez and
