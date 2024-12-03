@@ -21,6 +21,8 @@
 # Archivos de compilación
 *.pdf
 *.pdfsync
+*.bbl
+*.blg
 
 # Carpetas temporales y de compilación
 build/
