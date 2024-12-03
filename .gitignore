@@ -19,7 +19,6 @@
 *.ps
 
 # Archivos de compilación
-*.pdf
 *.pdfsync
 *.bbl
 *.blg
