@@ -352,156 +352,221 @@
 			
 	\section{Materiales y Métodos}
 	\label{seccion:Cuatro}
-		El desarrollo del sistema Torddis siguió una metodología estructurada para asegurar la integración efectiva de los componentes de hardware y software, con el objetivo de proporcionar una herramienta integral para monitorizar y mejorar la concentración de los estudiantes en casa. Esta sección detalla los materiales y métodos utilizados en el diseño, desarrollo y evaluación del sistema Torddis.
+		La presente sección describe en detalle los procedimientos, herramientas y metodologías empleadas en el diseño, desarrollo y evaluación del sistema Torddis. Este sistema combina tecnologías avanzadas de Internet de las Cosas (IoT) e Inteligencia Artificial (IA) para monitorizar y mejorar la concentración de los estudiantes en actividades académicas realizadas en el hogar. El enfoque metodológico estuvo guiado por la metodología TDDM4IoTS, permitiendo un desarrollo iterativo y enfocado en la calidad técnica y pedagógica.
 		
-		Más específicamente, Torddis se desarrolló utilizando la metodología TDDM4IoTS \citep{Guerrero-Ulloa2020TDDM4IoTS}. Esta metodología es la más completa respecto al ciclo de vida del sistema \citep{Guerrero-Ulloa2023Review} y ha sido ampliamente valorada \citep{Guerrero-Ulloa2023DevIdeAir,Guerrero-Ulloa2023IdeAir,Guerrero-Ulloa2023SP4,Guerrero-Ulloa2023Nawi}. Durante el desarrollo del proyecto tecnológico, se implementaron todas las etapas de la metodología, excepto la última, mantenimiento, debido al corto tiempo de vida del sistema al momento de la redacción de este artículo. Además, este marco metodológico ayuda en la detección temprana de errores, contribuyendo a reducir los costos y el tiempo de desarrollo, permitiendo un código más limpio \citep{Beck2002TDD}.
+		A través de este apartado, se exponen las características de los participantes, el diseño experimental, las técnicas utilizadas para la validación de instrumentos y análisis de datos, así como los aspectos técnicos del sistema. Además, se destacan las medidas adoptadas para reducir sesgos, asegurar la confiabilidad de los resultados y responder a las necesidades educativas y tecnológicas de los usuarios finales. Finalmente, se reconocen las limitaciones del estudio y se justifica el impacto pedagógico del sistema en el desarrollo de habilidades de autorregulación y aprendizaje autónomo.
 		
-		El equipo de proyecto estuvo compuesto por los autores del trabajo, con los roles de los miembros del equipo detallados en la Tabla \ref{tab:Roles}.
-		
-		\begin{table}[H]
-			\caption{Roles desempeñados por los miembros del equipo.\label{tab:Roles}}
-			\begin{tabularx}{0.8\textwidth}{>{\arraybackslash}X >{\arraybackslash}X}
-				\toprule
-				\textbf{Rol}	& \textbf{Miembro}\\
-				\midrule
-				Cliente/Usuario final & Autor 5, Autor 6 y algunos padres\\
-				Facilitador del proyecto		&  Autor 1 y Autor 4\\
-				Equipo de desarrollo		&  Autor 2 y Autor 3\\
-				Consejero		&  Alternando entre Autor 2 y Autor 3\\
-				\bottomrule
-			\end{tabularx}
-		\end{table}
-		
-		\subsection{Análisis Preliminar}
-			Esta etapa fue una etapa crucial, ya que se pudo determinar si el proyecto era viable para su desarrollo o no. Para determinar su viabilidad se desarrollaron algunas actividades.
+		\subsection{Participantes y Contexto del Estudio}
+			El estudio incluyó la participación de 12 niños con su respectivo tutor, seleccionados mediante un muestreo por conveniencia. Los niños tenían edades comprendidas entre los 7 y 12 años, cursando estudios primarios y secundarios. Los tutores, de entre 25 y 65 años, presentaban niveles de educación primaria y secundaria. Los participantes residen en sectores urbanos y rurales con servicios básicos (electricidad, agua potable, Internet y telefonía móvil).
+				
+			El criterio de selección garantizó que los hogares contaran con acceso a Internet en el domicilio (WiFi o datos móviles) y datos móviles en el Smartphone del tutor, condiciones necesarias para implementar el sistema. Este enfoque asegura que los participantes representan el perfil de los usuarios potenciales de Torddis: familias con tutores ocupados en actividades dentro y fuera del hogar, responsables de niños en edad escolar que necesitan supervisión directa.
+				
+			La representatividad de la muestra se considera aceptable al trabajar con usuarios reales del sistema y cumplir con criterios de inclusión definidos. La selección por conveniencia es adecuada en investigaciones preliminares como esta, permitiendo obtener una muestra significativa pese a la limitada disposición de colaboración de algunas familias \citep{DiPietro2025Meta}.
+				
+		\subsection{Proceso Experimental y Validación de Instrumentos}
+			El proceso experimental se llevó a cabo en dos etapas:
+				
+			\paragraph{Entorno simulado:} Diseñado para evaluar la usabilidad y rendimiento del sistema. Durante esta fase, los tutores usaron Torddis durante 30 minutos en un entorno controlado, donde se verificaron todas las funcionalidades del sistema. Se emplearon cuestionarios SUS y preguntas abiertas para recopilar datos sobre la experiencia del usuario.
 			
-			\subsubsection{Análisis de Requisitos Preliminares}
-				Este análisis de los requisitos preliminares abarcó tanto los aspectos funcionales (especificaciones del cliente) como los no funcionales (atributos de calidad del sistema) a un nivel general de detalle.
+			\paragraph{Entorno real:} Diseñado para evaluar la efectividad del sistema. Esta fase duró una semana, considerando que solo existía un prototipo. Se utilizó un cuestionario con escala de Likert para medir la percepción de los tutores sobre la utilidad y efectividad de Torddis (ver \ref{Appendix:Effectivity}), incluyendo preguntas sobre atracción del dispositivo, precisión de las notificaciones, y su impacto en la autorregulación y concentración de los niños \citep{Ackermans2025Young}.
 				
-				El equipo de proyecto logró reclutar a un usuario tutor con una necesidad inminente de un sistema como Torddis, permitiendo un rápido análisis preliminar de sus necesidades. Además, se reclutó a un grupo de usuarios tutores para verificar los requisitos propuestos en esta actividad. Posteriormente, todos estos actores¡, apoyaron para realizar el análisis detallado de los requisitos del sistema.
-				
-				En esta actividad se determinó que los requisitos funcionales que Torddis debe cumplir son \cite{Asish2022Detecting,Pabba2022AnIntelligent,Vettivel2018System}:%Yin2021}:
-				 
-				\begin{itemize}
-					\item Registrar y modificar los datos del usuario tutor.
-					\item Permitir al usuario tutor registrar y modificar los datos del niño en la aplicación móvil.
-					\item Permitir al usuario tutor habilitar y/o deshabilitar los objetos que están permitidos en el área de estudio (escritorio).
-					\item Monitorizar la presencia del niño, las expresiones faciales, el estado de somnolencia y el uso de los objetos que no están permitidos en el área de estudio (escritorio).
-					\item Visualizar el historial del monitorización de los parámetros de distracción del niño.
-					\item Reproducir un sonido de alarma y luz led mientras el niño se aleje del área de estudio (escritorio) o tenga signos de soñolencia.
-					\item Generar gráficos estadísticos sobre los eventos sucedidos: ha estado con sueño, ha usado objetos restringidos y el conteo de cada expresión facial del niño de los últimos 7 días a partir de una fecha seleccionada.
-				\end{itemize}
-				
-				Los requisitos no funcionales que debe cumplir el sistema propuesto son:
-				
-				\begin{itemize}
-					\item La aplicación móvil de tener una interfaz minimalista e intuitiva.
-					\item El dispositivo debe tener dimensiones como de algo cotidiano para el niño (juguete).
-					\item Al ser un dispositivo para estar en un lugar determinado (lugar destinado para hacer tareas escolares), debe ser alimentado por el sistema de electricidad público.
-					\item Los datos personales y de autenticación deben ser encriptados para asegurar la privacidad de los datos.
-					\item Utilizar la red WiFi disponible en el hogar.
-				\end{itemize}
-				
-				Para el análisis de los requisitos se utilizaron diagramas de casos de uso, empleando la herramienta web gratuita TDDT4IoTS disponible en \href{https://aplicaciones.uteq.edu.ec}{https://aplicaciones.uteq.edu.ec} o \href{http://www.tddt4iots.com}{http://www.tddt4iots.com}. 
-				
-				Además, se determinaron las tecnologías a utilizar para el desarrollo de Torddis, incluyendo recursos de hardware, tecnologías y herramientas de software para el desarrollo de la aplicación móvil y la configuración del hardware. La elección de los recursos se basó en los criterios de selección de los autores, como el uso de herramientas y tecnologías de software de código abierto con documentación adecuada y suficiente que cumplan con las funcionalidades requeridas y que el equipo de desarrollo tenga la experiencia necesaria.
-				
-				Entre las tecnologías de inteligencia artificial que se consideraron para su selección están los métodos para:
-				
-				\begin{itemize}
-					\item Reconocimiento Facial
-					\item Reconocimiento de Expresiones Faciales
-					\item Detección de Sueño
-					\item Reconocimiento de Objetos
-					\item Monitorización de las Distracciones de los Niños, según los parámetros de distracción
-				\end{itemize} 
-				Asimismo, para el hardware IoT se consideró importante que cumpla con las funcionalidades requeridas, sea económico, esté disponible en el mercado local, y cuente con la documentación necesaria para su implementación. También se valoró que el equipo de desarrollo tuviera experiencia en su configuración y uso.
-				
-				Estas tecnologías permiten ajustar las estrategias de monitoreo en tiempo real según las necesidades detectadas en el comportamiento de los estudiantes, maximizando la eficacia del sistema al proporcionar una supervisión personalizada. Investigaciones recientes han destacado que herramientas basadas en inteligencia artificial, como ChatGPT, no solo pueden generar contenido educativo adaptado, sino también ofrecer retroalimentación personalizada. Este enfoque subraya el potencial de la IA para optimizar los procesos educativos y fomentar entornos de aprendizaje más centrados en el estudiante, donde la personalización y la supervisión se integran de manera efectiva \cite{Wang2025Development, Li2024Systematic}.
+			La validez de los instrumentos fue garantizada mediante la revisión y validación por investigadores con experiencia, quienes aseguraron la claridad de las preguntas y su adecuación al propósito del estudio. Además, los datos generados por el sistema (e.g., detección de objetos, alertas) fueron corroborados manualmente para garantizar su precisión \citep{Wang2025Development}. Además, se calculó el Alpha de Cronbach \citep{Forero2024Cronbach} para medir la consistencia interna entre las afirmaciones.
 			
-			\subsubsection{Análisis de viabilidad}
-				Este análisis se realizó desde los tres aspectos considerados en la metodología TDDM4IoTS: viabilidades técnica, económica y operativa. La disponibilidad de los recursos de hardware y software necesarios para el desarrollo de Torddis fue crucial para garantizar el éxito de este proyecto. Además, la presencia de un equipo de desarrollo con las habilidades y conocimientos adecuados permitió completar Torddis con un presupuesto muy limitado y con un cronograma reducido.
-			
-			\subsubsection{Viabilidad Técnica}
-				Se analizaron las tecnologías disponibles para el desarrollo de Torddis, incluyendo recursos de hardware, algoritmos y métodos de IA, y herramientas de software para monitorizar las distracciones de los estudiantes durante sus actividades escolares.
-				
-				Siempre buscando responder a las preguntas de investigación planteadas en este documento, se realizó una revisión acerca de las tecnologías de software, IA y hardware y otros recursos existentes y su aplicación en entornos educativos ayudó a seleccionar las tecnologías más apropiadas para este proyecto.
-				
-				Para la selección de los componentes de hardware se aplicaron los siguientes criterios:
-				
-				\begin{enumerate}
-					\item \textbf{Disponibilidad:} El componente debía estar disponible en la tienda. Dado que no existe un mercado directo en el lugar de residencia del facilitador de proyecto para adquirirlo, se buscaron tiendas en línea (www.mercadolibre.com.ec). La tienda debía ser confiable. 
-					\item \textbf{Tiempo de entrega:} Dentro de la disponibilidad también se consideró el tiempo de entrega. Este plazo no debía superar las 48 horas.
-					\item \textbf{Precio:} El componente a adquirir debe ser económico. Es decir, la tienda seleccionada debe ser entre las confiables la que lo oferte a menor precio.
-					\item \textbf{Documentación:} La disponibilidad de documentación en línea para el uso adecuado del componente seleccionado.
-					\item \textbf{Experiencia:} El equipo de desarrollo debe tener experiencia en la configuración del componente.
-				\end{enumerate}
-				
-				Así mismo, el cronograma de actividades para el desarrollo del prototipo de TORDDIS estuvo dentro del periodo de tiempo adecuado.
-			
-			\subsubsection{Análisis Financiero}
-				En cuanto a lo financiero, el prototipo de TORDDIS se considera muy económico. Fue desarrollado utilizando herramientas, y tecnologías de Software e inteligencia artificial gratuitas. Los recursos financieros fueron dirigidos exclusivamente para obtener los componentes de hardware necesarios.
-				
-			\subsubsection{Vialidad Operativa}
-				Al considerar los requisitos no funcionales de TORDDIS, se garantiza que los usuarios tutores puedan manipular el dispositivo y manejar la aplicación móvil a su conveniencia. Por lo tanto la viabilidad operativa, se garantiza. Además estos mismos requisitos garantizan el cumplimiento de la garantía de la privacidad de los datos personales.
-				
-		\subsection{Diseño de la Capa Tecnológica}
-			Uno de los objetivos conseguidos en esta fase es el diseño de la arquitectura del sistema. La arquitectura es una guía importante para que los desarrolladores logren su objetivo con calidad \cite{Liu2011Status}. Para ayudar a los tutores que tienen múltiples ocupaciones sean dentro o fuera del hogar, se consideró la construcción de un dispositivo IoT para determinar el estado del niño mientras hace tareas escolares. 
-			
-			Para el diseño de la arquitectura de TORDDIS, se consideró: Siendo que el tutor no puede estar presente todo el tiempo al lado de su representado ¿Cómo suplir la presencia del tutor para vigilar al estudiante mientras realiza sus tareas escolares en su hogar?
-			
-			Si el tutor se encuentra fuera del hogar, ¿Cómo informarlo de los eventos sucedidos con su tutorado?, ¿Cómo el tutor persuade al estudiante para que continúe haciendo sus tareas escolares? 
-			
-			El análisis de estás interrogantes fue curcial para diseñar un sistema que ayude a los tutores a apoyar el aprendizaje de sus tutorados y mejorar su rendimiento académico, incluso mejorar su concentración mientras realizan sus tareas escolares.
-			
-		\subsection{Análisis detallado de requisitos}
-			El análisis de requisitos fue una primera fase que se desarrollo de manera iterativa, es decir para cada uno de los entregables. Los dos entregables fueron el dispositivo y la aplicación móvil. Así mismo cada uno de los componentes en los que se dividió cada uno de los entregables, a su vez se ejecutaron por tareas. Estas tareas tuvieron una duración de dos hasta seis semanas inclusive (por la disponibilidad de tiempo).
-			
-			Los componentes al ser desarrollados uno por uno, el posterior fue integrado con el/los anterior/es. Por lo tanto, al terminar el último componente, el entregable estaba listo para ser usado y probado.
-			
-			El detalle de los requisitos se consideró primeramente lo encontrado en la literatura, y se tomó decisivamente lo que los futuros usuarios especificaron. Esto se detalló en un formato de casos de uso semiestructurados para guardar un estándar enmarcado en una estructura definida previamente \cite{Zegzhda2018Use}.
-			
-		\subsection{Generación y Refinamiento del Modelo}
-						Cómo TDDM4IoTS \cite{Guerrero-Ulloa2020TDDM4IoTS} sugiere que no todas las etapas deben ser ejecutadas y que el orden puede variar, la etapa de refinamiento de modelos no se ejecutó.
-			
-			Esta etapa de refinamiento de modelos, los desarrolladores consideran que es importante cuando los requisitos no están claros al inicio del desarrollo y se vuelven más específicos a medida que avanza el ciclo de vida del proyecto. Caso que no sucedió en el desarrollo de TORDDIS, los requisitos fueron claros desde el inicio.
-			
-			Además, la no ejecución de esa etapa la atribuyen a la herramienta usada \cite{Guerrero2024Test}, en vista de qué, el refinamiento del modelo se hace dentro de los casos de uso, y ella se encarga de actualizar los modelos. El modelo al ser obtenido directamente de las especificaciones de los casos de uso, y TORDDIS al no tener una envergadura que demanda un esfuerzo extraordinario para su modelado, el modelo obtenido usando TDDT4IoTS fue el ideal.
-			
-		\subsection{Generación de Pruebas}
-			Las pruebas necesarias en el desarrollo de TORDDIS fueron las pruebas unitarias, las pruebas de integración, las pruebas de sistemas y las pruebas de aceptación \cite{Sciarra2024Smash}.
+		\subsection{Aleatorización y Sesgos}
+			No se implementó un proceso de aleatorización debido a la naturaleza del muestreo por conveniencia. Sin embargo, se tomaron medidas para minimizar sesgos, como \citep{Huang2025How}:
 			
 			\begin{itemize}
-				\item Las \textit{pruebas unitarias} son las más extensas pero simples que sirvieron para que los desarrolladores ahorren tiempo en la detección y corrección de errores \cite{Mafi2024Regression}
-				\item Las pruebas de integración fueron ejecutadas para integrar cada uno de los componentes de los entregables, y a su vez en para verificar que las partes que interactúan lo hagan correctamente, por ejemplo los servicios web con la la base de datos, y en su momento, estos con la lógica de negocios de la aplicación móvil, garantizando así que el sistema cumpla con los requisitos especificados por los usuarios.
-				\item Las pruebas de sistema se ejecutaron para integrar los entregables en un sistema. Es decir ya las partes más grandes del sistema.
-				\item Después que el equipo de desarrollo probó todo el sistemas, el usuario ejecutó las pruebas de de aceptación. Para el equipo del proyecto, las pruebas de aceptación sirvieron para evaluar el sistema por parte de los usuarios.
+				\item Explicación detallada de las preguntas del cuestionario antes de su llenado.
+				\item Garantía de anonimato y confidencialidad de las respuestas.
+				\item Aplicación del cuestionario sin la presencia de los investigadores para evitar influencia en las respuestas.
 			\end{itemize}
-			 
-		\subsection{Generación y Refinamiento del Software} 
-			El desarrollo del software para el sistema Torddis se llevó a cabo en dos etapas principales: generación y refinamiento. Inicialmente, el código fue escrito tomando como base los modelos y pruebas generados automáticamente por la herramienta TDDT4IoTS \cite{Guerrero2024Test}, complementado por los desarrolladores para los aspectos no automatizados. 
+				
+			Reconocemos que podrían existir sesgos relacionados con la cercanía de los investigadores a los participantes, lo que podría influir en las respuestas de los cuestionarios \citep{DiPietro2025Meta}.
 			
-			Durante esta etapa, se verificaron todos los componentes de software mediante la ejecución de las pruebas diseñadas para garantizar su funcionalidad y su alineación con los requisitos establecidos.
-		
-			Posteriormente, en la etapa de refinamiento, el software fue mejorado para optimizar su calidad y rendimiento. Los cambios realizados incluyeron la reducción de variables temporales o auxiliares para una aplicación de la computación verde \cite{Firmansyah2024Integrating}, el mejoramiento del nombrado de atributos, métodos y clases para facilitar la comprensión del código, y la adición de comentarios en las partes más importantes del mismo. Estas mejoras contribuyeron a un código limpio, mantenible y de mayor calidad, fortaleciendo la solidez del sistema Torddis en su conjunto \cite{Marabesi2024Exploring}.
-		
-		\subsection{Despliegue de Hardware y Software}
-			Cada uno de los componentes de los entregables fue  desplegado en el medio que finalmente fue desplegado todo el entregable en condiciones de despliegue del sistema en su conjunto. Los componentes de la aplicación móvil eran probados en el simulador de Android Studio, y luego de ser generado el apk iterativa, esa aplicación móvil se desplegó en un smartphone con las características mínimas para las cuales fue desarrollada.
-		
-			El despliegue de los componentes del entregable final o del dispositivo Torddis se desplegaron iterativamente en ambientes simulados o de pruebas en pleno desarrollo. Posteriormente, el para hacer las pruebas de integración y de sistema se desplegó en un entorno real-ideal, donde cualquier estudiante escolar puede realizar tareas escolares.
-		
-		\subsection{Evaluación de los Entregables}
-			Durante el desarrollo del proyecto y para evaluar la funcionalidad y usabilidad de Torddis. Se consideraron las capacidades de los usuarios tutores para garantizar que Torddis permaneciera operativo después de su implementación, sin la necesidad de personal adicional, excepto en casos de mantenimiento correctivo, donde personas con conocimientos sobre el desarrollo de Torddis tendrían que intervenir.
+		\subsection{Análisis Estadístico}
+			Los datos obtenidos fueron analizados utilizando métodos descriptivos y correlacionales. Para las evaluaciones de usabilidad (SUS), se calculó un puntaje promedio para determinar la aceptación del sistema. En la fase real, se empleó análisis correlacional para explorar relaciones entre las variables medidas (e.g., percepción del tutor sobre la mejora en la autorregulación y concentración de los niños) \citep{Wang2025Development}.
+				
+			El análisis estadístico permite identificar patrones significativos en el uso del sistema, justificando su validez en contextos similares. Los métodos empleados son apropiados para estudios piloto, donde el tamaño de la muestra limita el uso de pruebas inferenciales más robustas.
 			
-			Para la evaluación de la usabilidad se utilizó un formato para obtener el consentimiento informado (ver anexo \ref{Appendix:InformedConsent}), luego una encuesta demográfica (ver anexo \ref{Appendix:DemographicSurvey}) para conocer el contexto de los evaluadores, un cuestionario SUS con dos grupos de preguntas, uno con escala de Likert (ver anexo \ref{Appendix:LikertScale}) y otro de preguntas abiertas (ver anexo \ref{Appendix:OpenQuestions}).
-						
-		\subsection{Mantenimiento}		
-			La planificación del mantenimiento debe basarse en el tiempo de vida útil de los componentes del dispositivo, complementándose con mantenimientos preventivos realizados trimestralmente. Es esencial asegurar un entorno adecuado para su uso, prestando especial atención a la limpieza y reduciendo al máximo la presencia de polvo, humedad y la exposición directa a la luz solar.
-			
-			La frecuencia de los mantenimientos preventivos debe alinearse con la vida útil promedio del componente con menor durabilidad. Además, se recomienda disponer de repuestos para dichos componentes y mantener una copia actualizada del software utilizado para configurar el hardware IoT.
-			
-			El mantenimiento de la aplicación móvil debe realizarse, como mínimo, una vez al mes. Este procedimiento es necesario para gestionar el aumento de datos almacenados, lo que podría derivar en un uso innecesario de recursos. En caso de requerirse cambios en la lógica de negocios o en los requisitos del usuario, como modificaciones en los reportes, será indispensable contar con un ingeniero de software que pueda implementar dichas actualizaciones de forma adecuada.
+		\subsection{Limitaciones y Generalización}
+			El estudio presenta ciertas limitaciones:
+				
+			\begin{enumerate}
+				\item La muestra se limita a un grupo pequeño de participantes seleccionados por conveniencia, lo que podría no representar otros contextos sociodemográficos o tecnológicos.
+				\item La duración de la fase real (una semana) no permite evaluar el impacto a largo plazo del sistema en habilidades como la autorregulación.
+				\item La disponibilidad de un único prototipo restringió la simultaneidad del uso por varios participantes.
+			\end{enumerate}
 		
+			Estas limitaciones son comunes en investigaciones que exploran el impacto de tecnologías educativas en contextos iniciales o pilotos. Estudios previos han destacado que la generalización de los resultados en intervenciones tecnológicas depende en gran medida de las características específicas de la población y del entorno en el que se implementan. Por ejemplo, una meta-análisis reciente sobre los efectos de la tecnología en estudiantes desfavorecidos resalta cómo las variaciones en el acceso a recursos y las condiciones contextuales pueden influir significativamente en los resultados obtenidos, sugiriendo la necesidad de diseñar futuros estudios que incluyan una muestra más amplia y diversa para aumentar la representatividad de los hallazgos \citep{DiPietro2025Meta}.
+			
+		\subsection{Desarrollo de TORDDIS}
+			El desarrollo del sistema Torddis siguió una metodología estructurada para asegurar la integración efectiva de los componentes de hardware y software, con el objetivo de proporcionar una herramienta integral para monitorizar y mejorar la concentración de los estudiantes en casa. Esta sección detalla los materiales y métodos utilizados en el diseño, desarrollo y evaluación del sistema Torddis.
+			
+			Más específicamente, Torddis se desarrolló utilizando la metodología TDDM4IoTS \citep{Guerrero-Ulloa2020TDDM4IoTS}. Esta metodología es la más completa respecto al ciclo de vida del sistema \citep{Guerrero-Ulloa2023Review} y ha sido ampliamente valorada \citep{Guerrero-Ulloa2023DevIdeAir,Guerrero-Ulloa2023IdeAir,Guerrero-Ulloa2023SP4,Guerrero-Ulloa2023Nawi}. Durante el desarrollo del proyecto tecnológico, se implementaron todas las etapas de la metodología, excepto la última, mantenimiento, debido al corto tiempo de vida del sistema al momento de la redacción de este artículo. Además, este marco metodológico ayuda en la detección temprana de errores, contribuyendo a reducir los costos y el tiempo de desarrollo, permitiendo un código más limpio \citep{Beck2002TDD}.
+			
+			El equipo de proyecto estuvo compuesto por los autores del trabajo, con los roles de los miembros del equipo detallados en la Tabla \ref{tab:Roles}.
+			
+			\begin{table}[H]
+				\caption{Roles desempeñados por los miembros del equipo.\label{tab:Roles}}
+				\begin{tabularx}{0.8\textwidth}{>{\arraybackslash}X >{\arraybackslash}X}
+					\toprule
+					\textbf{Rol}	& \textbf{Miembro}\\
+					\midrule
+					Cliente/Usuario final & Autor 5, Autor 6 y algunos padres\\
+					Facilitador del proyecto		&  Autor 1 y Autor 4\\
+					Equipo de desarrollo		&  Autor 2 y Autor 3\\
+					Consejero		&  Alternando entre Autor 2 y Autor 3\\
+					\bottomrule
+				\end{tabularx}
+			\end{table}
+			
+			\subsubsection{Análisis Preliminar}
+				Esta etapa fue una etapa crucial, ya que se pudo determinar si el proyecto era viable para su desarrollo o no. Para determinar su viabilidad se desarrollaron algunas actividades.
+				
+				\subsubsection*{Análisis de Requisitos Preliminares}
+					Este análisis de los requisitos preliminares abarcó tanto los aspectos funcionales (especificaciones del cliente) como los no funcionales (atributos de calidad del sistema) a un nivel general de detalle.
+					
+					El equipo de proyecto logró reclutar a un usuario tutor con una necesidad inminente de un sistema como Torddis, permitiendo un rápido análisis preliminar de sus necesidades. Además, se reclutó a un grupo de usuarios tutores para verificar los requisitos propuestos en esta actividad. Posteriormente, todos estos actores¡, apoyaron para realizar el análisis detallado de los requisitos del sistema.
+					
+					En esta actividad se determinó que los requisitos funcionales que Torddis debe cumplir son \citep{Asish2022Detecting,Pabba2022AnIntelligent,Vettivel2018System}:%Yin2021}:
+					 
+					\begin{itemize}
+						\item Registrar y modificar los datos del usuario tutor.
+						\item Permitir al usuario tutor registrar y modificar los datos del niño en la aplicación móvil.
+						\item Permitir al usuario tutor habilitar y/o deshabilitar los objetos que están permitidos en el área de estudio (escritorio).
+						\item Monitorizar la presencia del niño, las expresiones faciales, el estado de somnolencia y el uso de los objetos que no están permitidos en el área de estudio (escritorio).
+						\item Visualizar el historial del monitorización de los parámetros de distracción del niño.
+						\item Reproducir un sonido de alarma y luz led mientras el niño se aleje del área de estudio (escritorio) o tenga signos de soñolencia.
+						\item Generar gráficos estadísticos sobre los eventos sucedidos: ha estado con sueño, ha usado objetos restringidos y el conteo de cada expresión facial del niño de los últimos 7 días a partir de una fecha seleccionada.
+					\end{itemize}
+					
+					Los requisitos no funcionales que debe cumplir el sistema propuesto son:
+					
+					\begin{itemize}
+						\item La aplicación móvil de tener una interfaz minimalista e intuitiva.
+						\item El dispositivo debe tener dimensiones como de algo cotidiano para el niño (juguete).
+						\item Al ser un dispositivo para estar en un lugar determinado (lugar destinado para hacer tareas escolares), debe ser alimentado por el sistema de electricidad público.
+						\item Los datos personales y de autenticación deben ser encriptados para asegurar la privacidad de los datos.
+						\item Utilizar la red WiFi disponible en el hogar.
+					\end{itemize}
+					
+					Para el análisis de los requisitos se utilizaron diagramas de casos de uso, empleando la herramienta web gratuita TDDT4IoTS disponible en \href{https://aplicaciones.uteq.edu.ec}{https://aplicaciones.uteq.edu.ec} o \href{http://www.tddt4iots.com}{http://www.tddt4iots.com}. 
+					
+					Además, se determinaron las tecnologías a utilizar para el desarrollo de Torddis, incluyendo recursos de hardware, tecnologías y herramientas de software para el desarrollo de la aplicación móvil y la configuración del hardware. La elección de los recursos se basó en los criterios de selección de los autores, como el uso de herramientas y tecnologías de software de código abierto con documentación adecuada y suficiente que cumplan con las funcionalidades requeridas y que el equipo de desarrollo tenga la experiencia necesaria.
+					
+					Entre las tecnologías de inteligencia artificial que se consideraron para su selección están los métodos para:
+					
+					\begin{itemize}
+						\item Reconocimiento Facial
+						\item Reconocimiento de Expresiones Faciales
+						\item Detección de Sueño
+						\item Reconocimiento de Objetos
+						\item Monitorización de las Distracciones de los Niños, según los parámetros de distracción
+					\end{itemize} 
+					Asimismo, para el hardware IoT se consideró importante que cumpla con las funcionalidades requeridas, sea económico, esté disponible en el mercado local, y cuente con la documentación necesaria para su implementación. También se valoró que el equipo de desarrollo tuviera experiencia en su configuración y uso.
+					
+					Estas tecnologías permiten ajustar las estrategias de monitoreo en tiempo real según las necesidades detectadas en el comportamiento de los estudiantes, maximizando la eficacia del sistema al proporcionar una supervisión personalizada. Investigaciones recientes han destacado que herramientas basadas en inteligencia artificial, como ChatGPT, no solo pueden generar contenido educativo adaptado, sino también ofrecer retroalimentación personalizada. Este enfoque subraya el potencial de la IA para optimizar los procesos educativos y fomentar entornos de aprendizaje más centrados en el estudiante, donde la personalización y la supervisión se integran de manera efectiva \citep{Wang2025Development, Li2024Systematic}.
+				
+				\subsubsection*{Análisis de viabilidad}
+					Este análisis se realizó desde los tres aspectos considerados en la metodología TDDM4IoTS: viabilidades técnica, económica y operativa. La disponibilidad de los recursos de hardware y software necesarios para el desarrollo de Torddis fue crucial para garantizar el éxito de este proyecto. Además, la presencia de un equipo de desarrollo con las habilidades y conocimientos adecuados permitió completar Torddis con un presupuesto muy limitado y con un cronograma reducido.
+				
+				\subsubsection*{Viabilidad Técnica}
+					Se analizaron las tecnologías disponibles para el desarrollo de Torddis, incluyendo recursos de hardware, algoritmos y métodos de IA, y herramientas de software para monitorizar las distracciones de los estudiantes durante sus actividades escolares.
+					
+					Siempre buscando responder a las preguntas de investigación planteadas en este documento, se realizó una revisión acerca de las tecnologías de software, IA y hardware y otros recursos existentes y su aplicación en entornos educativos ayudó a seleccionar las tecnologías más apropiadas para este proyecto.
+					
+					Para la selección de los componentes de hardware se aplicaron los siguientes criterios:
+					
+					\begin{enumerate}
+						\item \textbf{Disponibilidad:} El componente debía estar disponible en la tienda. Dado que no existe un mercado directo en el lugar de residencia del facilitador de proyecto para adquirirlo, se buscaron tiendas en línea (www.mercadolibre.com.ec). La tienda debía ser confiable. 
+						\item \textbf{Tiempo de entrega:} Dentro de la disponibilidad también se consideró el tiempo de entrega. Este plazo no debía superar las 48 horas.
+						\item \textbf{Precio:} El componente a adquirir debe ser económico. Es decir, la tienda seleccionada debe ser entre las confiables la que lo oferte a menor precio.
+						\item \textbf{Documentación:} La disponibilidad de documentación en línea para el uso adecuado del componente seleccionado.
+						\item \textbf{Experiencia:} El equipo de desarrollo debe tener experiencia en la configuración del componente.
+					\end{enumerate}
+					
+					Así mismo, el cronograma de actividades para el desarrollo del prototipo de TORDDIS estuvo dentro del periodo de tiempo adecuado.
+				
+				\subsubsection*{Viabilidad Financiera}
+					En cuanto a lo financiero, el prototipo de TORDDIS se considera muy económico. Fue desarrollado utilizando herramientas, y tecnologías de Software e inteligencia artificial gratuitas. Los recursos financieros fueron dirigidos exclusivamente para obtener los componentes de hardware necesarios.
+					
+				\subsubsection*{Vialidad Operativa}
+					Al considerar los requisitos no funcionales de TORDDIS, se garantiza que los usuarios tutores puedan manipular el dispositivo y manejar la aplicación móvil a su conveniencia. Por lo tanto la viabilidad operativa, se garantiza. Además estos mismos requisitos garantizan el cumplimiento de la garantía de la privacidad de los datos personales.
+					
+			\subsubsection{Diseño de la Capa Tecnológica}
+				Uno de los objetivos conseguidos en esta fase es el diseño de la arquitectura del sistema. La arquitectura es una guía importante para que los desarrolladores logren su objetivo con calidad \citep{Liu2011Status}. Para ayudar a los tutores que tienen múltiples ocupaciones sean dentro o fuera del hogar, se consideró la construcción de un dispositivo IoT para determinar el estado del niño mientras hace tareas escolares. 
+				
+				Para el diseño de la arquitectura de TORDDIS, se consideró: Siendo que el tutor no puede estar presente todo el tiempo al lado de su representado ¿Cómo suplir la presencia del tutor para vigilar al estudiante mientras realiza sus tareas escolares en su hogar?
+				
+				Si el tutor se encuentra fuera del hogar, ¿Cómo informarlo de los eventos sucedidos con su tutorado?, ¿Cómo el tutor persuade al estudiante para que continúe haciendo sus tareas escolares? 
+				
+				El análisis de estás interrogantes fue curcial para diseñar un sistema que ayude a los tutores a apoyar el aprendizaje de sus tutorados y mejorar su rendimiento académico, incluso mejorar su concentración mientras realizan sus tareas escolares.
+				
+			\subsubsection{Análisis detallado de requisitos}
+				El análisis de requisitos fue una primera fase que se desarrollo de manera iterativa, es decir para cada uno de los entregables. Los dos entregables fueron el dispositivo y la aplicación móvil. Así mismo cada uno de los componentes en los que se dividió cada uno de los entregables, a su vez se ejecutaron por tareas. Estas tareas tuvieron una duración de dos hasta seis semanas inclusive (por la disponibilidad de tiempo).
+				
+				Los componentes al ser desarrollados uno por uno, el posterior fue integrado con el/los anterior/es. Por lo tanto, al terminar el último componente, el entregable estaba listo para ser usado y probado.
+				
+				El detalle de los requisitos se consideró primeramente lo encontrado en la literatura, y se tomó decisivamente lo que los futuros usuarios especificaron. Esto se detalló en un formato de casos de uso semiestructurados para guardar un estándar enmarcado en una estructura definida previamente \citep{Zegzhda2018Use}.
+				
+			\subsubsection{Generación y Refinamiento del Modelo}
+				Cómo TDDM4IoTS \citep{Guerrero-Ulloa2020TDDM4IoTS} sugiere que no todas las etapas deben ser ejecutadas y que el orden puede variar, la etapa de refinamiento de modelos no se ejecutó.
+				
+				Esta etapa de refinamiento de modelos, los desarrolladores consideran que es importante cuando los requisitos no están claros al inicio del desarrollo y se vuelven más específicos a medida que avanza el ciclo de vida del proyecto. Caso que no sucedió en el desarrollo de TORDDIS, los requisitos fueron claros desde el inicio.
+				
+				Además, la no ejecución de esa etapa la atribuyen a la herramienta usada \citep{Guerrero2024Test}, en vista de qué, el refinamiento del modelo se hace dentro de los casos de uso, y ella se encarga de actualizar los modelos. El modelo al ser obtenido directamente de las especificaciones de los casos de uso, y TORDDIS al no tener una envergadura que demanda un esfuerzo extraordinario para su modelado, el modelo obtenido usando TDDT4IoTS fue el ideal.
+				
+			\subsubsection{Generación de Pruebas}
+				Las pruebas necesarias en el desarrollo de TORDDIS fueron las pruebas unitarias, las pruebas de integración, las pruebas de sistemas y las pruebas de aceptación \citep{Sciarra2024Smash}.
+				
+				\begin{itemize}
+					\item Las \textit{pruebas unitarias} son las más extensas pero simples que sirvieron para que los desarrolladores ahorren tiempo en la detección y corrección de errores \citep{Mafi2024Regression}
+					\item Las pruebas de integración fueron ejecutadas para integrar cada uno de los componentes de los entregables, y a su vez en para verificar que las partes que interactúan lo hagan correctamente, por ejemplo los servicios web con la la base de datos, y en su momento, estos con la lógica de negocios de la aplicación móvil, garantizando así que el sistema cumpla con los requisitos especificados por los usuarios.
+					\item Las pruebas de sistema se ejecutaron para integrar los entregables en un sistema. Es decir ya las partes más grandes del sistema.
+					\item Después que el equipo de desarrollo probó todo el sistemas, el usuario ejecutó las pruebas de de aceptación. Para el equipo del proyecto, las pruebas de aceptación sirvieron para evaluar el sistema por parte de los usuarios.
+				\end{itemize}
+				 
+			\subsubsection{Generación y Refinamiento del Software} 
+				El desarrollo del software para el sistema Torddis se llevó a cabo en dos etapas principales: generación y refinamiento. Inicialmente, el código fue escrito tomando como base los modelos y pruebas generados automáticamente por la herramienta TDDT4IoTS \citep{Guerrero2024Test}, complementado por los desarrolladores para los aspectos no automatizados. 
+				
+				Durante esta etapa, se verificaron todos los componentes de software mediante la ejecución de las pruebas diseñadas para garantizar su funcionalidad y su alineación con los requisitos establecidos.
+			
+				Posteriormente, en la etapa de refinamiento, el software fue mejorado para optimizar su calidad y rendimiento. Los cambios realizados incluyeron la reducción de variables temporales o auxiliares para una aplicación de la computación verde \citep{Firmansyah2024Integrating}, el mejoramiento del nombrado de atributos, métodos y clases para facilitar la comprensión del código, y la adición de comentarios en las partes más importantes del mismo. Estas mejoras contribuyeron a un código limpio, mantenible y de mayor calidad, fortaleciendo la solidez del sistema Torddis en su conjunto \citep{Marabesi2024Exploring}.
+			
+			\subsubsection{Despliegue de Hardware y Software}
+				Cada uno de los componentes de los entregables fue  desplegado en el medio que finalmente fue desplegado todo el entregable en condiciones de despliegue del sistema en su conjunto. Los componentes de la aplicación móvil eran probados en el simulador de Android Studio, y luego de ser generado el apk iterativa, esa aplicación móvil se desplegó en un smartphone con las características mínimas para las cuales fue desarrollada.
+			
+				El despliegue de los componentes del entregable final o del dispositivo Torddis se desplegaron iterativamente en ambientes simulados o de pruebas en pleno desarrollo. Posteriormente, el para hacer las pruebas de integración y de sistema se desplegó en un entorno real-ideal, donde cualquier estudiante escolar puede realizar tareas escolares.
+			
+			\subsubsection{Evaluación de los Entregables}
+				Durante el desarrollo del proyecto y para evaluar la funcionalidad y usabilidad de Torddis. Se consideraron las capacidades de los usuarios tutores para garantizar que Torddis permaneciera operativo después de su implementación, sin la necesidad de personal adicional, excepto en casos de mantenimiento correctivo, donde personas con conocimientos sobre el desarrollo de Torddis tendrían que intervenir.
+				
+				Para la evaluación de la usabilidad se utilizó un formato para obtener el consentimiento informado (ver anexo \ref{Appendix:InformedConsent}), luego una encuesta demográfica (ver anexo \ref{Appendix:DemographicSurvey}) para conocer el contexto de los evaluadores, un cuestionario SUS con dos grupos de preguntas, uno con escala de Likert (ver anexo \ref{Appendix:LikertScale}) y otro de preguntas abiertas (ver anexo \ref{Appendix:OpenQuestions}).
+		
+			\subsubsection{Mantenimiento}		
+				La planificación del mantenimiento debe basarse en el tiempo de vida útil de los componentes del dispositivo, complementándose con mantenimientos preventivos realizados trimestralmente. Es esencial asegurar un entorno adecuado para su uso, prestando especial atención a la limpieza y reduciendo al máximo la presencia de polvo, humedad y la exposición directa a la luz solar.
+				
+				La frecuencia de los mantenimientos preventivos debe alinearse con la vida útil promedio del componente con menor durabilidad. Además, se recomienda disponer de repuestos para dichos componentes y mantener una copia actualizada del software utilizado para configurar el hardware IoT.
+				
+				El mantenimiento de la aplicación móvil debe realizarse, como mínimo, una vez al mes. Este procedimiento es necesario para gestionar el aumento de datos almacenados, lo que podría derivar en un uso innecesario de recursos. En caso de requerirse cambios en la lógica de negocios o en los requisitos del usuario, como modificaciones en los reportes, será indispensable contar con un ingeniero de software que pueda implementar dichas actualizaciones de forma adecuada.
+		
+		\subsection{Validación de la Metodología TDDM4IoTS}
+			La metodología TDDM4IoTS \citep{Guerrero-Ulloa2020TDDM4IoTS} fue seleccionada por su enfoque en proyectos IoT, permitiendo la integración iterativa de hardware y software. Durante el desarrollo de Torddis, esta metodología facilitó:
+			
+			\begin{itemize}
+				\item La definición de requisitos funcionales y no funcionales, basada en las necesidades de los tutores.
+				\item La generación automática de pruebas, reduciendo tiempos y errores en el desarrollo.
+				\item La validación temprana de componentes, asegurando la robustez del sistema.
+			\end{itemize}
+			En comparación con metodologías tradicionales, TDDM4IoTS destaca por su capacidad de adaptarse a proyectos con múltiples entregables interdependientes, como los que combinan IoT y aplicaciones móviles. Además, es la metodología que garantiza el cumplimiento del ciclo de vida de los sistemas \citep{Guerrero2023Agile,ISO-IEC-IEEE12207-2017,ISO-IEC-IEEE12207-2017Application}.
+		
+			Metodologías estructuradas como TDDM4IoTS son particularmente efectivas en el desarrollo de sistemas educativos basados en tecnología, ya que permiten integrar de manera eficiente componentes tecnológicos y pedagógicos. Según investigaciones recientes sobre sistemas de aprendizaje adaptativo, la aplicación de enfoques metodológicos claros no solo asegura un desarrollo robusto, sino que también optimiza la alineación entre las funcionalidades del sistema y las necesidades específicas de los usuarios finales. Este enfoque metodológico es clave para abordar los desafíos de interoperabilidad y personalización en contextos educativos \citep{Wang2025Development}.
+				
+		\subsection{Justificación Pedagógica}
+			El diseño del sistema y la metodología aplicada están alineados con objetivos pedagógicos clave, como fomentar habilidades de autorregulación y aprendizaje autónomo en los estudiantes. A través de retroalimentación inmediata y personalización, Torddis ayuda a los estudiantes a gestionar su atención y tiempo, mientras que los tutores pueden supervisar y apoyar el proceso de aprendizaje \citep{Chen2025Unpacking}.
+			
+			Además, las etapas iterativas del desarrollo, guiadas por TDDM4IoTS, permitieron incorporar mejoras pedagógicas en cada fase, asegurando que el sistema responda tanto a necesidades tecnológicas como educativas \citep{Huang2025How}.
+			
 	\section{Resultados y Discusión}
 	\label{seccion:Cinco}
 		A continuación se presentan los resultados de cada una de las fases de desarrollo del sistemas según la metodología aplicada. Así como, los hallazgos obtenidos a través de diversas evaluaciones realizadas al prototipo del sistema Torddis. Estas evaluaciones incluyen pruebas funcionales, cuestionarios de usabilidad y análisis de datos demográficos y de monitorización, con el objetivo de determinar la efectividad y aceptación del sistema desde una perspectiva tanto técnica como de experiencia del usuario.
@@ -509,7 +574,7 @@
 		Los resultados obtenidos se detallan a continuación, proporcionando una visión integral del rendimiento y utilidad del sistema Torddis en su contexto de aplicación.
 		
 		\subsection{Desarrollo del Sistema Prototipo TORDDIS}
-			Los resultados de cada una de las etapas de la metodología TDDM4IoTS \cite{Guerrero-Ulloa2020TDDM4IoTS} se exponen en cada una de los siguientes apartados.
+			Los resultados de cada una de las etapas de la metodología TDDM4IoTS \citep{Guerrero-Ulloa2020TDDM4IoTS} se exponen en cada una de los siguientes apartados.
 			
 			\subsubsection{Análisis Preliminar}
 				El análisis a grano grueso de los requisitos funcionales se muestran en el diagrama general de casos de uso que se muestra en la Figura \ref{fig:UseCaseDiagram}). Estas funcionalidades y sus responsables fueron consideradas con base a las entrevistas iniciales con el usuario final y los educadores.
@@ -745,7 +810,7 @@
 				\end{table} 
 							
 			\subsubsection{Generación y Refinamiento de Modelos}
-				Entre las herramientas de modelado del sistema  se utilizaron los modelos de estructura como son los diagramas de clases. Este diagrama de clases )ver figura \ref{fig:ClassDiagram}) fue obtenido directamente de la herramienta usada \cite{Guerrero2024Test}.
+				Entre las herramientas de modelado del sistema  se utilizaron los modelos de estructura como son los diagramas de clases. Este diagrama de clases )ver figura \ref{fig:ClassDiagram}) fue obtenido directamente de la herramienta usada \citep{Guerrero2024Test}.
 	
 				\begin{figure}[hbt!]
 					\centering
@@ -758,7 +823,7 @@
 			\subsubsection{Generación de Pruebas}
 				Las pruebas unitarias fueron generadas utilizando la herramienta TDDT4IoTS. Las pruebas de integración fueron ejecutadas manualmente por los desarrolladores, cuyas especificaciones fueron obtenidas desde el diseño de la arquitectura del sistemas, y complementadas más delante en las etapas de \textit{generación y refinamiento de modelos}.
 				
-				Las Tablas \ref{tab:create-tutor-account-test-case}, \ref{tab:login-test-case}, \ref{tab:face-training-test-case}, \ref{tab:device-registration-test-case}, y \ref{tab:configure-object-usage-test-case} muestran algunos de los casos de prueba de sistema que en la secuencia lógica fueron ejecutados por el equipo de desarrollo. Similares casos de prueba en la secuencia lógica que el usuario requería ejecutar sirvieron como casos de prueba de aceptación. Con este último tipo de pruebas los interesados verificaron que Torddis cumple con los requisitos especificados \cite{Sciarra2024Smash}.
+				Las Tablas \ref{tab:create-tutor-account-test-case}, \ref{tab:login-test-case}, \ref{tab:face-training-test-case}, \ref{tab:device-registration-test-case}, y \ref{tab:configure-object-usage-test-case} muestran algunos de los casos de prueba de sistema que en la secuencia lógica fueron ejecutados por el equipo de desarrollo. Similares casos de prueba en la secuencia lógica que el usuario requería ejecutar sirvieron como casos de prueba de aceptación. Con este último tipo de pruebas los interesados verificaron que Torddis cumple con los requisitos especificados \citep{Sciarra2024Smash}.
 				
 				\begin{table}[hbt!]
 					\centering
@@ -877,9 +942,9 @@
 					\end{tabularx}
 				\end{table}
 			\subsubsection{Generación y Refinamiento de Software}
-				En esta etapa se escribió el código del software basándose en los modelos generados y las pruebas tanto unitarias como de integración. Se utilizó el lenguaje de programación Python con la herramienta Visual Studio Code \cite{Microsoft2024Visual} para desarrollar los webs services, Java como lenguaje de programación con IDE Android Studio \cite{Android2024Android} para la aplicación móvil y lenguaje C++ en IDE Arduino \cite{Arduino2024Software} para configurar los componentes de hardware IoT del dispositivo de TORDDIS.
+				En esta etapa se escribió el código del software basándose en los modelos generados y las pruebas tanto unitarias como de integración. Se utilizó el lenguaje de programación Python con la herramienta Visual Studio Code \citep{Microsoft2024Visual} para desarrollar los webs services, Java como lenguaje de programación con IDE Android Studio \citep{Android2024Android} para la aplicación móvil y lenguaje C++ en IDE Arduino \citep{Arduino2024Software} para configurar los componentes de hardware IoT del dispositivo de TORDDIS.
 				
-				El software fue generado usando la herramienta TDDT4IoTS \cite{Guerrero2024Test}, y luego completado manualmente por los desarrolladores. El mismo equipo de desarrolladores fueron los encargados de entregar el software probado y funcionando. En resumen, en esta etapa se obtuvo una versión del software por cada entregable probado y funcionando.
+				El software fue generado usando la herramienta TDDT4IoTS \citep{Guerrero2024Test}, y luego completado manualmente por los desarrolladores. El mismo equipo de desarrolladores fueron los encargados de entregar el software probado y funcionando. En resumen, en esta etapa se obtuvo una versión del software por cada entregable probado y funcionando.
 				
 			\subsubsection{Despliegue de Software y Hardware}
 				Los componentes de la aplicación móvil y finalmente la aplicación móvil en su conjunto fue desplegada en un Smartphone con Android versión 13 marca Xiaomi modelo Note 10 Pro. Aunque, la aplicación móvil puede ser desplegada en cualquier Smartphone Android de la versión 13 en adelante.
@@ -913,388 +978,389 @@
 				Para la evaluación de las funcionalidades del sistema en conjunto se realizaron las pruebas de aceptación que se detallan en las tablas \ref{tab:create-tutor-account-test-case}, \ref{tab:login-test-case}, \ref{tab:face-training-test-case}, \ref{tab:device-registration-test-case}, y \ref{tab:configure-object-usage-test-case}.
 				
 				\subsubsection*{Evaluación de Usabilidad del Sistema Prototipo Desarrollado}
-				La evaluación de la usabilidad del sistema Torddis se llevó a cabo para recopilar información sobre la experiencia general del usuario, centrándose específicamente en la facilidad de uso, la interfaz del sistema y la efectividad de las funciones proporcionadas. Esta evaluación integral tuvo como objetivo identificar fortalezas y áreas de mejora, asegurando que el sistema cumpla eficazmente con las necesidades de los usuarios. Las siguientes subsecciones detallan los datos demográficos de los participantes, sus experiencias, las tareas específicas realizadas durante la evaluación y los resultados del cuestionario SUS y de las preguntas abiertas (ver Apéndice \ref{Appendix:SUSQuestionarie}).
+					La evaluación de la usabilidad del sistema Torddis se llevó a cabo para recopilar información sobre la experiencia general del usuario, centrándose específicamente en la facilidad de uso, la interfaz del sistema y la efectividad de las funciones proporcionadas. Esta evaluación integral tuvo como objetivo identificar fortalezas y áreas de mejora, asegurando que el sistema cumpla eficazmente con las necesidades de los usuarios. Las siguientes subsecciones detallan los datos demográficos de los participantes, sus experiencias, las tareas específicas realizadas durante la evaluación y los resultados del cuestionario SUS y de las preguntas abiertas (ver Apéndice \ref{Appendix:SUSQuestionarie}).
 				
-				\paragraph{\textbf{Datos Demográficos:}}
-				Al inicio de la evaluación de usabilidad, se proporcionó un cuestionario demográfico para recopilar información sobre los tutores que participaron en la evaluación de usabilidad del sistema Torddis (ver Apéndice \ref{Appendix:DemographicSurvey}). El cuestionario demográfico arrojó los siguientes resultados:
+					\paragraph{\textbf{Datos Demográficos:}}
+						Al inicio de la evaluación de usabilidad, se proporcionó un cuestionario demográfico para recopilar información sobre los tutores que participaron en la evaluación de usabilidad del sistema Torddis (ver Apéndice \ref{Appendix:DemographicSurvey}). El cuestionario demográfico arrojó los siguientes resultados:
 				
-				\begin{itemize}
-					\item Se evaluaron un total de 12 familias: 8 madres y 4 padres, todos pertenecientes a la zona geográfica de Quevedo, Ecuador.
-					\item La edad promedio de los participantes es de 39 años, con un rango de edad entre 18 y 65 años.
-					\item El 58\% de los tutores solo completaron la educación primaria, mientras que el 42\% estudiaron hasta la educación secundaria.
-				\end{itemize}
-				
-				\paragraph{\textbf{Acerca de la monitorización:}}
-				Una de las preguntas preliminares en la evaluación de usabilidad fue sobre la facilidad con la que pueden monitorizar a sus hijos de primaria mientras realizan sus tareas escolares (ver Figura \ref{fig:previous-questions}). La mayoría de los tutores respondieron que el proceso de monitorización de la distracción de los niños es una tarea compleja. La Figura \ref{fig:monitoring-process} muestra los resultados detallados. Otra pregunta preliminar fue sobre la frecuencia con la que necesitaban monitorizar a sus hijos mientras realizaban actividades escolares. La mayoría de los tutores indicaron que debían hacerlo constantemente. Para respuestas más detalladas, véase la Figura \ref{fig:monitoring-frequency}. Finalmente, los tutores indicaron que, entre las estrategias que utilizan para mantener a sus estudiantes concentrados en sus actividades escolares, están las llamadas de atención (regaños), los consejos motivacionales y las recompensas, tales como dulces, juguetes, paseos al parque, comidas favoritas, y así sucesivamente (ver Figura \ref{fig:concentration-strategies}).
-				
-				\begin{figure}[hbt!]
-					\centering
-					\begin{minipage}{0.45\textwidth}
-						\centering
-						\begin{tikzpicture}
-							\begin{axis}[
-								ybar,
-								width=\textwidth,
-								height=6.5cm,
-								symbolic x coords={Fácil, Regular, Complejo},
-								xtick=data,
-								ylabel={Cantidad},
-								ymin=0,
-								nodes near coords,
-								enlarge x limits=0.5,
-								x tick label style={rotate=45, anchor=east}
-								]
-								\addplot coordinates {(Fácil, 1) (Regular, 4) (Complejo, 7)};
-							\end{axis}
-						\end{tikzpicture}
-						\subcaption{Facilidad del proceso de monitorización.}
-						\label{fig:monitoring-process}
-					\end{minipage}
-					\vspace{5mm}
-					\begin{minipage}{0.45\textwidth}
-						\centering
-						\begin{tikzpicture}
-							\begin{axis}[
-								ybar,
-								width=\textwidth,
-								height=6cm,
-								symbolic x coords={A veces, Casi siempre, Siempre},
-								xtick=data,
-								ylabel={Cantidad},
-								ymin=0,
-								nodes near coords,
-								enlarge x limits=0.5,
-								x tick label style={rotate=45, anchor=east}
-								]
-								\addplot coordinates {(A veces, 3) (Casi siempre, 3) (Siempre, 6)};
-							\end{axis}
-						\end{tikzpicture}
-						\subcaption{Frecuencia de monitorización.}
-						\label{fig:monitoring-frequency}
-					\end{minipage}
-					\begin{minipage}{0.45\textwidth}
-						\centering
-						\begin{tikzpicture}
-							\begin{axis}[
-								ybar,
-								height=6cm,
-								width=0.9\textwidth,
-								symbolic x coords={Llamadas de atención, Consejos y motivación, Recompensas},
-								xtick=data,
-								ylabel={Cantidad},
-								ymin=0,
-								nodes near coords,
-								enlarge x limits=0.5,
-								x tick label style={rotate=45, anchor=east}
-								]
-								\addplot coordinates {(Llamadas de atención, 5) (Consejos y motivación, 3) (Recompensas, 4)};
-							\end{axis}
-						\end{tikzpicture}
-						\subcaption{Estrategias para lograr la concentración.}
-						\label{fig:concentration-strategies}
-					\end{minipage}
-					\caption{Resultados de preguntas realizadas a los padres sobre el proceso de monitorización de sus hijos de primaria mientras hacen sus tareas.}
-					\label{fig:previous-questions}
-				\end{figure}
-				
-				\paragraph{\textbf{Tareas para los Usuarios Participantes:}}
-				Las tareas que los tutores realizaron durante la evaluación fueron las siguientes:
-				
-				\begin{enumerate}
-					\item Conectar el dispositivo Torddis a la fuente de alimentación y colocarlo en el escritorio donde el niño se sentará para realizar una tarea.
-					\item Crear una cuenta de usuario tutor en la aplicación móvil.
-					\item Iniciar sesión en la aplicación móvil.
-					\item Registrar al niño que será monitoreado.
-					\item Registrar el dispositivo Torddis en la aplicación móvil utilizando la dirección IP proporcionada en una etiqueta adherida al dispositivo.
-					\item Realizar el entrenamiento facial para el niño registrado.
-					\item Activar y/o desactivar los objetos que se monitorizarán en la sección correspondiente de la aplicación móvil.
-					\item Asignar una tarea al niño mientras es monitoreado por el dispositivo Torddis: colorear un mandala.
-					\item Activar el reconocimiento de cada parámetro de distracción en la sección de monitorización de la aplicación móvil.
-					\item Dejar al niño solo, sin la presencia de un adulto, durante 6 minutos.
-					\item Activar y/o desactivar la transmisión de video desde el dispositivo Torddis.
-					\item Navegar por el historial de los parámetros de distracción monitoreados en el niño.
-					\item Visualizar un informe con gráficos que representan los parámetros de distracción detectados para el niño monitoreado.
-				\end{enumerate}
-				
-				\paragraph{\textbf{Resultados del Cuestionario System Usability Scale:}}
-				Los resultados analizados en esta sección corresponden a las respuestas del cuestionario SUS (ver Apéndice \ref{Appendix:LikertScale}) proporcionado a los 12 tutores. Después de tabular los datos obtenidos, la Figura \ref{fig:sus-questionnaire} muestra que la media de los datos recopilados es 81.46\% con una desviación estándar de 11.65. Según los adjetivos (Peor imaginable, Pobre, OK, Bueno, Excelente, Mejor imaginable) propuestos por Bangor et al. \cite{Bangor2008AnEmpirical} para evaluar cualitativamente la usabilidad de un sistema basado en la media alcanzada, es evidente que Torddis tiene un nivel de usabilidad "Bueno" según los tutores evaluados.
-				
-				\begin{figure}[hbt!]
-					\centering
-					\begin{tikzpicture}
-						\begin{axis}[
-							scatter/classes={
-								a={mark=*,blue}
-							},
-							width=12cm,
-							height=8cm,
-							xlabel={Participante},
-							ylabel={Evaluación},
-							ymin=40, ymax=100,
-							xmin=0, xmax=13,
-							xtick={1,2,3,4,5,6,7,8,9,10,11,12},
-							xticklabels={1,2,3,4,5,6,7,8,9,10,11,12},
-							ytick={40,60,80,100},
-							nodes near coords,
-							every node near coord/.append style={font=\footnotesize, /pgf/number format/fixed},
-							legend style={at={(0.5,-0.15)}, anchor=north, legend columns=-1},
-							enlarge x limits=0.05,
-							]
-							\addplot[
-							scatter,
-							only marks,
-							scatter src=explicit symbolic,
-							visualization depends on=\thisrow{Evaluation} \as \label
-							] table[meta=class,x=Participant,y=Evaluation] {
-								Participant Evaluation class
-								1 90.00 90.00
-								2 95.00 95.00
-								3 72.50 72.50
-								4 60.00 60.00
-								5 85.00 85.00
-								6 67.50 67.50
-								7 92.50 92.50
-								8 67.50 67.50
-								9 82.50 82.50
-								10 85.00 85.00
-								11 92.50 92.50
-								12 87.50 87.50
-							};
-							
-							% Línea de promedio
-							\addplot [
-							color=orange,
-							thick,
-							mark=none
-							] coordinates {(0,\average) (13,\average)};
-							
-							% Línea de desviación estándar superior
-							\addplot [
-							color=orange,
-							thick,
-							dashed,
-							mark=none
-							] coordinates {(0,\upperlimit) (13,\upperlimit)};
-							
-							% Línea de desviación estándar inferior
-							\addplot [
-							color=orange,
-							thick,
-							dashed,
-							mark=none
-							] coordinates {(0,\lowerlimit) (13,\lowerlimit)};
-							
-							\legend{Participante, Promedio SUS, Desv. Estándar}
-						\end{axis}
-					\end{tikzpicture}
-					\caption{Datos del cuestionario SUS por tutor con evaluación promedio y desviación estándar.}
-					\label{fig:sus-questionnaire}
-				\end{figure}
-				
-				\paragraph{\textbf{Resultados del Cuestionario de Preguntas Abiertas:}}
-				Al final del cuestionario SUS, los tutores respondieron 8 preguntas abiertas (ver Apéndice \ref{Appendix:OpenQuestions}) para proporcionar sus opiniones personales.
-				
-				La primera pregunta fue "¿Cuál es su opinión general sobre el sistema?", a la que algunos tutores respondieron que apoya la concentración de los estudiantes, y otros dijeron que tiene un diseño agradable. Los resultados se muestran en la Figura \ref{fig:AboutTorddis}. La segunda pregunta abierta que respondieron los tutores fue "¿Le gustaron los sonidos y/o luces que utiliza Torddis?". La mayoría de los tutores presentaron una opinión favorable a esta pregunta, ya que creen que las alertas luminosas ayudan a mantener al estudiante despierto y están satisfechos con las alarmas sonoras (ver Figura \ref{fig:SoundAndLigth}).
-				
-				\begin{figure}[hbt!]
-					\centering
-					\begin{minipage}{0.45\textwidth}
-						\centering
-						\begin{tikzpicture}
-							\begin{axis}[
-								ybar,
-								width=\textwidth,
-								height=6cm,
-								symbolic x coords={Apoya la concentración, Diseño agradable},
-								xtick=data,
-								ylabel={Cantidad},
-								ymin=0,
-								nodes near coords,
-								enlarge x limits=0.5,
-								x tick label style={rotate=45, anchor=east}
-								]
-								\addplot coordinates {(Apoya la concentración, 8) (Diseño agradable, 8)};
-							\end{axis}
-						\end{tikzpicture}
-						\subcaption{Opinión general sobre el sistema Torddis.}
-						\label{fig:AboutTorddis}
-					\end{minipage}
-					\vspace{5mm}
-					\begin{minipage}{0.45\textwidth}
-						\centering
-						\begin{tikzpicture}
-							\begin{axis}[
-								ybar,
-								width=\textwidth,
-								height=6.5cm,
-								symbolic x coords={Ayuda al estudiante, Satisfacción},
-								xtick=data,
-								ylabel={Cantidad},
-								ymin=0,
-								nodes near coords,
-								enlarge x limits=0.5,
-								x tick label style={rotate=45, anchor=east}
-								]
-								\addplot coordinates {(Ayuda al estudiante, 7) (Satisfacción, 5)};
-							\end{axis}
-						\end{tikzpicture}
-						\subcaption{Alertas sonoras y luminosas del sistema.}
-						\label{fig:SoundAndLigth}
-					\end{minipage}
-					\begin{minipage}{0.45\textwidth}
-						\centering
-						\begin{tikzpicture}
-							\begin{axis}[
-								ybar,
-								height=6cm,
-								width=0.9\textwidth,
-								symbolic x coords={Cámara, Soporte, Sin mejoras},
-								xtick=data,
-								ylabel={Cantidad},
-								ymin=0,
-								nodes near coords,
-								enlarge x limits=0.5,
-								x tick label style={rotate=45, anchor=east}
-								]
-								\addplot coordinates {(Cámara, 4) (Soporte, 2) (Sin mejoras, 6)};
-							\end{axis}
-						\end{tikzpicture}
-						\subcaption{Sugerencias para mejorar el sistema.}
-						\label{fig:Improvements}
-					\end{minipage}
-					\begin{minipage}{0.45\textwidth}
-						\centering
-						\begin{tikzpicture}
-							\begin{axis}[
-								ybar,
-								height=6.1cm,
-								width=0.9\textwidth,
-								symbolic x coords={monitorización, Diseño agradable},
-								xtick=data,
-								ylabel={Cantidad},
-								ymin=0,
-								nodes near coords,
-								enlarge x limits=0.5,
-								x tick label style={rotate=45, anchor=east}
-								]
-								\addplot coordinates {(monitorización, 7) (Diseño agradable, 5)};
-							\end{axis}
-						\end{tikzpicture}
-						\subcaption{Razones para recomendar el sistema.}
-						\label{fig:ReasonsRecomend}
-					\end{minipage}
-					\caption{Resultados de preguntas realizadas a los padres sobre el proceso de monitorización de sus hijos de primaria usando Torddis mientras hacen sus tareas.}
-					\label{fig:AnswerOfOpenQuestion}
-				\end{figure}
-				
-				En las preguntas 3 ("¿Le gusta el diseño de la aplicación móvil Torddis? ¿Por qué?"), 4 ("¿Es adecuada la forma en que se visualizan los datos de monitorización de distracción de su hijo en la aplicación móvil Torddis? ¿Por qué?"), 5 ("¿Cree que este sistema ayudaría a mejorar la concentración de su hijo y mantenerlo informado mientras realiza sus tareas escolares? ¿Por qué?"), y 7 ("¿Estaría dispuesto a seguir usando el sistema Torddis?"), todos los tutores expresaron comentarios positivos. Manifestaron que les agrada el diseño de las vistas de la aplicación móvil, destacaron la organización de los datos históricos y los gráficos de informes, confirmaron que el sistema prototipo apoya eficazmente la concentración de los niños manteniéndolos informados cuando el niño se distrae, e indicaron su disposición a continuar usando el sistema Torddis.
-				
-				La pregunta 6 tenía como objetivo recopilar información sobre las mejoras que se podrían hacer a Torddis. Los comentarios obtenidos incluyen el uso de una cámara de mayor calidad y la mejora del soporte en el que se monta la cámara. Sin embargo, un alto porcentaje de usuarios mencionó que el dispositivo no necesita más mejoras. Estos resultados se muestran en la Figura \ref{fig:Improvements}. Por su parte, la pregunta 8 recopiló las razones por las que los evaluadores de Torddis recomendarían el uso de este sistema para la monitorización de estudiantes durante sus actividades escolares. La Figura \ref{fig:ReasonsRecomend} muestra las razones mencionadas por los tutores, incluyendo que les ayuda en la monitorización de sus estudiantes y su diseño agradable.
-				
-			\subsubsection*{Análisis de Reconocimiento}
-				Esta subsección presenta los resultados de 14 pruebas realizadas utilizando el sistema Torddis, en las cuales se evaluaron cuatro tareas diferentes de reconocimiento: personas, expresiones faciales, presencia de sueño y objetos distractores. Cada prueba midió el tiempo en segundos que tomó reconocer el elemento correspondiente y registró si el reconocimiento fue exitoso o no. La Tabla \ref{tab:combined-recognition} muestra los datos recopilados para este análisis.
-				
-				\begin{table}[hbt!]
-					\centering
-					\caption{Resultados agregados de reconocimiento.}
-					\label{tab:combined-recognition}
-					\begin{tabularx}{\textwidth}{c >{\centering\arraybackslash}X c >{\centering\arraybackslash}X c >{\centering\arraybackslash}X c >{\centering\arraybackslash}X c}
-						\toprule
-						\textbf{No.} & \multicolumn{2}{c}{\textbf{Personas}} & \multicolumn{2}{c}{\textbf{Expresiones Faciales}} & \multicolumn{2}{c}{\textbf{Presencia de Sueño}} & \multicolumn{2}{c}{\textbf{Objetos Distractores}}\\
-						\cline{2-9}
-						& \textbf{Latencia} & \textbf{Logrado?} & \textbf{Latencia} & \textbf{Logrado?} & \textbf{Latencia} & \textbf{Logrado?} & \textbf{Latencia} & \textbf{Logrado?} \\
-						\midrule
-						1 & 0.57 & Sí & 1.50 & Sí & 5.10 & Sí & 0.00 & \textbf{No} \\
-						2 & 0.60 & Sí & 1.20 & Sí & 3.50 & Sí & 1.68 & Sí \\
-						3 & 0.00 & \textbf{No} & 0.70 & Sí & 0.00 & \textbf{No} & 0.00 & No \\
-						4 & 0.78 & Sí & 1.30 & Sí & 3.68 & Sí & 1.79 & Sí \\
-						5 & 1.02 & Sí & 0.78 & Sí & 2.24 & Sí & 0.00 & \textbf{No} \\
-						6 & 0.88 & Sí & 1.01 & \textbf{No} & 2.63 & Sí & 1.98 & Sí \\
-						7 & 0.53 & Sí & 1.23 & Sí & 0.00 & \textbf{No} & 1.73 & Sí \\
-						8 & 1.20 & Sí & 0.97 & Sí & 2.03 & Sí & 2.05 & Sí \\
-						9 & 0.76 & Sí & 1.05 & Sí & 4.09 & Sí & 1.77 & Sí \\
-						10 & 1.20 & Sí & 0.70 & Sí & 3.36 & Sí & 1.91 & Sí \\
-						11 & 0.69 & Sí & 1.99 & Sí & 4.69 & Sí & 4.27 & Sí \\
-						12 & 0.82 & Sí & 1.83 & Sí & 3.29 & Sí & 2.69 & Sí \\
-						13 & 0.93 & Sí & 1.68 & Sí & 3.14 & Sí & 2.81 & Sí \\
-						14 & 0.58 & Sí & 1.76 & Sí & 3.45 & Sí & 2.94 & Sí \\
-						\bottomrule
-					\end{tabularx}
-				\end{table}
-				
-				\subsubsection*{Resultados}
-					\begin{itemize}
-						\item \textbf{Tiempo total de reconocimiento en segundos para todas las pruebas}: 
 						\begin{itemize}
-							\item Personas: 10.56 segundos
-							\item Expresiones Faciales: 17.70 segundos
-							\item Sueño: 41.20 segundos
-							\item Objetos Distractores: 25.62 segundos
+							\item Se evaluaron un total de 12 familias: 8 madres y 4 padres, todos pertenecientes a la zona geográfica de Quevedo, Ecuador.
+							\item La edad promedio de los participantes es de 39 años, con un rango de edad entre 18 y 65 años.
+							\item El 58\% de los tutores solo completaron la educación primaria, mientras que el 42\% estudiaron hasta la educación secundaria.
 						\end{itemize}
-						\item \textbf{Número de reconocimientos exitosos}:
-						\begin{itemize}
-							\item Personas: 13
-							\item Expresiones Faciales: 13
-							\item Sueño: 12
-							\item Objetos Distractores: 11
-						\end{itemize}
-						\item \textbf{Número de fallos en el reconocimiento}:
-						\begin{itemize}
-							\item Personas: 1
-							\item Expresiones Faciales: 1
-							\item Sueño: 2
-							\item Objetos Distractores: 3
-						\end{itemize}
-					\end{itemize}
+						
+					\paragraph{\textbf{Acerca de la monitorización:}}
+						Una de las preguntas preliminares en la evaluación de usabilidad fue sobre la facilidad con la que pueden monitorizar a sus hijos de primaria mientras realizan sus tareas escolares (ver Figura \ref{fig:previous-questions}). La mayoría de los tutores respondieron que el proceso de monitorización de la distracción de los niños es una tarea compleja. La Figura \ref{fig:monitoring-process} muestra los resultados detallados. Otra pregunta preliminar fue sobre la frecuencia con la que necesitaban monitorizar a sus hijos mientras realizaban actividades escolares. La mayoría de los tutores indicaron que debían hacerlo constantemente. Para respuestas más detalladas, véase la Figura \ref{fig:monitoring-frequency}. Finalmente, los tutores indicaron que, entre las estrategias que utilizan para mantener a sus estudiantes concentrados en sus actividades escolares, están las llamadas de atención (regaños), los consejos motivacionales y las recompensas, tales como dulces, juguetes, paseos al parque, comidas favoritas, y así sucesivamente (ver Figura \ref{fig:concentration-strategies}).
 					
-				\subsubsection*{Tiempo Promedio de Reconocimiento}
-					El tiempo promedio para los reconocimientos exitosos se calculó para cada tarea de reconocimiento:
+						\begin{figure}[hbt!]
+							\centering
+							\begin{minipage}{0.45\textwidth}
+								\centering
+								\begin{tikzpicture}
+									\begin{axis}[
+										ybar,
+										width=\textwidth,
+										height=6.5cm,
+										symbolic x coords={Fácil, Regular, Complejo},
+										xtick=data,
+										ylabel={Cantidad},
+										ymin=0,
+										nodes near coords,
+										enlarge x limits=0.5,
+										x tick label style={rotate=45, anchor=east}
+										]
+										\addplot coordinates {(Fácil, 1) (Regular, 4) (Complejo, 7)};
+									\end{axis}
+								\end{tikzpicture}
+								\subcaption{Facilidad del proceso de monitorización.}
+								\label{fig:monitoring-process}
+							\end{minipage}
+							\vspace{5mm}
+							\begin{minipage}{0.45\textwidth}
+								\centering
+								\begin{tikzpicture}
+									\begin{axis}[
+										ybar,
+										width=\textwidth,
+										height=6cm,
+										symbolic x coords={A veces, Casi siempre, Siempre},
+										xtick=data,
+										ylabel={Cantidad},
+										ymin=0,
+										nodes near coords,
+										enlarge x limits=0.5,
+										x tick label style={rotate=45, anchor=east}
+										]
+										\addplot coordinates {(A veces, 3) (Casi siempre, 3) (Siempre, 6)};
+									\end{axis}
+								\end{tikzpicture}
+								\subcaption{Frecuencia de monitorización.}
+								\label{fig:monitoring-frequency}
+							\end{minipage}
+							\begin{minipage}{0.45\textwidth}
+								\centering
+								\begin{tikzpicture}
+									\begin{axis}[
+										ybar,
+										height=6cm,
+										width=0.9\textwidth,
+										symbolic x coords={Llamadas de atención, Consejos y motivación, Recompensas},
+										xtick=data,
+										ylabel={Cantidad},
+										ymin=0,
+										nodes near coords,
+										enlarge x limits=0.5,
+										x tick label style={rotate=45, anchor=east}
+										]
+										\addplot coordinates {(Llamadas de atención, 5) (Consejos y motivación, 3) (Recompensas, 4)};
+									\end{axis}
+								\end{tikzpicture}
+								\subcaption{Estrategias para lograr la concentración.}
+								\label{fig:concentration-strategies}
+							\end{minipage}
+							\caption{Resultados de preguntas realizadas a los padres sobre el proceso de monitorización de sus hijos de primaria mientras hacen sus tareas.}
+							\label{fig:previous-questions}
+						\end{figure}
 					
-					\begin{itemize}
-						\item \textbf{Personas}: \(\frac{10.56 \text{ segundos}}{13} \approx 0.81 \text{ segundos}\)
-						\item \textbf{Expresiones Faciales}: \(\frac{17.70 \text{ segundos}}{13} \approx 1.36 \text{ segundos}\)
-						\item \textbf{Sueño}: \(\frac{41.20 \text{ segundos}}{12} \approx 3.43 \text{ segundos}\)
-						\item \textbf{Objetos Distractores}: \(\frac{25.62 \text{ segundos}}{11} \approx 2.33 \text{ segundos}\)
-					\end{itemize}
-				
-				\subsubsection*{Tasa de Reconocimiento}
-					La tasa de reconocimiento se determinó para cada tarea como el porcentaje de reconocimientos exitosos sobre el total de pruebas:
-				
-					\begin{itemize}
-						\item \textbf{Personas}: \(92.86\%\)
-						\item \textbf{Expresiones Faciales}: \(92.86\%\)
-						\item \textbf{Sueño}: \(85.71\%\)
-						\item \textbf{Objetos Distractores}: \(78.57\%\)
-					\end{itemize}
+					\paragraph{\textbf{Tareas para los Usuarios Participantes:}}
+						Las tareas que los tutores realizaron durante la evaluación fueron las siguientes:
 					
-				\subsubsection*{Tiempos Mínimos y Máximos de Reconocimiento}
-					Tiempos mínimos y máximos de reconocimiento observados en las pruebas para cada tarea:
+						\begin{enumerate}
+							\item Conectar el dispositivo Torddis a la fuente de alimentación y colocarlo en el escritorio donde el niño se sentará para realizar una tarea.
+							\item Crear una cuenta de usuario tutor en la aplicación móvil.
+							\item Iniciar sesión en la aplicación móvil.
+							\item Registrar al niño que será monitoreado.
+							\item Registrar el dispositivo Torddis en la aplicación móvil utilizando la dirección IP proporcionada en una etiqueta adherida al dispositivo.
+							\item Realizar el entrenamiento facial para el niño registrado.
+							\item Activar y/o desactivar los objetos que se monitorizarán en la sección correspondiente de la aplicación móvil.
+							\item Asignar una tarea al niño mientras es monitoreado por el dispositivo Torddis: colorear un mandala.
+							\item Activar el reconocimiento de cada parámetro de distracción en la sección de monitorización de la aplicación móvil.
+							\item Dejar al niño solo, sin la presencia de un adulto, durante 6 minutos.
+							\item Activar y/o desactivar la transmisión de video desde el dispositivo Torddis.
+							\item Navegar por el historial de los parámetros de distracción monitoreados en el niño.
+							\item Visualizar un informe con gráficos que representan los parámetros de distracción detectados para el niño monitoreado.
+						\end{enumerate}
 					
-					\begin{itemize}
-						\item \textbf{Personas}:
-						\begin{itemize}
-							\item Tiempo mínimo: 0.00 segundos (Prueba 3)
-							\item Tiempo máximo: 1.20 segundos (Pruebas 8 y 10)
-						\end{itemize}
-						\item \textbf{Expresiones Faciales}:
-						\begin{itemize}
-							\item Tiempo mínimo: 0.70 segundos (Pruebas 3 y 10)
-							\item Tiempo máximo: 1.99 segundos (Prueba 11)
-						\end{itemize}
-						\item \textbf{Sueño}:
-						\begin{itemize}
-							\item Tiempo mínimo: 0.00 segundos (Pruebas 3 y 7)
-							\item Tiempo máximo: 5.10 segundos (Prueba 1)
-						\end{itemize}
-						\item \textbf{Objetos Distractores}:
-						\begin{itemize}
-							\item Tiempo mínimo: 0.00 segundos (Pruebas 1, 3 y 5)
-							\item Tiempo máximo: 4.27 segundos (Prueba 11)
-						\end{itemize}
-					\end{itemize}
+					\paragraph{\textbf{Resultados del Cuestionario System Usability Scale:}}
+						Los resultados analizados en esta sección corresponden a las respuestas del cuestionario SUS (ver Apéndice \ref{Appendix:LikertScale}) proporcionado a los 12 tutores. Después de tabular los datos obtenidos, la Figura \ref{fig:sus-questionnaire} muestra que la media de los datos recopilados es 81.46\% con una desviación estándar de 11.65. Según los adjetivos (Peor imaginable, Pobre, OK, Bueno, Excelente, Mejor imaginable) propuestos por \cite{Bangor2008AnEmpirical} para evaluar cualitativamente la usabilidad de un sistema basado en la media alcanzada, es evidente que Torddis tiene un nivel de usabilidad "Bueno" según los tutores evaluados.
+					
+						\begin{figure}[hbt!]
+							\centering
+							\begin{tikzpicture}
+								\begin{axis}[
+									scatter/classes={
+										a={mark=*,blue}
+									},
+									width=12cm,
+									height=8cm,
+									xlabel={Participante},
+									ylabel={Evaluación},
+									ymin=40, ymax=100,
+									xmin=0, xmax=13,
+									xtick={1,2,3,4,5,6,7,8,9,10,11,12},
+									xticklabels={1,2,3,4,5,6,7,8,9,10,11,12},
+									ytick={40,60,80,100},
+									nodes near coords,
+									every node near coord/.append style={font=\footnotesize, /pgf/number format/fixed},
+									legend style={at={(0.5,-0.15)}, anchor=north, legend columns=-1},
+									enlarge x limits=0.05,
+									]
+									\addplot[
+									scatter,
+									only marks,
+									scatter src=explicit symbolic,
+									visualization depends on=\thisrow{Evaluation} \as \label
+									] table[meta=class,x=Participant,y=Evaluation] {
+										Participant Evaluation class
+										1 90.00 90.00
+										2 95.00 95.00
+										3 72.50 72.50
+										4 60.00 60.00
+										5 85.00 85.00
+										6 67.50 67.50
+										7 92.50 92.50
+										8 67.50 67.50
+										9 82.50 82.50
+										10 85.00 85.00
+										11 92.50 92.50
+										12 87.50 87.50
+									};
+									
+									% Línea de promedio
+									\addplot [
+									color=orange,
+									thick,
+									mark=none
+									] coordinates {(0,\average) (13,\average)};
+									
+									% Línea de desviación estándar superior
+									\addplot [
+									color=orange,
+									thick,
+									dashed,
+									mark=none
+									] coordinates {(0,\upperlimit) (13,\upperlimit)};
+									
+									% Línea de desviación estándar inferior
+									\addplot [
+									color=orange,
+									thick,
+									dashed,
+									mark=none
+									] coordinates {(0,\lowerlimit) (13,\lowerlimit)};
+									
+									\legend{Participante, Promedio SUS, Desv. Estándar}
+								\end{axis}
+							\end{tikzpicture}
+							\caption{Datos del cuestionario SUS por tutor con evaluación promedio y desviación estándar.}
+							\label{fig:sus-questionnaire}
+						\end{figure}
+						
+					\paragraph{\textbf{Resultados del Cuestionario de Preguntas Abiertas:}}
+						Al final del cuestionario SUS, los tutores respondieron 8 preguntas abiertas (ver Apéndice \ref{Appendix:OpenQuestions}) para proporcionar sus opiniones personales.
+					
+						La primera pregunta fue "¿Cuál es su opinión general sobre el sistema?", a la que algunos tutores respondieron que apoya la concentración de los estudiantes, y otros dijeron que tiene un diseño agradable. Los resultados se muestran en la Figura \ref{fig:AboutTorddis}. La segunda pregunta abierta que respondieron los tutores fue "¿Le gustaron los sonidos y/o luces que utiliza Torddis?". La mayoría de los tutores presentaron una opinión favorable a esta pregunta, ya que creen que las alertas luminosas ayudan a mantener al estudiante despierto y están satisfechos con las alarmas sonoras (ver Figura \ref{fig:SoundAndLigth}).
+					
+						\begin{figure}[hbt!]
+							\centering
+							\begin{minipage}{0.45\textwidth}
+								\centering
+								\begin{tikzpicture}
+									\begin{axis}[
+										ybar,
+										width=\textwidth,
+										height=6cm,
+										symbolic x coords={Apoya la concentración, Diseño agradable},
+										xtick=data,
+										ylabel={Cantidad},
+										ymin=0,
+										nodes near coords,
+										enlarge x limits=0.5,
+										x tick label style={rotate=45, anchor=east}
+										]
+										\addplot coordinates {(Apoya la concentración, 8) (Diseño agradable, 8)};
+									\end{axis}
+								\end{tikzpicture}
+								\subcaption{Opinión general sobre el sistema Torddis.}
+								\label{fig:AboutTorddis}
+							\end{minipage}
+							\vspace{5mm}
+							\begin{minipage}{0.45\textwidth}
+								\centering
+								\begin{tikzpicture}
+									\begin{axis}[
+										ybar,
+										width=\textwidth,
+										height=6.5cm,
+										symbolic x coords={Ayuda al estudiante, Satisfacción},
+										xtick=data,
+										ylabel={Cantidad},
+										ymin=0,
+										nodes near coords,
+										enlarge x limits=0.5,
+										x tick label style={rotate=45, anchor=east}
+										]
+										\addplot coordinates {(Ayuda al estudiante, 7) (Satisfacción, 5)};
+									\end{axis}
+								\end{tikzpicture}
+								\subcaption{Alertas sonoras y luminosas del sistema.}
+								\label{fig:SoundAndLigth}
+							\end{minipage}
+							\begin{minipage}{0.45\textwidth}
+								\centering
+								\begin{tikzpicture}
+									\begin{axis}[
+										ybar,
+										height=6cm,
+										width=0.9\textwidth,
+										symbolic x coords={Cámara, Soporte, Sin mejoras},
+										xtick=data,
+										ylabel={Cantidad},
+										ymin=0,
+										nodes near coords,
+										enlarge x limits=0.5,
+										x tick label style={rotate=45, anchor=east}
+										]
+										\addplot coordinates {(Cámara, 4) (Soporte, 2) (Sin mejoras, 6)};
+									\end{axis}
+								\end{tikzpicture}
+								\subcaption{Sugerencias para mejorar el sistema.}
+								\label{fig:Improvements}
+							\end{minipage}
+							\begin{minipage}{0.45\textwidth}
+								\centering
+								\begin{tikzpicture}
+									\begin{axis}[
+										ybar,
+										height=6.1cm,
+										width=0.9\textwidth,
+										symbolic x coords={monitorización, Diseño agradable},
+										xtick=data,
+										ylabel={Cantidad},
+										ymin=0,
+										nodes near coords,
+										enlarge x limits=0.5,
+										x tick label style={rotate=45, anchor=east}
+										]
+										\addplot coordinates {(monitorización, 7) (Diseño agradable, 5)};
+									\end{axis}
+								\end{tikzpicture}
+								\subcaption{Razones para recomendar el sistema.}
+								\label{fig:ReasonsRecomend}
+							\end{minipage}
+							\caption{Resultados de preguntas realizadas a los padres sobre el proceso de monitorización de sus hijos de primaria usando Torddis mientras hacen sus tareas.}
+							\label{fig:AnswerOfOpenQuestion}
+						\end{figure}
+						
+						En las preguntas 3 ("¿Le gusta el diseño de la aplicación móvil Torddis? ¿Por qué?"), 4 ("¿Es adecuada la forma en que se visualizan los datos de monitorización de distracción de su hijo en la aplicación móvil Torddis? ¿Por qué?"), 5 ("¿Cree que este sistema ayudaría a mejorar la concentración de su hijo y mantenerlo informado mientras realiza sus tareas escolares? ¿Por qué?"), y 7 ("¿Estaría dispuesto a seguir usando el sistema Torddis?"), todos los tutores expresaron comentarios positivos. Manifestaron que les agrada el diseño de las vistas de la aplicación móvil, destacaron la organización de los datos históricos y los gráficos de informes, confirmaron que el sistema prototipo apoya eficazmente la concentración de los niños manteniéndolos informados cuando el niño se distrae, e indicaron su disposición a continuar usando el sistema Torddis.
+						
+						La pregunta 6 tenía como objetivo recopilar información sobre las mejoras que se podrían hacer a Torddis. Los comentarios obtenidos incluyen el uso de una cámara de mayor calidad y la mejora del soporte en el que se monta la cámara. Sin embargo, un alto porcentaje de usuarios mencionó que el dispositivo no necesita más mejoras. Estos resultados se muestran en la Figura \ref{fig:Improvements}. Por su parte, la pregunta 8 recopiló las razones por las que los evaluadores de Torddis recomendarían el uso de este sistema para la monitorización de estudiantes durante sus actividades escolares. La Figura \ref{fig:ReasonsRecomend} muestra las razones mencionadas por los tutores, incluyendo que les ayuda en la monitorización de sus estudiantes y su diseño agradable.
+						
+				\subsubsection*{Análisis de Reconocimiento}
+					Esta subsección presenta los resultados de 14 pruebas realizadas utilizando el sistema Torddis, en las cuales se evaluaron cuatro tareas diferentes de reconocimiento: personas, expresiones faciales, presencia de sueño y objetos distractores. Cada prueba midió el tiempo en segundos que tomó reconocer el elemento correspondiente y registró si el reconocimiento fue exitoso o no. La Tabla \ref{tab:combined-recognition} muestra los datos recopilados para este análisis.
 				
-				\subsubsection*{Distribución de los Tiempos de Reconocimiento}
-					Los tiempos de reconocimiento para cada tarea varían, lo que indica una variabilidad en la respuesta del sistema. La mayoría de los tiempos de reconocimiento están dentro de un rango razonable, lo que sugiere una respuesta rápida y efectiva del sistema en la mayoría de los casos.
+					\begin{table}[hbt!]
+						\centering
+						\caption{Resultados agregados de reconocimiento.}
+						\label{tab:combined-recognition}
+						\begin{tabularx}{\textwidth}{c >{\centering\arraybackslash}X c >{\centering\arraybackslash}X c >{\centering\arraybackslash}X c >{\centering\arraybackslash}X c}
+							\toprule
+							\textbf{No.} & \multicolumn{2}{c}{\textbf{Personas}} & \multicolumn{2}{c}{\textbf{Expresiones Faciales}} & \multicolumn{2}{c}{\textbf{Presencia de Sueño}} & \multicolumn{2}{c}{\textbf{Objetos Distractores}}\\
+							\cline{2-9}
+							& \textbf{Latencia} & \textbf{Logrado?} & \textbf{Latencia} & \textbf{Logrado?} & \textbf{Latencia} & \textbf{Logrado?} & \textbf{Latencia} & \textbf{Logrado?} \\
+							\midrule
+							1 & 0.57 & Sí & 1.50 & Sí & 5.10 & Sí & 0.00 & \textbf{No} \\
+							2 & 0.60 & Sí & 1.20 & Sí & 3.50 & Sí & 1.68 & Sí \\
+							3 & 0.00 & \textbf{No} & 0.70 & Sí & 0.00 & \textbf{No} & 0.00 & No \\
+							4 & 0.78 & Sí & 1.30 & Sí & 3.68 & Sí & 1.79 & Sí \\
+							5 & 1.02 & Sí & 0.78 & Sí & 2.24 & Sí & 0.00 & \textbf{No} \\
+							6 & 0.88 & Sí & 1.01 & \textbf{No} & 2.63 & Sí & 1.98 & Sí \\
+							7 & 0.53 & Sí & 1.23 & Sí & 0.00 & \textbf{No} & 1.73 & Sí \\
+							8 & 1.20 & Sí & 0.97 & Sí & 2.03 & Sí & 2.05 & Sí \\
+							9 & 0.76 & Sí & 1.05 & Sí & 4.09 & Sí & 1.77 & Sí \\
+							10 & 1.20 & Sí & 0.70 & Sí & 3.36 & Sí & 1.91 & Sí \\
+							11 & 0.69 & Sí & 1.99 & Sí & 4.69 & Sí & 4.27 & Sí \\
+							12 & 0.82 & Sí & 1.83 & Sí & 3.29 & Sí & 2.69 & Sí \\
+							13 & 0.93 & Sí & 1.68 & Sí & 3.14 & Sí & 2.81 & Sí \\
+							14 & 0.58 & Sí & 1.76 & Sí & 3.45 & Sí & 2.94 & Sí \\
+							\bottomrule
+						\end{tabularx}
+					\end{table}
+					
+					\paragraph{Tiempo total de reconocimiento: }
+						\begin{itemize}
+							\item \textbf{Tiempo total de reconocimiento en segundos para todas las pruebas}: 
+							\begin{itemize}
+								\item Personas: 10.56 segundos
+								\item Expresiones Faciales: 17.70 segundos
+								\item Sueño: 41.20 segundos
+								\item Objetos Distractores: 25.62 segundos
+							\end{itemize}
+							\item \textbf{Número de reconocimientos exitosos}:
+							\begin{itemize}
+								\item Personas: 13
+								\item Expresiones Faciales: 13
+								\item Sueño: 12
+								\item Objetos Distractores: 11
+							\end{itemize}
+							\item \textbf{Número de fallos en el reconocimiento}:
+							\begin{itemize}
+								\item Personas: 1
+								\item Expresiones Faciales: 1
+								\item Sueño: 2
+								\item Objetos Distractores: 3
+							\end{itemize}
+						\end{itemize}
+						
+					\paragraph{Tiempo Promedio de Reconocimiento: }
+						El tiempo promedio para los reconocimientos exitosos se calculó para cada tarea de reconocimiento:
+						
+						\begin{itemize}
+							\item \textbf{Personas}: \(\frac{10.56 \text{ segundos}}{13} \approx 0.81 \text{ segundos}\)
+							\item \textbf{Expresiones Faciales}: \(\frac{17.70 \text{ segundos}}{13} \approx 1.36 \text{ segundos}\)
+							\item \textbf{Sueño}: \(\frac{41.20 \text{ segundos}}{12} \approx 3.43 \text{ segundos}\)
+							\item \textbf{Objetos Distractores}: \(\frac{25.62 \text{ segundos}}{11} \approx 2.33 \text{ segundos}\)
+						\end{itemize}
+					
+					\paragraph{Tasa de Reconocimiento: }
+						La tasa de reconocimiento se determinó para cada tarea como el porcentaje de reconocimientos exitosos sobre el total de pruebas:
+					
+						\begin{itemize}
+							\item \textbf{Personas}: \(92.86\%\)
+							\item \textbf{Expresiones Faciales}: \(92.86\%\)
+							\item \textbf{Sueño}: \(85.71\%\)
+							\item \textbf{Objetos Distractores}: \(78.57\%\)
+						\end{itemize}
+						
+					\paragraph{Tiempos Mínimos y Máximos de Reconocimiento: }
+						Tiempos mínimos y máximos de reconocimiento observados en las pruebas para cada tarea:
+						
+						\begin{itemize}
+							\item \textbf{Personas}:
+							\begin{itemize}
+								\item Tiempo mínimo: 0.00 segundos (Prueba 3)
+								\item Tiempo máximo: 1.20 segundos (Pruebas 8 y 10)
+							\end{itemize}
+							\item \textbf{Expresiones Faciales}:
+							\begin{itemize}
+								\item Tiempo mínimo: 0.70 segundos (Pruebas 3 y 10)
+								\item Tiempo máximo: 1.99 segundos (Prueba 11)
+							\end{itemize}
+							\item \textbf{Sueño}:
+							\begin{itemize}
+								\item Tiempo mínimo: 0.00 segundos (Pruebas 3 y 7)
+								\item Tiempo máximo: 5.10 segundos (Prueba 1)
+							\end{itemize}
+							\item \textbf{Objetos Distractores}:
+							\begin{itemize}
+								\item Tiempo mínimo: 0.00 segundos (Pruebas 1, 3 y 5)
+								\item Tiempo máximo: 4.27 segundos (Prueba 11)
+							\end{itemize}
+						\end{itemize}
+					
+					\paragraph{Distribución de los Tiempos de Reconocimiento:}
+						Los tiempos de reconocimiento para cada tarea varían, lo que indica una variabilidad en la respuesta del sistema. La mayoría de los tiempos de reconocimiento están dentro de un rango razonable, lo que sugiere una respuesta rápida y efectiva del sistema en la mayoría de los casos.
+					
 			\subsubsection{Mantenimiento}
 				Esta fase no fue ejecutada debido al corto tiempo de desarrollo para cada entregable, y además para la evaluación del proyecto. Sin embargo, el sistema debe ser mantenido bajo las indicaciones de prevención y de vida útil de cada uno de los componentes para funcionar correctamente. La Tabla \ref{tab:maintenance-tasks} describe algunas tareas de mantenimiento tentativas. En general, el mantenimiento del sistema se debe considerar de manera trimestral y semestral, aunque su frecuencia puede variar dependiendo del entorno en el que se lo use.
 			
@@ -1314,10 +1380,64 @@
 						\bottomrule
 					\end{tabularx}
 				\end{table}
+				Además, el mantenimiento correctivo por cada componente físico del sistema se debe realizar antes que la vida útil del componente llegue a su límite. La vida útil de cada uno de los componentes se muestra en la Tabla \ref{tab:ShelfLife}.
+				
+				\begin{table}[h]
+					\centering
+					\caption{Tiempo de vida útil de los componentes de hardware.}
+					\label{tab:ShelfLife}
+					\begin{tabularx}{\textwidth}{cXX}
+						\toprule
+						\textbf{Componente} & \textbf{Tiempo de vida útil} & Reducción de la vida útil\\
+						\midrule
+						Esp32CAM & 20 \cite{Espressif2022ESP32-CAM,Espressif2022ESP32Forum} & Exposición a temperaturas extremas, alta humedad, polvo o vibraciones mecánicas\\
+						ESP8266 Node MCU & 20.83 \cite{Amri2018Improving} a 57 \cite{Ardumotica2023,Espressif2022ESP32Forum}. & Temperaturas extremas, niveles altos de humedad, polvo, picos de voltaje, ruido en la fuente, ciclo frecuentes de apagado y encendido, uso intenso de WiFi en máxima potencia, actualizaciones de firmware.\\
+						Buzzer Pasivo & 3 \cite{HuawhaElectronics} & Voltaje excesivo, sobrecorriente, temperaturas extremas, vibraciones o impactos mecánicos, humedad o corrosión, operación continua prolongada. \\
+						Leds & 3 \cite{Casamayor2015} - 14 \cite{Cary,GreenLighting2024} & Desgaste de componentes, condiciones de fabricación, \\
+						Resistencias y otros & Probar el sistema informático (servidor de aplicaciones web, servicios web, aplicación móvil, dispositivo IoT).\\
+						\bottomrule
+					\end{tabularx}
+				\end{table}
+				
+		\subsection{Análisis estadístico del estudio}
 			
+			Se determinó realizar el análisis de correlación que existe entre las afirmaciones (5) "Después de dejar de usar el dispositivo, su tutorado mejoró el nivel de autoregulación y concentración en la realización de tareas" y (6) "Aunque es poco tiempo de utilización del dispositivo, mejoraría considerablemente el cumplimiento de tareas, por ende el nivel de aprovechamiento de los estudios de su tutorado", con el resto de variables determinando que nada tiene que ver el tipo de institución educativa con esas afirmaciones.
+				
+			En la tabla \ref{table:correlations} se muestran los índices de correlación r de la afirmación (5).
+				
+			\begin{table}[h!]
+				\centering
+				\caption{Correlaciones entre variables y la afirmación (5)}
+				\begin{tabularx}{\textwidth}{Xr}
+					\toprule
+					\textbf{Variable} & \textbf{Correlación con la afirmación (5)} \\
+					\midrule
+					Tiempo dedicado a la supervisión de tareas (Horas)                                   & 0.184 \\
+					Edad Estudiante                                                                      &-0.141 \\
+					(1) El dispositivo fue tomado por su tutorado como algo atractivo                    & 0.776 \\
+					(3) Su tutorado tomó desapercibida la presencia del dispositivo                      & 0.750 \\
+					(4) Utilizó el dispositivo todo el tiempo efectivo dedicado para hacer las tareas.   & 0.816 \\
+					(6) Aunque es poco tiempo de utilización del dispositivo                             & 1.000 \\
+					(7) Está dispuesto a seguir utilizando el dispositivo                                & 0.776 \\
+					\bottomrule
+				\end{tabularx}
+				\label{table:correlations}
+			\end{table}			
+				
+			La mejora percibida en la autorregulación del tutorado presenta una correlación positiva fuerte con la percepción de atractivo del dispositivo. Esto sugiere que un diseño atractivo fomenta el compromiso de los estudiantes, lo que contribuye a mejorar sus habilidades de autorregulación.
+				
+			Asimismo, una correlación moderada-alta indica que los tutores que consideraron que la aplicación reflejaba correctamente los eventos percibieron mayores mejoras en la autorregulación de sus tutorados. Esto subraya la relevancia de la precisión del sistema para ganar la confianza de los usuarios y garantizar su efectividad.
+				
+			Por otro lado, una correlación positiva moderada revela que los estudiantes que no se sintieron distraídos por el dispositivo tuvieron una mayor probabilidad de mejorar en su autorregulación. Esto evidencia la importancia de un diseño que sea poco intrusivo y que permita mantener el enfoque en las tareas académicas.
+				
+			Además, la percepción de que el dispositivo mejora las habilidades de autorregulación incluso en períodos de uso corto muestra una correlación muy fuerte con esta afirmación. Esto refuerza la efectividad del sistema como una herramienta para el desarrollo académico.
+				
+			Finalmente, la disposición a seguir utilizando el dispositivo presenta la correlación más alta con la mejora en la autorregulación y la concentración. Esto refleja una aceptación generalizada del sistema, tanto por parte de los tutores como de los estudiantes, y reafirma su potencial para generar impacto positivo en el entorno educativo.
+				
+		
 	\section{Conclusiones}
 	\label{seccion:Seis}
-		El sistema prototipo Torddis aporta un avance significativo en el campo de la pedagogía tecnológica, combinando IoT e IA para abordar desafíos críticos en el aprendizaje autónomo \cite{DiPietro2025Meta}. A diferencia de propuestas previas, el sistema integra análisis de comportamiento en tiempo real con retroalimentación activa, destacando su contribución al desarrollo de teorías sobre autorregulación y aprendizaje personalizado en entornos domésticos. Las evaluaciones, que incluyen pruebas funcionales y cuestionarios de usabilidad, revelaron que el sistema cumple con los requisitos técnicos esperados y es altamente valorado por los usuarios finales, es decir, los tutores.
+		El sistema prototipo Torddis aporta un avance significativo en el campo de la pedagogía tecnológica, combinando IoT e IA para abordar desafíos críticos en el aprendizaje autónomo \citep{DiPietro2025Meta}. A diferencia de propuestas previas, el sistema integra análisis de comportamiento en tiempo real con retroalimentación activa, destacando su contribución al desarrollo de teorías sobre autorregulación y aprendizaje personalizado en entornos domésticos. Las evaluaciones, que incluyen pruebas funcionales y cuestionarios de usabilidad, revelaron que el sistema cumple con los requisitos técnicos esperados y es altamente valorado por los usuarios finales, es decir, los tutores.
 		
 		El análisis de los datos demográficos y de monitorización indica que Torddis tiene un impacto significativo en la gestión de la distracción de los niños, proporcionando a los tutores una herramienta valiosa para mantener a los estudiantes enfocados en sus tareas. La alta puntuación en el cuestionario de usabilidad SUS refuerza la percepción de que el sistema es fácil de usar y efectivo en su propósito.
 		
@@ -1487,5 +1607,27 @@
 			8 & ¿Recomendaría este sistema a otras personas interesadas en monitorizar la distracción de niños mientras realizan tareas escolares? Por favor responda sí o no, y proporcione la razón. \\ \bottomrule
 		\end{tabularx}
 	\end{table}
+	
+	\subsection[\appendixname~\thesection]{Preguntas para evaluar la efectividad del prototipo}
+	\label{Appendix:Effectivity}
+	Las preguntas abiertas del cuestionario SUS se muestran en la Tabla \ref{tab:EffectivityQuestions}.
+	\begin{table}[bt!]
+		\centering
+		\caption{Preguntas Abiertas del Cuestionario SUS \label{tab:EffectivityQuestions}}	
+		\begin{tabularx}{\textwidth}{c X }
+			\toprule
+			\textbf{No.} & \textbf{Pregunta} \\
+			\midrule
+			1 & El dispositivo fue tomado por su tutorado como algo atractivo. \\
+			2 & La aplicación móvil mostró correctamente los eventos que sucedieron. \\
+			3 & Su tutorado tomó desapercibida la presencia del dispositivo. \\
+			4 & Utilizó el dispositivo todo el tiempo efectivo dedicado para hacer las tareas. \\
+			5 & Después de dejar de usar el dispositivo, su tutorado mejoró el nivel de autoregulación y concentración en la realización de tareas. \\
+			6 & Aunque es poco tiempo de utilización del dispositivo, mejoraría considerablemente el cumplimiento de tareas, por ende el nivel de aprovechamiento de los estudios de su tutorado. \\
+			7 & Está dispuesto a seguir utilizando el dispositivo. \\
+			\bottomrule
+		\end{tabularx}
+	\end{table}
+	
 \end{document}
 
