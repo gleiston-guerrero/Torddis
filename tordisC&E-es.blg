@@ -1,59 +1,52 @@
 This is BibTeX, Version 0.99d (TeX Live 2022)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: tordisC&E-es.aux
-White space in argument---line 163 of file tordisC&E-es.aux
+White space in argument---line 167 of file tordisC&E-es.aux
  : \citation{Kulkarni2023
  :                        }
 I'm skipping whatever remains of this command
 The style file: cas-model2-names.bst
 Database file #1: torddisC&E-refs.bib
-I was expecting a `,' or a `}'---line 588 of file torddisC&E-refs.bib
- : 
- : @inproceedings{Hachad2020,
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "Mohamed201862"
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Warning--missing school in Salter2014Exploring
-You've used 80 entries,
+You've used 110 entries,
             2990 wiz_defined-function locations,
-            1348 strings with 30782 characters,
-and the built_in function-call counts, 61602 in all, are:
-= -- 4768
-> -- 2637
-< -- 54
-+ -- 1030
-- -- 928
-* -- 6879
-:= -- 8738
-add.period$ -- 281
-call.type$ -- 80
-change.case$ -- 704
-chr.to.int$ -- 76
-cite$ -- 81
-duplicate$ -- 4531
-empty$ -- 4281
-format.name$ -- 1175
-if$ -- 11802
-int.to.chr$ -- 5
+            1547 strings with 38150 characters,
+and the built_in function-call counts, 80374 in all, are:
+= -- 6280
+> -- 3289
+< -- 74
++ -- 1291
+- -- 1150
+* -- 8886
+:= -- 11479
+add.period$ -- 386
+call.type$ -- 110
+change.case$ -- 936
+chr.to.int$ -- 105
+cite$ -- 110
+duplicate$ -- 5969
+empty$ -- 5664
+format.name$ -- 1475
+if$ -- 15344
+int.to.chr$ -- 6
 int.to.str$ -- 1
-missing$ -- 882
-newline$ -- 456
-num.names$ -- 322
-pop$ -- 1540
+missing$ -- 1145
+newline$ -- 621
+num.names$ -- 442
+pop$ -- 2000
 preamble$ -- 1
-purify$ -- 627
+purify$ -- 821
 quote$ -- 0
-skip$ -- 1532
+skip$ -- 1987
 stack$ -- 0
-substring$ -- 2303
-swap$ -- 3505
-text.length$ -- 33
+substring$ -- 3057
+swap$ -- 4511
+text.length$ -- 35
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 717
-warning$ -- 1
-while$ -- 352
+type$ -- 987
+warning$ -- 0
+while$ -- 468
 width$ -- 0
-write$ -- 1280
-(There were 2 error messages)
+write$ -- 1744
+(There was 1 error message)

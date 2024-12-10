@@ -1,4 +1,4 @@
-\begin{thebibliography}{80}
+\begin{thebibliography}{110}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -11,6 +11,19 @@
 \providecommand{\Pubmed}[1]{\href{pmid:#1}{\path{#1}}}
 \providecommand{\bibinfo}[2]{#2}
 \ifx\xfnm\relax \def\xfnm[#1]{\unskip,\space#1}\fi
+%Type = Article
+\bibitem[{Ackermans et~al.(2025)Ackermans, Bakker, {van Loon}, Kral and
+  Camp}]{Ackermans2025Young}
+\bibinfo{author}{Ackermans, K.}, \bibinfo{author}{Bakker, M.},
+  \bibinfo{author}{{van Loon}, A.M.}, \bibinfo{author}{Kral, M.},
+  \bibinfo{author}{Camp, G.}, \bibinfo{year}{2025}.
+\newblock \bibinfo{title}{Young learners’ motivation, self-regulation and
+  performance in personalized learning}.
+\newblock \bibinfo{journal}{Computers \& Education} \bibinfo{volume}{226},
+  \bibinfo{pages}{105208}.
+\newblock \URLprefix
+  \url{https://www.sciencedirect.com/science/article/pii/S0360131524002227},
+  \DOIprefix\doi{https://doi.org/10.1016/j.compedu.2024.105208}.
 %Type = Phdthesis
 \bibitem[{Adcroft(2018)}]{Adcroft2018Developing}
 \bibinfo{author}{Adcroft, S.K.}, \bibinfo{year}{2018}.
@@ -40,8 +53,7 @@
   brain-tumour treatment: A long-term follow-up after glioma surgery}.
 \newblock \bibinfo{journal}{Neuropsychological Rehabilitation}
   \bibinfo{volume}{33}, \bibinfo{pages}{1225--1261}.
-\newblock \DOIprefix\doi{10.1080/09602011.2022.2080720}. \bibinfo{note}{pMID:
-  35653603}.
+\newblock \DOIprefix\doi{10.1080/09602011.2022.2080720}.
 %Type = Article
 \bibitem[{Akter et~al.(2021)Akter, Ali, Khan, Satu, Uddin, Alyami, Ali, Azad
   and Moni}]{Akter2021}
@@ -101,6 +113,27 @@
 \newblock \bibinfo{journal}{Enfoque UTE} \bibinfo{volume}{8},
   \bibinfo{pages}{244--256}.
 \newblock \DOIprefix\doi{10.29019/enfoqueute.v8n1.121}.
+%Type = Inproceedings
+\bibitem[{Amri and Setiawan(2018)}]{Amri2018Improving}
+\bibinfo{author}{Amri, Y.}, \bibinfo{author}{Setiawan, M.A.},
+  \bibinfo{year}{2018}.
+\newblock \bibinfo{title}{Improving smart home concept with the internet of
+  things concept using raspberrypi and nodemcu}, in: \bibinfo{booktitle}{IOP
+  Conference Series: Materials Science and Engineering},
+  \bibinfo{organization}{IOP Publishing}. p. \bibinfo{pages}{012021}.
+%Type = Misc
+\bibitem[{Arduino(2024)}]{Arduino2024Software}
+\bibinfo{author}{Arduino}, \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{Software}.
+\newblock \URLprefix \url{https://www.arduino.cc/en/software}.
+  \bibinfo{note}{accessed on Agosto 15, 2024}.
+%Type = Misc
+\bibitem[{{Ardumotica}(2023)}]{Ardumotica2023}
+\bibinfo{author}{{Ardumotica}}, \bibinfo{year}{2023}.
+\newblock \bibinfo{title}{Módulo wifi nodemcu v3 lolin esp8266 ch340}.
+\newblock \URLprefix
+  \url{https://ardumotica.cl/producto/modulo-wifi-nodemcu-v3-lolin-esp8266-ch340/}.
+  \bibinfo{note}{accessed on December 06, 2024}.
 %Type = Inproceedings
 \bibitem[{Argel et~al.(2023)Argel, Ragmac, Lindo and
   Tiglao}]{Argel2023Intellitell}
@@ -213,6 +246,20 @@
   Conference (EIRCON)}, \bibinfo{publisher}{IEEE}. pp. \bibinfo{pages}{1--4}.
 \newblock \DOIprefix\doi{10.1109/eircon56026.2022.9934094}.
 %Type = Article
+\bibitem[{Chen et~al.(2025)Chen, Xiang, Zhou, Jia, Shang, Li, Gašević and
+  Fan}]{Chen2025Unpacking}
+\bibinfo{author}{Chen, A.}, \bibinfo{author}{Xiang, M.}, \bibinfo{author}{Zhou,
+  J.}, \bibinfo{author}{Jia, J.}, \bibinfo{author}{Shang, J.},
+  \bibinfo{author}{Li, X.}, \bibinfo{author}{Gašević, D.},
+  \bibinfo{author}{Fan, Y.}, \bibinfo{year}{2025}.
+\newblock \bibinfo{title}{Unpacking help-seeking process through multimodal
+  learning analytics: A comparative study of chatgpt vs human expert}.
+\newblock \bibinfo{journal}{Computers \& Education} \bibinfo{volume}{226},
+  \bibinfo{pages}{105198}.
+\newblock \URLprefix
+  \url{https://www.sciencedirect.com/science/article/pii/S0360131524002124},
+  \DOIprefix\doi{https://doi.org/10.1016/j.compedu.2024.105198}.
+%Type = Article
 \bibitem[{Coffman and Taber(2024)}]{Coffman2024Developing}
 \bibinfo{author}{Coffman, S.}, \bibinfo{author}{Taber, A.},
   \bibinfo{year}{2024}.
@@ -260,6 +307,17 @@
   Conference on Industrial and Information Systems (ICIIS)},
   \bibinfo{publisher}{IEEE}. pp. \bibinfo{pages}{236--241}.
 \newblock \DOIprefix\doi{10.1109/iciis51140.2020.9342670}.
+%Type = Article
+\bibitem[{{Di Pietro} and {Castaño Muñoz}(2025)}]{DiPietro2025Meta}
+\bibinfo{author}{{Di Pietro}, G.}, \bibinfo{author}{{Castaño Muñoz}, J.},
+  \bibinfo{year}{2025}.
+\newblock \bibinfo{title}{A meta-analysis on the effect of technology on the
+  achievement of less advantaged students}.
+\newblock \bibinfo{journal}{Computers \& Education} \bibinfo{volume}{226},
+  \bibinfo{pages}{105197}.
+\newblock \URLprefix
+  \url{https://www.sciencedirect.com/science/article/pii/S0360131524002112},
+  \DOIprefix\doi{https://doi.org/10.1016/j.compedu.2024.105197}.
 %Type = Misc
 \bibitem[{{Draw.io}(2021)}]{Diagram2023Software}
 \bibinfo{author}{{Draw.io}}, \bibinfo{year}{2021}.
@@ -300,6 +358,20 @@
   \bibinfo{publisher}{Springer International Publishing},
   \bibinfo{address}{Cham}. pp. \bibinfo{pages}{393--399}.
 \newblock \DOIprefix\doi{10.1007/978-3-319-48746-5_40}.
+%Type = Misc
+\bibitem[{{ESPRESSIF}(2018)}]{Espressif2022ESP32Forum}
+\bibinfo{author}{{ESPRESSIF}}, \bibinfo{year}{2018}.
+\newblock \bibinfo{title}{What is the lifetime expectancy of esp-wroom-32
+  module?}
+\newblock \URLprefix \url{https://www.esp32.com/viewtopic.php?t=4974#p21521}.
+  \bibinfo{note}{accessed on December 06, 2024}.
+%Type = Misc
+\bibitem[{{ESPRESSIF}(2022)}]{Espressif2022ESP32-CAM}
+\bibinfo{author}{{ESPRESSIF}}, \bibinfo{year}{2022}.
+\newblock \bibinfo{title}{Esp32-powered diy wi-fi security camera}.
+\newblock \URLprefix
+  \url{https://www.espressif.com/en/news/ESP32_Security_Camera}.
+  \bibinfo{note}{accessed on December 06, 2024}.
 %Type = Article
 \bibitem[{Farsani et~al.(2020)Farsani, Breda and Sebasti{\'a}}]{Farsani2020}
 \bibinfo{author}{Farsani, D.}, \bibinfo{author}{Breda, A.},
@@ -309,6 +381,23 @@
 \newblock \bibinfo{journal}{Journal of Research in Mathematics Education}
   \bibinfo{volume}{9}, \bibinfo{pages}{220}.
 \newblock \DOIprefix\doi{10.17583/redimat.2020.5185}.
+%Type = Article
+\bibitem[{Firmansyah et~al.(2024)Firmansyah, Sudirman and
+  Putra}]{Firmansyah2024Integrating}
+\bibinfo{author}{Firmansyah, F.}, \bibinfo{author}{Sudirman, M.Y.D.},
+  \bibinfo{author}{Putra, R.I.}, \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{Integrating green computing into rational unified
+  process for sustainable development goals: a comprehensive approach}.
+\newblock \bibinfo{journal}{International Journal of Electrical and Computer
+  Engineering (IJECE)} \bibinfo{volume}{14}, \bibinfo{pages}{2868--2874}.
+\newblock \DOIprefix\doi{10.11591/ijece.v14i3.pp2868-2874}.
+%Type = Incollection
+\bibitem[{Forero(2024)}]{Forero2024Cronbach}
+\bibinfo{author}{Forero, C.G.}, \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{Cronbach’s alpha}, in:
+  \bibinfo{booktitle}{Encyclopedia of quality of life and well-being research}.
+  \bibinfo{publisher}{Springer}, pp. \bibinfo{pages}{1505--1507}.
+\newblock \DOIprefix\doi{10.1007/978-3-031-17299-1_622}.
 %Type = Inproceedings
 \bibitem[{Garcia et~al.(2021)Garcia, Lacayanga and
   Cruz}]{Garcia2021Application}
@@ -337,6 +426,13 @@
   Conference on Computing Sciences}, \bibinfo{publisher}{IEEE}. pp.
   \bibinfo{pages}{132--136}.
 \newblock \DOIprefix\doi{10.1109/iccs.2012.40}.
+%Type = Misc
+\bibitem[{{Green Lighting}(2024)}]{GreenLighting2024}
+\bibinfo{author}{{Green Lighting}}, \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{The lifespan of and led builb}.
+\newblock \URLprefix
+  \url{https://greenlighting.co.uk/the-lifespan-of-an-led-bulb/}.
+  \bibinfo{note}{accessed on December 06, 2024}.
 %Type = Article
 \bibitem[{Guerrero-Ulloa et~al.(2023a)Guerrero-Ulloa, Andrango-Catota,
   Abad-Alay, Hornos and
@@ -417,6 +513,17 @@
 \newblock \bibinfo{journal}{Sensors} \bibinfo{volume}{23},
   \bibinfo{pages}{790}.
 \newblock \DOIprefix\doi{10.3390/s23020790}.
+%Type = Article
+\bibitem[{Guerrero-Ulloa et~al.(2023f)Guerrero-Ulloa,
+  Rodr{\'\i}guez-Dom{\'\i}nguez and Hornos}]{Guerrero2023Agile}
+\bibinfo{author}{Guerrero-Ulloa, G.},
+  \bibinfo{author}{Rodr{\'\i}guez-Dom{\'\i}nguez, C.}, \bibinfo{author}{Hornos,
+  M.J.}, \bibinfo{year}{2023}f.
+\newblock \bibinfo{title}{Agile methodologies applied to the development of
+  internet of things (iot)-based systems: A review}.
+\newblock \bibinfo{journal}{Sensors} \bibinfo{volume}{23},
+  \bibinfo{pages}{790--824}.
+\newblock \DOIprefix\doi{10.3390/s23020790}.
 %Type = Inproceedings
 \bibitem[{Hachad et~al.(2020)Hachad, Sadiq and Ghanimi}]{Hachad2020}
 \bibinfo{author}{Hachad, T.}, \bibinfo{author}{Sadiq, A.},
@@ -439,6 +546,26 @@
   \bibinfo{volume}{6}.
 \newblock \URLprefix \url{https://www.mdpi.com/2414-4088/6/6/44},
   \DOIprefix\doi{10.3390/mti6060044}.
+%Type = Article
+\bibitem[{Huang et~al.(2025)Huang, Tu, Wang, Li, He and Zhang}]{Huang2025How}
+\bibinfo{author}{Huang, C.}, \bibinfo{author}{Tu, Y.}, \bibinfo{author}{Wang,
+  Q.}, \bibinfo{author}{Li, M.}, \bibinfo{author}{He, T.},
+  \bibinfo{author}{Zhang, D.}, \bibinfo{year}{2025}.
+\newblock \bibinfo{title}{How does social support detected automatically in
+  discussion forums relate to online learning burnout? the moderating role of
+  students’ self-regulated learning}.
+\newblock \bibinfo{journal}{Computers \& Education} \bibinfo{volume}{227},
+  \bibinfo{pages}{105213}.
+\newblock \URLprefix
+  \url{https://www.sciencedirect.com/science/article/pii/S0360131524002276},
+  \DOIprefix\doi{https://doi.org/10.1016/j.compedu.2024.105213}.
+%Type = Misc
+\bibitem[{{Huawha Electronics}(2023)}]{HuawhaElectronics}
+\bibinfo{author}{{Huawha Electronics}}, \bibinfo{year}{2023}.
+\newblock \bibinfo{title}{What is the lifespan of smd piezo buzzer?}
+\newblock \URLprefix
+  \url{https://www.jshnbuzzer.com/new_detail/nid/85649.html}.
+  \bibinfo{note}{accessed on December 06, 2024}.
 %Type = Inproceedings
 \bibitem[{Ili{\'c} et~al.(2021)Ili{\'c}, Bati{\'c}, Mirkovi{\'c},
   Vukmirovi{\'c}, {\'C}ulibrk, Bosakov and Popovi{\'c}}]{Ilic2021Automatic}
@@ -451,6 +578,21 @@
   Symposium INFOTEH-JAHORINA (INFOTEH)}, \bibinfo{publisher}{IEEE}. pp.
   \bibinfo{pages}{1--5}.
 \newblock \DOIprefix\doi{10.1109/infoteh51037.2021.9400699}.
+%Type = Article
+\bibitem[{{ISO/IEC/IEEE}(2017)}]{ISO-IEC-IEEE12207-2017}
+\bibinfo{author}{{ISO/IEC/IEEE}}, \bibinfo{year}{2017}.
+\newblock \bibinfo{title}{Iso/iec/ieee international standard - systems and
+  software engineering -- software life cycle processes}.
+\newblock \bibinfo{journal}{ISO/IEC/IEEE 12207:2017(E) First edition 2017-11} ,
+  \bibinfo{pages}{1--157}\DOIprefix\doi{10.1109/IEEESTD.2017.8100771}.
+%Type = Article
+\bibitem[{{ISO/IEC/IEEE}(2019)}]{ISO-IEC-IEEE12207-2017Application}
+\bibinfo{author}{{ISO/IEC/IEEE}}, \bibinfo{year}{2019}.
+\newblock \bibinfo{title}{Ieee draft - systems and software engineering-life
+  cycle management-part 3: Guidelines for the application of iso/iec/ieee 12207
+  (software life cycle processes)}.
+\newblock \bibinfo{journal}{ISO/IEC/IEEE P24748-3, January 2019} ,
+  \bibinfo{pages}{1--78}.
 %Type = Inproceedings
 \bibitem[{James and Nettikadan(2019)}]{James2019}
 \bibinfo{author}{James, C.}, \bibinfo{author}{Nettikadan, D.},
@@ -460,6 +602,15 @@
   Trends in Electronics and Informatics (ICOEI)}, \bibinfo{publisher}{IEEE}.
   pp. \bibinfo{pages}{659--663}.
 \newblock \DOIprefix\doi{10.1109/icoei.2019.8862534}.
+%Type = Article
+\bibitem[{Jose~Casamayor and Sarshar(2015)}]{Casamayor2015}
+\bibinfo{author}{Jose~Casamayor, D.S.}, \bibinfo{author}{Sarshar, M.},
+  \bibinfo{year}{2015}.
+\newblock \bibinfo{title}{Extending the lifespan of led-lighting products}.
+\newblock \bibinfo{journal}{Architectural Engineering and Design Management}
+  \bibinfo{volume}{11}, \bibinfo{pages}{105--122}.
+\newblock \URLprefix \url{https://doi.org/10.1080/17452007.2013.834813},
+  \DOIprefix\doi{10.1080/17452007.2013.834813}.
 %Type = Inproceedings
 \bibitem[{Kedari et~al.(2021)Kedari, Kapile, Kadole and
   Jaikar}]{Kedari2021Face}
@@ -471,6 +622,17 @@
   Computing, Communication, Embedded and Secure Systems (ACCESS)},
   \bibinfo{publisher}{IEEE}. pp. \bibinfo{pages}{118--123}.
 \newblock \DOIprefix\doi{10.1109/access51619.2021.9563343}.
+%Type = Article
+\bibitem[{Ketsman et~al.(2025)Ketsman, Droog and Qazi}]{Ketsman2025Mapping}
+\bibinfo{author}{Ketsman, O.}, \bibinfo{author}{Droog, A.},
+  \bibinfo{author}{Qazi, S.}, \bibinfo{year}{2025}.
+\newblock \bibinfo{title}{Mapping the prevalence of mixed methods research in
+  educational technology journals}.
+\newblock \bibinfo{journal}{Computers \& Education} \bibinfo{volume}{226},
+  \bibinfo{pages}{105207}.
+\newblock \URLprefix
+  \url{https://www.sciencedirect.com/science/article/pii/S0360131524002215},
+  \DOIprefix\doi{https://doi.org/10.1016/j.compedu.2024.105207}.
 %Type = Inproceedings
 \bibitem[{Kulkarni et~al.(2023)Kulkarni, Anjali, Rohith, Nadagouda and
   Veeresh}]{Kulkarni2023}
@@ -518,6 +680,30 @@
   opencv}, in: \bibinfo{booktitle}{2022 IEEE World AI IoT Congress (AIIoT)},
   \bibinfo{publisher}{IEEE}. pp. \bibinfo{pages}{624--628}.
 \newblock \DOIprefix\doi{10.1109/aiiot54504.2022.9817372}.
+%Type = Article
+\bibitem[{Li et~al.(2024)Li, Lowell, Wang and Li}]{Li2024Systematic}
+\bibinfo{author}{Li, B.}, \bibinfo{author}{Lowell, V.L.},
+  \bibinfo{author}{Wang, C.}, \bibinfo{author}{Li, X.}, \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{A systematic review of the first year of publications
+  on chatgpt and language education: Examining research on chatgpt’s use in
+  language learning and teaching}.
+\newblock \bibinfo{journal}{Computers and Education: Artificial Intelligence}
+  \bibinfo{volume}{7}, \bibinfo{pages}{100266}.
+\newblock \URLprefix
+  \url{https://www.sciencedirect.com/science/article/pii/S2666920X24000699},
+  \DOIprefix\doi{https://doi.org/10.1016/j.caeai.2024.100266}.
+%Type = Article
+\bibitem[{Liu et~al.(2011)Liu, Zhu, Holroyd and Seng}]{Liu2011Status}
+\bibinfo{author}{Liu, C.}, \bibinfo{author}{Zhu, Q.}, \bibinfo{author}{Holroyd,
+  K.A.}, \bibinfo{author}{Seng, E.K.}, \bibinfo{year}{2011}.
+\newblock \bibinfo{title}{Status and trends of mobile-health applications for
+  ios devices: A developer's perspective}.
+\newblock \bibinfo{journal}{Journal of Systems and Software}
+  \bibinfo{volume}{84}, \bibinfo{pages}{2022--2033}.
+\newblock \URLprefix
+  \url{https://www.sciencedirect.com/science/article/pii/S0164121211001610},
+  \DOIprefix\doi{https://doi.org/10.1016/j.jss.2011.06.049}.
+  \bibinfo{note}{mobile Applications: Status and Trends}.
 %Type = Inproceedings
 \bibitem[{Liu et~al.(2021)Liu, Liao, Chou and Fan}]{Liu2021Objetcs}
 \bibinfo{author}{Liu, F.Y.}, \bibinfo{author}{Liao, C.L.},
@@ -528,6 +714,41 @@
   10th Global Conference on Consumer Electronics (GCCE)},
   \bibinfo{publisher}{IEEE}. pp. \bibinfo{pages}{454--455}.
 \newblock \DOIprefix\doi{10.1109/gcce53005.2021.9750962}.
+%Type = Article
+\bibitem[{Loh et~al.(2025)Loh, Kraaykamp and {van Hek}}]{Loh2025Plugging}
+\bibinfo{author}{Loh, R.S.M.}, \bibinfo{author}{Kraaykamp, G.},
+  \bibinfo{author}{{van Hek}, M.}, \bibinfo{year}{2025}.
+\newblock \bibinfo{title}{Plugging in at school: Do schools nurture digital
+  skills and narrow digital skills inequality?}
+\newblock \bibinfo{journal}{Computers \& Education} \bibinfo{volume}{226},
+  \bibinfo{pages}{105195}.
+\newblock \URLprefix
+  \url{https://www.sciencedirect.com/science/article/pii/S0360131524002094},
+  \DOIprefix\doi{https://doi.org/10.1016/j.compedu.2024.105195}.
+%Type = Article
+\bibitem[{Mafi and Mirian-Hosseinabadi(2024)}]{Mafi2024Regression}
+\bibinfo{author}{Mafi, Z.}, \bibinfo{author}{Mirian-Hosseinabadi, S.H.},
+  \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{Regression test selection in test-driven
+  development}.
+\newblock \bibinfo{journal}{Automated Software Engineering}
+  \bibinfo{volume}{31}, \bibinfo{pages}{9}.
+\newblock \DOIprefix\doi{10.1007/s10515-023-00405-w}.
+%Type = Article
+\bibitem[{Marabesi et~al.(2024)Marabesi, Garc{\'\i}a-Holgado and
+  Garc{\'\i}a-Pe{\~n}alvo}]{Marabesi2024Exploring}
+\bibinfo{author}{Marabesi, M.}, \bibinfo{author}{Garc{\'\i}a-Holgado, A.},
+  \bibinfo{author}{Garc{\'\i}a-Pe{\~n}alvo, F.J.}, \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{Exploring the connection between the tdd practice and
+  test smells—a systematic literature review}.
+\newblock \bibinfo{journal}{Computers} \bibinfo{volume}{13},
+  \bibinfo{pages}{79}.
+\newblock \DOIprefix\doi{10.3390/computers13030079}.
+%Type = Misc
+\bibitem[{{Microsoft Corporation}(2024)}]{Microsoft2024Visual}
+\bibinfo{author}{{Microsoft Corporation}}, \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{Visual studio code - code editing. redefined}.
+\newblock \URLprefix \url{https://code.visualstudio.com/}.
 %Type = Article
 \bibitem[{Mohamed and Lamia(2018)}]{Mohamed2018Implementing}
 \bibinfo{author}{Mohamed, H.}, \bibinfo{author}{Lamia, M.},
@@ -611,6 +832,17 @@
   \bibinfo{pages}{12839}.
 \newblock \DOIprefix\doi{10.1111/exsy.12839}.
 %Type = Article
+\bibitem[{Palioura and Sapounidis(2025)}]{Palioura2025Storylling}
+\bibinfo{author}{Palioura, M.}, \bibinfo{author}{Sapounidis, T.},
+  \bibinfo{year}{2025}.
+\newblock \bibinfo{title}{“storytelling and educational robotics: A scoping
+  review (2004–2024)”}.
+\newblock \bibinfo{journal}{Computers \& Education} \bibinfo{volume}{225},
+  \bibinfo{pages}{105186}.
+\newblock \URLprefix
+  \url{https://www.sciencedirect.com/science/article/pii/S0360131524002008},
+  \DOIprefix\doi{https://doi.org/10.1016/j.compedu.2024.105186}.
+%Type = Article
 \bibitem[{Palmer et~al.(2022)Palmer, Moulton, Stone, Lavender, Fulford and
   Phillips}]{Palmer2022impact}
 \bibinfo{author}{Palmer, R.H.}, \bibinfo{author}{Moulton, M.K.},
@@ -665,9 +897,18 @@
 \bibinfo{author}{Salter, P.E.}, \bibinfo{year}{2014}.
 \newblock \bibinfo{title}{Exploring a whole-school integrated approach to
   developing students' self-regulated learning (SRL) skills}.
-\newblock Ph.D. thesis.
+\newblock Ph.D. thesis. University of Technology Sydney.
 \newblock \URLprefix
   \url{https://www.proquest.com/docview/3039732343/$N?accountid=14542&sourcetype=Dissertations%20&%20Theses}.
+%Type = Article
+\bibitem[{Sciarra and Elfner(2024)}]{Sciarra2024Smash}
+\bibinfo{author}{Sciarra, A.}, \bibinfo{author}{Elfner, H.},
+  \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{Smash as an event generator for heavy-ion
+  collisions}.
+\newblock \bibinfo{journal}{Frontiers in Physics} \bibinfo{volume}{12},
+  \bibinfo{pages}{1502621}.
+\newblock \DOIprefix\doi{10.3389/fphy.2024.1502621}.
 %Type = Article
 \bibitem[{Seidu et~al.(2022)Seidu, Arthur-Holmes, Agbaglo and
   Ahinkorah}]{Abdul-Aziz2022}
@@ -701,6 +942,14 @@
   Conference on Intelligent Technologies (CONIT)}, \bibinfo{publisher}{IEEE}.
   pp. \bibinfo{pages}{1--6}.
 \newblock \DOIprefix\doi{10.1109/conit51480.2021.9498494}.
+%Type = Misc
+\bibitem[{{Shenzhen Cary Technology Co.,Ltd}()}]{Cary}
+\bibinfo{author}{{Shenzhen Cary Technology Co.,Ltd}}, .
+\newblock \bibinfo{title}{Led lifespan: light emitting diode lifetime \& mtbf -
+  knowledge}.
+\newblock \URLprefix
+  \url{https://www.carylighting.com/info/led-lifespan-light-emitting-diode-lifetime-53797730.html}.
+  \bibinfo{note}{accessed on December 06 2024}.
 %Type = Inproceedings
 \bibitem[{Silva et~al.(2021)Silva, Sudasinghe, Hansika, Gamage and
   Gamage}]{Silva2021AI}
@@ -712,6 +961,13 @@
   Conference on Advancements in Computing (ICAC)}, \bibinfo{publisher}{IEEE}.
   pp. \bibinfo{pages}{294--299}.
 \newblock \DOIprefix\doi{10.1109/icac54203.2021.9671209}.
+%Type = Misc
+\bibitem[{Studio(2024)}]{Android2024Android}
+\bibinfo{author}{Studio, A.}, \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{Android mobile app development tools | android
+  developers}.
+\newblock \URLprefix \url{https://developer.android.com/}.
+  \bibinfo{note}{accessed on June 28, 2024}.
 %Type = Inproceedings
 \bibitem[{Sudharshan and Raj(2018)}]{Sudharshan2018Object}
 \bibinfo{author}{Sudharshan, D.P.}, \bibinfo{author}{Raj, S.},
@@ -812,6 +1068,17 @@
   \bibinfo{volume}{14}.
 \newblock \DOIprefix\doi{10.30935/cedtech/12456}.
 %Type = Article
+\bibitem[{Wang et~al.(2025)Wang, Maeda and Chang}]{Wang2025Development}
+\bibinfo{author}{Wang, X.}, \bibinfo{author}{Maeda, Y.},
+  \bibinfo{author}{Chang, H.H.}, \bibinfo{year}{2025}.
+\newblock \bibinfo{title}{Development and techniques in learner model in
+  adaptive e-learning system: A systematic review}.
+\newblock \bibinfo{journal}{Computers \& Education} \bibinfo{volume}{225},
+  \bibinfo{pages}{105184}.
+\newblock \URLprefix
+  \url{https://www.sciencedirect.com/science/article/pii/S0360131524001982},
+  \DOIprefix\doi{https://doi.org/10.1016/j.compedu.2024.105184}.
+%Type = Article
 \bibitem[{Warren et~al.(2015)Warren, Zheng, Das, Young, Swanson, Weitlauf and
   Sarkar}]{Warren2015Brief}
 \bibinfo{author}{Warren, Z.}, \bibinfo{author}{Zheng, Z.},
@@ -836,6 +1103,16 @@
   Systems - Proceedings}, \bibinfo{publisher}{Association for Computing
   Machinery}. pp. \bibinfo{pages}{2348 -- 2354}.
 \newblock \DOIprefix\doi{10.1145/2851581.2892282}.
+%Type = Article
+\bibitem[{Zegzhda et~al.(2018)Zegzhda, Poltavtseva, Pechenkin, Lavrova and
+  Zaitseva}]{Zegzhda2018Use}
+\bibinfo{author}{Zegzhda, P.D.}, \bibinfo{author}{Poltavtseva, M.A.},
+  \bibinfo{author}{Pechenkin, A.I.}, \bibinfo{author}{Lavrova, D.S.},
+  \bibinfo{author}{Zaitseva, E.}, \bibinfo{year}{2018}.
+\newblock \bibinfo{title}{A use case analysis of heterogeneous semistructured
+  objects in information security problems}.
+\newblock \bibinfo{journal}{Automatic Control and Computer Sciences}
+  \bibinfo{volume}{52}, \bibinfo{pages}{918--930}.
 %Type = Article
 \bibitem[{Zhang and Yu(2022)}]{Zhang2022}
 \bibinfo{author}{Zhang, J.}, \bibinfo{author}{Yu, H.}, \bibinfo{year}{2022}.
