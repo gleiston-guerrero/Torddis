@@ -1,4 +1,4 @@
-\begin{thebibliography}{110}
+\begin{thebibliography}{112}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -758,6 +758,18 @@
 \newblock \bibinfo{journal}{Computers \& Education} \bibinfo{volume}{124},
   \bibinfo{pages}{62--76}.
 \newblock \DOIprefix\doi{10.1016/j.compedu.2018.05.011}.
+%Type = Article
+\bibitem[{Moss and Wilson(2018)}]{Moss2018Why}
+\bibinfo{author}{Moss, S.A.}, \bibinfo{author}{Wilson, S.G.},
+  \bibinfo{year}{2018}.
+\newblock \bibinfo{title}{Why are older people often so responsible and
+  considerate even when their future seems limited? a systematic review}.
+\newblock \bibinfo{journal}{The International Journal of Aging and Human
+  Development} \bibinfo{volume}{86}, \bibinfo{pages}{82--108}.
+\newblock \DOIprefix\doi{10.1177/0091415017689883},
+  \href{http://arxiv.org/abs/https://doi.org/10.1177/0091415017689883}{\tt
+  arXiv:https://doi.org/10.1177/0091415017689883}. \bibinfo{note}{pMID:
+  28105868}.
 %Type = Phdthesis
 \bibitem[{Muljana(2022)}]{Muljana2022Instructional}
 \bibinfo{author}{Muljana, P.S.}, \bibinfo{year}{2022}.
@@ -961,6 +973,13 @@
   Conference on Advancements in Computing (ICAC)}, \bibinfo{publisher}{IEEE}.
   pp. \bibinfo{pages}{294--299}.
 \newblock \DOIprefix\doi{10.1109/icac54203.2021.9671209}.
+%Type = Inproceedings
+\bibitem[{Simon et~al.(2017)Simon, Camus and Rebillat}]{Simon2017Evolution}
+\bibinfo{author}{Simon, C.}, \bibinfo{author}{Camus, G.},
+  \bibinfo{author}{Rebillat, F.}, \bibinfo{year}{2017}.
+\newblock \bibinfo{title}{Electrical resistivity monitoring of a
+  {SiC/PyC/[Si-B-C]} composite under oxidizing conditions}, in:
+  \bibinfo{booktitle}{Journ{\'e}es Nationales sur les Composites 2017}.
 %Type = Misc
 \bibitem[{Studio(2024)}]{Android2024Android}
 \bibinfo{author}{Studio, A.}, \bibinfo{year}{2024}.

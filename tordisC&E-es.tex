@@ -27,11 +27,14 @@
 %\usepackage[numbers]{natbib}
 %\usepackage[authoryear]{natbib}
 \usepackage[export]{adjustbox}
+\usepackage{amssymb}
+\usepackage{fontawesome}
 \usepackage[authoryear,longnamesfirst]{natbib}
 \usepackage{tabularx}
 \usepackage{subcaption}
 \usepackage{tikz}
 \usepackage{pgfplots}
+
 \graphicspath{{figs/}}
 
 %%%Author macros
@@ -1362,7 +1365,7 @@
 						Los tiempos de reconocimiento para cada tarea varían, lo que indica una variabilidad en la respuesta del sistema. La mayoría de los tiempos de reconocimiento están dentro de un rango razonable, lo que sugiere una respuesta rápida y efectiva del sistema en la mayoría de los casos.
 					
 			\subsubsection{Mantenimiento}
-				Esta fase no fue ejecutada debido al corto tiempo de desarrollo para cada entregable, y además para la evaluación del proyecto. Sin embargo, el sistema debe ser mantenido bajo las indicaciones de prevención y de vida útil de cada uno de los componentes para funcionar correctamente. La Tabla \ref{tab:maintenance-tasks} describe algunas tareas de mantenimiento tentativas. En general, el mantenimiento del sistema se debe considerar de manera trimestral y semestral, aunque su frecuencia puede variar dependiendo del entorno en el que se lo use.
+				Esta fase no fue ejecutada debido al corto tiempo de desarrollo para cada entregable, y además para la evaluación del proyecto. Sin embargo, el sistema debe ser mantenido bajo las indicaciones de prevención y de vida útil de cada uno de los componentes para funcionar correctamente. La Tabla \ref{tab:maintenance-tasks} describe algunas tareas de mantenimiento tentativas. En general, el mantenimiento del sistema se debe considerar hacerlo de manera trimestral y semestral, aunque su frecuencia puede variar dependiendo del entorno en el que se lo use.
 			
 				\begin{table}[h]
 					\centering
@@ -1380,7 +1383,7 @@
 						\bottomrule
 					\end{tabularx}
 				\end{table}
-				Además, el mantenimiento correctivo por cada componente físico del sistema se debe realizar antes que la vida útil del componente llegue a su límite. La vida útil de cada uno de los componentes se muestra en la Tabla \ref{tab:ShelfLife}.
+				Los tiempos para el mantenimiento preventivo se consideran de acuerdo al componente con tiempo de vida útil. Así mismo¡, el mantenimiento correctivo por cada componente físico del sistema se debe realizar antes que la vida útil del componente llegue a su límite. La vida útil de cada uno de los componentes se muestra en la Tabla \ref{tab:ShelfLife}. El tiempo de vida útil de las resistencias se espera que sea significativamente mayor al del componente con la mayor durabilidad.
 				
 				\begin{table}[h]
 					\centering
@@ -1388,53 +1391,209 @@
 					\label{tab:ShelfLife}
 					\begin{tabularx}{\textwidth}{cXX}
 						\toprule
-						\textbf{Componente} & \textbf{Tiempo de vida útil} & Reducción de la vida útil\\
+						\textbf{Componente} & \textbf{Vida útil (años)} & Condiciones que reducen su vida útil\\
 						\midrule
-						Esp32CAM & 20 \cite{Espressif2022ESP32-CAM,Espressif2022ESP32Forum} & Exposición a temperaturas extremas, alta humedad, polvo o vibraciones mecánicas\\
-						ESP8266 Node MCU & 20.83 \cite{Amri2018Improving} a 57 \cite{Ardumotica2023,Espressif2022ESP32Forum}. & Temperaturas extremas, niveles altos de humedad, polvo, picos de voltaje, ruido en la fuente, ciclo frecuentes de apagado y encendido, uso intenso de WiFi en máxima potencia, actualizaciones de firmware.\\
-						Buzzer Pasivo & 3 \cite{HuawhaElectronics} & Voltaje excesivo, sobrecorriente, temperaturas extremas, vibraciones o impactos mecánicos, humedad o corrosión, operación continua prolongada. \\
-						Leds & 3 \cite{Casamayor2015} - 14 \cite{Cary,GreenLighting2024} & Desgaste de componentes, condiciones de fabricación, \\
-						Resistencias y otros & Probar el sistema informático (servidor de aplicaciones web, servicios web, aplicación móvil, dispositivo IoT).\\
+						Esp32CAM & 20 \citep{Espressif2022ESP32-CAM,Espressif2022ESP32Forum} & Exposición a temperaturas extremas, alta humedad, polvo o vibraciones mecánicas\\
+						ESP8266 Node MCU & 20.83 \citep{Amri2018Improving} a 57 \citep{Ardumotica2023,Espressif2022ESP32Forum}. & Temperaturas extremas, niveles altos de humedad, polvo, picos de voltaje, ruido en la fuente, ciclo frecuentes de apagado y encendido, uso intenso de WiFi en máxima potencia, actualizaciones de firmware.\\
+						Buzzer Pasivo & 3 \citep{HuawhaElectronics} & Voltaje excesivo, sobrecorriente, temperaturas extremas, vibraciones o impactos mecánicos, humedad o corrosión, operación continua prolongada. \\
+						Leds & 3 \citep{Casamayor2015} - 14 \citep{Cary,GreenLighting2024} & Desgaste de componentes, condiciones de fabricación, \\
+						Resistencias y otros & $\infty$ (se espera) & Tensiones altas \citep{Simon2017Evolution}. \\
 						\bottomrule
 					\end{tabularx}
 				\end{table}
+				La estimación de los años de vida útil de los componentes se ha fundamentado prioritariamente en referencias de documentos científicos. No obstante, en ausencia de fuentes académicas pertinentes, se han considerado las especificaciones proporcionadas por fabricantes y distribuidores, complementadas con información obtenida de foros especializados en ciertos casos.
 				
 		\subsection{Análisis estadístico del estudio}
-			
-			Se determinó realizar el análisis de correlación que existe entre las afirmaciones (5) "Después de dejar de usar el dispositivo, su tutorado mejoró el nivel de autoregulación y concentración en la realización de tareas" y (6) "Aunque es poco tiempo de utilización del dispositivo, mejoraría considerablemente el cumplimiento de tareas, por ende el nivel de aprovechamiento de los estudios de su tutorado", con el resto de variables determinando que nada tiene que ver el tipo de institución educativa con esas afirmaciones.
+				\subsubsection{Estadísticas Descriptivas}
+				En esta sección de Resultados y Discusión, se presentan y analizan las estadísticas descriptivas obtenidas de los datos recolectados. Estas estadísticas desempeñan un papel crucial en el entendimiento del comportamiento de las variables evaluadas y su impacto en la aceptación y efectividad del sistema.
 				
-			En la tabla \ref{table:correlations} se muestran los índices de correlación r de la afirmación (5).
+				la tabla \ref{table:DescriptiveStatistics} muestra las métricas de tendencia central, como la media y la mediana, permiten identificar patrones generales en las respuestas de los tutores y estudiantes. Por ejemplo, el tiempo promedio dedicado por los tutores a la supervisión de tareas escolares de manera diaria es de 2 horas, lo que indica una participación activa pero limitada debido a restricciones de tiempo. Las respuestas a las afirmaciones relacionadas con la percepción y uso del dispositivo (1 a 7) reflejan valores medios consistentemente altos (entre 3.58 y 4.42), lo que sugiere una aceptación generalizada del sistema.
 				
-			\begin{table}[h!]
-				\centering
-				\caption{Correlaciones entre variables y la afirmación (5)}
-				\begin{tabularx}{\textwidth}{Xr}
-					\toprule
-					\textbf{Variable} & \textbf{Correlación con la afirmación (5)} \\
-					\midrule
-					Tiempo dedicado a la supervisión de tareas (Horas)                                   & 0.184 \\
-					Edad Estudiante                                                                      &-0.141 \\
-					(1) El dispositivo fue tomado por su tutorado como algo atractivo                    & 0.776 \\
-					(3) Su tutorado tomó desapercibida la presencia del dispositivo                      & 0.750 \\
-					(4) Utilizó el dispositivo todo el tiempo efectivo dedicado para hacer las tareas.   & 0.816 \\
-					(6) Aunque es poco tiempo de utilización del dispositivo                             & 1.000 \\
-					(7) Está dispuesto a seguir utilizando el dispositivo                                & 0.776 \\
-					\bottomrule
-				\end{tabularx}
-				\label{table:correlations}
-			\end{table}			
+				\begin{table}[h!]
+					\centering
+					\caption{Estadísticas Descriptivas}
+					\begin{tabularx}{0.85\textwidth}{Xcccccccc}
+						\toprule
+						\textbf{Estadística} & \textbf{Horas de Supervisión} & \textbf{(1)} & \textbf{(2)} & \textbf{(3)} & \textbf{(4)} & \textbf{(5)} & \textbf{(6)} & \textbf{(7)} \\
+						\midrule
+						Media & 2.00 & 4.42 & 4.42 & 2.67 & 3.58 & 4.00 & 4.42 & 4.42 \\
+						Mediana & 2.00 & 5.00 & 4.00 & 3.00 & 4.00 & 4.00 & 5.00 & 5.00 \\
+						Desviación estándar & 0.69 & 0.90 & 0.67 & 0.98 & 0.90 & 0.85 & 0.79 & 0.79 \\
+						Mínimo & 1.00 & 3.00 & 3.00 & 1.00 & 2.00 & 3.00 & 3.00 & 3.00 \\
+						Máximo & 3.00 & 5.00 & 5.00 & 4.00 & 5.00 & 5.00 & 5.00 & 5.00 \\
+						\bottomrule
+					\end{tabularx}
+					\label{table:DescriptiveStatistics}
+					\vspace{0.3em} % Espaciado entre la tabla y el pie
+					\parbox{0.85\textwidth}{\footnotesize \centering
+						(1): Afirmación (1), Afirmación (2),..., Afirmación (7).\\
+						\textit{Horas de supervisión} representa el tiempo diario que los tutores dedican a la supervisión de sus hijos en cuánto a la realización de tareas escolares. Las \textit{Afirmaciones de la (1) a la (7)} corresponden a los ítems evaluados en la escala de Likert relacionada con la efectividad del prototipo (ver anexo \ref{Appendix:Effectivity}).
+					}
+				\end{table}
 				
-			La mejora percibida en la autorregulación del tutorado presenta una correlación positiva fuerte con la percepción de atractivo del dispositivo. Esto sugiere que un diseño atractivo fomenta el compromiso de los estudiantes, lo que contribuye a mejorar sus habilidades de autorregulación.
+				Por otro lado, los indicadores de dispersión, como la desviación estándar, ofrecen información sobre la variabilidad de las respuestas. La desviación estándar de las afirmaciones (0.67 a 0.98) indica que las percepciones de los participantes fueron relativamente homogéneas, lo que refuerza la consistencia en la experiencia de uso del dispositivo. Sin embargo, la mayor variabilidad en la afirmación (3) sugiere que algunos estudiantes pudieron percibir más intrusividad en el dispositivo, lo que podría requerir ajustes de diseño.
 				
-			Asimismo, una correlación moderada-alta indica que los tutores que consideraron que la aplicación reflejaba correctamente los eventos percibieron mayores mejoras en la autorregulación de sus tutorados. Esto subraya la relevancia de la precisión del sistema para ganar la confianza de los usuarios y garantizar su efectividad.
+				Asimismo, los valores mínimos y máximos revelan las posibles diferencias en la experiencia de los participantes, destacando áreas que podrían mejorarse. Por ejemplo, algunos tutores dedicaron solo 1 hora a la supervisión, mientras que otros alcanzaron las 3 horas, lo que podría influir en las respuestas relacionadas con la efectividad del sistema.
 				
-			Por otro lado, una correlación positiva moderada revela que los estudiantes que no se sintieron distraídos por el dispositivo tuvieron una mayor probabilidad de mejorar en su autorregulación. Esto evidencia la importancia de un diseño que sea poco intrusivo y que permita mantener el enfoque en las tareas académicas.
+				Estos resultados permiten identificar no solo el nivel de aceptación general del sistema, sino también las áreas que podrían beneficiarse de intervenciones específicas. En conjunto, las estadísticas descriptivas proporcionan un marco para validar el diseño del dispositivo y fundamentar la discusión sobre su potencial pedagógico y práctico.
 				
-			Además, la percepción de que el dispositivo mejora las habilidades de autorregulación incluso en períodos de uso corto muestra una correlación muy fuerte con esta afirmación. Esto refuerza la efectividad del sistema como una herramienta para el desarrollo académico.
-				
-			Finalmente, la disposición a seguir utilizando el dispositivo presenta la correlación más alta con la mejora en la autorregulación y la concentración. Esto refleja una aceptación generalizada del sistema, tanto por parte de los tutores como de los estudiantes, y reafirma su potencial para generar impacto positivo en el entorno educativo.
-				
-		
+				\subsubsection{Análisis de la Normalidad de los Datos}
+					Para evaluar si las variables continuas, como la edad del tutor, horas de supervisión y edad del estudiante, siguen una distribución normal se realizó la prueba de Shapiro-Wilk. Los resultados se muestra en la Tabla \ref{table:Shaphiro-Wilk}.
+					
+					\begin{table}[h!]
+						\centering
+						\caption{Resultados del análisis de normalidad mediante la prueba de Shapiro-Wilk}
+						\begin{tabularx}{0.75\textwidth}{Xccc}
+							\toprule
+							\textbf{Variable} & \textbf{Estadístico} &  \textbf{p-valor} & \textbf{Distribución Normal} \\
+							\midrule
+							Edad del tutor & 0.912 & 0.228 & \(\checkmark\) \\
+							Localización de la vivienda & 0.640 & 0.000 & \(\times\) \\
+							Horas de supervisión & 0.809 & 0.012 & \(\times\) \\
+							Edad del estudiante & 0.903 & 0.174 & \(\checkmark\) \\
+							Afirmación (1) & 0.729 & 0.002 & \(\times\) \\
+							Afirmación (2) & 0.784 & 0.002 & \(\times\) \\
+							Afirmación (3) & 0.863 & 0.053 & \(\checkmark\) \\
+							Afirmación (4) & 0.867 & 0.060 & \(\checkmark\) \\
+							Afirmación (5) & 0.828 & 0.020 & \(\times\) \\
+							Afirmación (6) & 0.828 & 0.020 & \(\times\) \\
+							Afirmación (7) & 0.729 & 0.002 & \(\times\) \\
+							\bottomrule
+						\end{tabularx}
+						\label{table:Shaphiro-Wilk}
+						\vspace{0.3em} % Espaciado entre la tabla y el pie
+						\parbox{0.75\textwidth}{\footnotesize \centering
+							\(\times\): No sigue una distribución normal. \(\checkmark\): Sigue una distribución normal.\\
+							La variable "\textit{localización de la vivienda}", representa si la vivienda está en el sector rural o urbano. La columna \textit{Estadístico} muestra los valores de los coeficientes obtenidos mediante la prueba de Shapiro-Wilk. El \textit{p-valor} representa el nivel de significancia de la prueba.
+						}
+					\end{table}
+					
+					El \textit{p-valor} de la Tabla \ref{table:Shaphiro-Wilk}, indica si se acepta o rechaza la hipótesis nula, es decir, si las variables siguen o no una distribución normal. En la columna \textit{Distribución Normal}, muestran la conclusión de las pruebas de hipótesis (H0 : La variable sigue una distribución normal. H1: la variable no sigue una distribución normal.)
+					
+					Los resultados de la prueba de Shapiro-Wilk indicaron que algunas variables seguían una distribución normal, mientras que otras no lo hacían. Para garantizar la validez de los análisis posteriores, se seleccionaron pruebas estadísticas adecuadas en función de estos resultados.
+					
+					\paragraph{\textbf{Variables con distribución normal:}}
+					Las variables "Edad del tutor", "Edad del estudiante", "Afirmación \textit{(3) Su tutorado tomó desapercibida la presencia del dispositivo}" y "Afirmación (4) \textit{Utilizó el dispositivo todo el tiempo efectivo dedicado para hacer las tareas}" mostraron un p-valor mayor a 0.05, lo que permitió emplear pruebas paramétricas. Se utilizaron pruebas de correlación de Pearson y análisis de varianza (ANOVA) para explorar las relaciones y diferencias significativas entre estas variables y los factores correspondientes.
+					
+					\paragraph*{Coeficientes de Correlación de Pearson:}
+					En la Tabla \ref{table:Pearson-Correlation} se presentan los resultados de la relación entre la afirmación (5) y las variables con distribución normal, utilizando los coeficientes de correlación de Pearson.
+					
+					\begin{table}[h!]
+						\centering
+						\caption{Correlaciones entre las variables con distribución normal}
+						\begin{tabularx}{0.75\textwidth}{Xccc}
+							\toprule
+							\textbf{Variable} & \textbf{Correlación con Afirmación (5)} &  \textbf{p-valor} & \textbf{Tipo de relación} \\
+							\midrule
+							Edad del tutor & 0.272 & 0.392 & \(\times\) \\ % Sin relación significativa
+							Edad del estudiante & -0.141 & 0.663 & \(\times\) \\ % Sin relación significativa
+							Afirmación (3) & 0.750 & 0.005 & \(\bigtriangleup\) \\ % Relación moderada
+							Afirmación (4) & 0.816 & 0.001 & \(\checkmark\) \\ % Relación fuerte
+							\bottomrule
+						\end{tabularx}
+						\label{table:Pearson-Correlation}
+						\vspace{0.3em} % Espaciado entre la tabla y el pie
+						\parbox{0.75\textwidth}{\footnotesize \centering
+							\(\times\): Sin relación significativa. \(\bigtriangleup\): Relación moderada. \(\checkmark\): Relación fuerte
+						}
+					\end{table}
+					
+					El análisis de \textit{\textbf{correlaciones de Pearson}} permitió identificar las relaciones entre las variables con distribución normal y la afirmación (5), "\textit{Después de dejar de usar el dispositivo, su tutorado mejoró el nivel de autorregulación y concentración en la realización de tareas}". Las correlaciones observadas fueron estadísticamente significativas en varios casos, lo que destaca patrones importantes sobre el impacto del dispositivo.
+					
+					En primer lugar, las variables de las afirmaciones (3) \textit{"Su tutorado tomó desapercibida la presencia del dispositivo"} y (4) "\textit{Utilizó el dispositivo todo el tiempo efectivo dedicado para hacer las tareas}" presentaron correlaciones positivas fuertes con la \textit{afirmación (5)}, con valores de \textbf{0.750} y \textbf{0.816} respectivamente. Esto sugiere que el diseño no intrusivo del dispositivo (afirmación 3) y su uso efectivo durante el tiempo dedicado a las tareas (afirmación 4) son factores clave que contribuyen a la mejora percibida en la autorregulación. La fortaleza de estas correlaciones resalta la importancia de la usabilidad y la funcionalidad del dispositivo en la experiencia del usuario.
+					
+					La edad suele percibirse como un indicador de mayor responsabilidad \citep{Moss2018Why}. Sin embargo, en este estudio, las variables "\textit{Edad del tutor}" y "\textit{Edad del estudiante}" mostraron correlaciones débiles y no significativas, con valores de \textbf{0.272} y \textbf{-0.141}, respectivamente. Estos hallazgos sugieren que la efectividad percibida del dispositivo no está influenciada ni por la edad de los tutores ni por la de los estudiantes. Este resultado resalta la versatilidad del sistema, demostrando su aplicabilidad en diversos grupos demográficos sin verse limitado por factores relacionados con la edad.
+					
+					Finalmente, los resultados obtenidos subrayan que las características directamente relacionadas con el uso del dispositivo, como su diseño y efectividad operativa, tienen un mayor impacto en la mejora de la autorregulación que los factores demográficos. Esto proporciona evidencia sólida para el diseño centrado en el usuario como una estrategia clave en el desarrollo de sistemas educativos basados en tecnología.
+					
+					\paragraph*{Análisis ANOVA:}
+					
+					\begin{table}[h!]
+						\centering
+						\caption{Resultados del Análisis ANOVA}
+						\begin{tabularx}{0.75\textwidth}{Xcrrrrc}
+							\toprule
+							\textbf{Variable} & \textbf{df} &  \textbf{sum\_sq} & \textbf{mean\_sq} & \textbf{F} & \textbf{PR(>F)} & \textbf{Conclusión}\\
+							\midrule
+							Edad del tutor & 1 & 0.445 & 0.445 & 2.984 & 0.128 & \(\times\)  \\ %No hay diferencias significativas.
+							Edad del estudiante & 1 & 0.006 & 0.006 & 0.041 & 0.846 & \textit{NS}\\ % Sin efecto significativo.\\ 
+							Afirmación (3) & 1 & 3.031 & 3.031 & 20.306 & 0.003 & \(\bigstar\) \\ % Relación altamente significativa.
+							Afirmación (4) & 1 & 1.473 & 1.473 & 9.868 & 0.016 & \(\checkmark\) \\ %Relación significativa.
+							Residual & 7 & 1.045 & 0.149 & NaN & NaN & \faExclamationTriangle \\ %Contribución acumulada de la variabilidad no explicada.
+							\bottomrule
+						\end{tabularx}
+						\label{table:ANOVA-Results}
+						\vspace{0.3em} % Espaciado entre la tabla y el pie
+						\parbox{0.75\textwidth}{\footnotesize 
+							\(\times\): No hay diferencias significativas. \textit{NS}: Sin efecto significativo. \(\checkmark\): Relación significativa. \(\bigstar\): Relación altamente significativa. \faExclamationTriangle: Contribución acumulada de la variabilidad no explicada: Modelo mejorable.
+						}
+					\end{table}
+					
+					El valor residual refleja la porción de variabilidad en los datos que no ha sido explicada por las variables consideradas en el modelo. Este valor indica que, aunque algunas variables, como las afirmaciones (3) y (4), muestran efectos significativos en la afirmación (5), existe una parte de la variabilidad que no puede atribuirse directamente a las variables incluidas.
+					
+					En este caso, el residual sugiere que hay factores adicionales, posiblemente no considerados en este modelo, que también influyen en la percepción de mejora en la autorregulación tras el uso del dispositivo. Estos factores podrían estar relacionados con características individuales de los tutores o estudiantes, el contexto específico de las pruebas, o incluso aspectos técnicos del dispositivo que no fueron directamente medidos.
+					
+					\paragraph{\textbf{Variables sin distribución normal:}}
+					Para las variables "Horas de supervisión", "Afirmación \textit{(1) El dispositivo fue tomado por su tutorado como algo atractivo}", "Afirmación \textit{(2) La aplicación móvil mostró correctamente los eventos que sucedieron}", "Afirmación \textit{(6) Aunque es poco tiempo de utilización del dispositivo, mejoraría considerablemente el cumplimiento de tareas, por ende el nivel de aprovechamiento de los estudios de su tutorado.}" y "Afirmación \textit{(7) Está dispuesto a seguir utilizando el dispositivo}", cuyo p-valor fue menor a 0.05, se realizaron pruebas no paramétricas. En este caso, se aplicó el coeficiente de correlación de Spearman para evaluar las relaciones entre estas variables y se utilizó la prueba de Kruskal-Wallis para analizar diferencias entre grupos categóricos.
+					
+					\paragraph*{Coeficientes de Correlación de Spearman: }
+					En la Tabla \ref{table:Spearman-Correlation} se muestran los resultados del coeficiente de Spearman.
+						
+					\begin{table}[h!]
+						\centering
+						\caption{Correlaciones entre las variables con distribución No normal}
+						\begin{tabularx}{0.85\textwidth}{Xccc}
+							\toprule
+							\textbf{Variable} & \textbf{Correlación con Afirmación (5)} &  \textbf{p-valor} & \textbf{Tipo de relación} \\
+							\midrule
+							Tiempo de supervisión de tareas & 0.192 & 0.549 & \(\times\)  \\ % (Sin relación significativa) \\
+							Afirmación (1) & 0.770 & 0.003 & \(\checkmark\) \\ %(Relación fuerte)
+							Afirmación (2) & 0.551 & 0.063 & \(\bigtriangleup\)  \\ %(Relación moderada)
+							Afirmación (6) & 1.000 & 0.000 & \(\bigstar\)  \\ %(Relación perfecta)
+							Afirmación (7) & 0.770 & 0.003 & \(\checkmark\)  \\ %(Relación fuerte)
+							\bottomrule
+						\end{tabularx}
+						\label{table:Spearman-Correlation}
+						\vspace{0.3em} % Espaciado entre la tabla y el pie
+						\parbox{0.75\textwidth}{\footnotesize 
+							\(\times\): Sin relación significativa. \(\bigtriangleup\): Relación moderada. \(\bigstar\): Relación perfecta. \(\checkmark\): Relación fuerte.
+						}
+					\end{table}
+					
+					Los resultados del análisis de \textit{\textbf{correlación de Spearman}} proporcionaron información valiosa sobre las relaciones entre las variables con distribución no normal y la Afirmación (5).
+					
+					La Afirmación (1) mostró una correlación fuerte y significativa (\textbf{0.770}, \textit{p}=0.003), lo que indica que la percepción positiva inicial del dispositivo está altamente relacionada con la mejora percibida en la autorregulación del estudiante. Esto subraya la importancia del diseño atractivo y funcional del dispositivo como factor clave para fomentar el uso y obtener resultados positivos.
+					
+					Por otro lado, la Afirmación (2) presentó una correlación moderada pero no significativa (\textbf{0.551, p=0.063}). Aunque los resultados no permiten confirmar una relación estadísticamente significativa, la tendencia observada sugiere que la precisión en la detección de eventos puede contribuir a generar confianza en el sistema, lo que podría tener un impacto indirecto en la percepción de su efectividad.
+					
+					En el caso de la Afirmación (6), se observó una correlación perfecta (\textbf{1.00, p=0.000}). Esto refleja una dependencia completa entre esta variable y la mejora percibida en la autorregulación, lo cual puede interpretarse como una validación directa de la efectividad del dispositivo en contextos específicos.
+					
+					Finalmente, la Afirmación (7) mostró una correlación fuerte y significativa (\textbf{0.770, p=0.003}). Este resultado resalta la aceptación general del sistema entre los usuarios y su disposición a continuar utilizándolo, lo que puede ser un indicador de la sostenibilidad del dispositivo en el tiempo.
+					
+					\paragraph*{Prueba de Kruskal-Wallis para Determinar las Diferencias entre Grupos Categóricos: }
+					Al aplicar la \textbf{\textit{prueba de Kruskal-Wallis}} se determinó la relación entre grupos categóricos con la Afirmación (5). Los resultados que se obtuvieron en la prueba de Kruskal-Wallis se muestran en la Tabla \ref{table:Kruskal-Wallis}.
+					
+					\begin{table}[h!]
+						\centering
+						\caption{Resultados de la Prueba de Kruskal-Wallis para Variables Categóricas}
+						\begin{tabularx}{0.75\textwidth}{Xccc}
+							\toprule
+							\textbf{Variable} & \textbf{Estadístico} &  \textbf{p-valor} & \textbf{Conclusión} \\
+							\midrule
+							Localización de la residencia & 18.223 & 1.965 & \(\times\) \\ % No se encontraron diferencias significativas.
+							Formación del tutor & 18.223 & 1.965 & \(\times\) \\ % No se encontraron diferencias significativas. \\
+							Género del tutor & 18.374 & 1.814 &  \(\times\) \\ % No se encontraron diferencias significativas.
+							\bottomrule
+						\end{tabularx}
+						\label{table:Kruskal-Wallis}
+						\vspace{0.3em} % Espaciado entre la tabla y el pie
+						\parbox{0.75\textwidth}{\footnotesize 
+							\(\times\): No se encontraron diferencias significativas.
+						}
+					\end{table}
+					
+					Que no existan diferencias significativas en un análisis estadístico, como en este caso con la prueba de Kruskal-Wallis, significa que no se puede rechazar la hipótesis nula, que establece que las medianas de los grupos comparados son iguales. En otras palabras, los datos no proporcionan evidencia suficiente para afirmar que existe una diferencia real entre los grupos categóricos analizados en relación con la variable de interés, en este caso, la Afirmación (5).
+						
 	\section{Conclusiones}
 	\label{seccion:Seis}
 		El sistema prototipo Torddis aporta un avance significativo en el campo de la pedagogía tecnológica, combinando IoT e IA para abordar desafíos críticos en el aprendizaje autónomo \citep{DiPietro2025Meta}. A diferencia de propuestas previas, el sistema integra análisis de comportamiento en tiempo real con retroalimentación activa, destacando su contribución al desarrollo de teorías sobre autorregulación y aprendizaje personalizado en entornos domésticos. Las evaluaciones, que incluyen pruebas funcionales y cuestionarios de usabilidad, revelaron que el sistema cumple con los requisitos técnicos esperados y es altamente valorado por los usuarios finales, es decir, los tutores.
@@ -1449,6 +1608,10 @@
 		
 		En conclusión, Torddis ha superado las expectativas en términos de funcionalidad y usabilidad, demostrando ser una solución viable y efectiva para mantener la concentración de los estudiantes en entornos de aprendizaje. El éxito de este proyecto subraya la importancia de la innovación tecnológica en la educación y sienta las bases para futuras mejoras y expansiones del sistema.
 	
+		(ANOVA) La presencia de un residual notable refuerza la idea de que, aunque el modelo es útil para identificar relaciones significativas, no agota todas las explicaciones posibles, lo que abre la puerta a investigaciones futuras para explorar otras variables que puedan complementar el análisis actual.
+		
+		En resumen, los resultados del análisis de Spearman destacan cómo factores como la percepción inicial del dispositivo, su precisión y su aceptación por parte de los usuarios influyen en la efectividad percibida. Este enfoque refuerza la importancia de integrar estos elementos en el diseño y evaluación de tecnologías educativas para garantizar su éxito en contextos diversos.
+		
 	\section*{Agradecimientos}
 	
 	Este trabajo de investigación ha sido financiado por la subvención PID2022-139297OB-I00, financiada por MICIU/AEI/10.13039/501100011033 y por el FEDER/UE.
