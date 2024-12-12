@@ -33,6 +33,7 @@
 \usepackage{tabularx}
 \usepackage{subcaption}
 \usepackage{tikz}
+\usepackage{xcolor}
 \usepackage{pgfplots}
 
 \graphicspath{{figs/}}
@@ -75,6 +76,8 @@
 
 
 \newcommand{\utequrl}{https://www.uteq.edu.ec} % Define the URL macro
+% Definición personalizada del símbolo \doublecheck
+\newcommand{\doublecheck}{\text{\checkmark\kern-0.5em\raisebox{-0.2em}{\checkmark}}}
 
 \begin{document}
 	\let\WriteBookmarks\relax
@@ -207,13 +210,68 @@
 		Este artículo está organizado en secciones que cubren diferentes aspectos de la implementación de la propuesta actual. La Sección \ref{seccion:Dos} se plantea la dimensión pedagógica del sistema TORDDIS. En La Sección \ref{seccion:Tres} revisa trabajos relacionados publicados en revistas internacionales de prestigio durante los últimos diez años. Estos trabajos están indexados en bases de datos como Web of Science (WoS), IEEE Xplore, ACM Digital Library y PubMed. La sección \ref{seccion:Cuatro} describe los materiales y métodos utilizados a lo largo del desarrollo y los procesos de evaluación del sistema. La Sección \ref{seccion:Cinco} presenta los principales resultados y discusión, y la Sección \ref{seccion:Seis} expone las conclusiones.
 		
 	\section{Dimensión Pedagógica de Torddis}
+	\label{seccion:Dos}
+	
+		Torddis no solo ofrece soluciones tecnológicas avanzadas para la monitorización de la concentración de los estudiantes, sino que también desempeña un papel fundamental en la promoción de habilidades pedagógicas clave como la autorregulación, la autorreflexión y el aprendizaje autónomo. Al proporcionar retroalimentación inmediata y personalizada, el sistema facilita la creación de estrategias efectivas que fortalecen la gestión del tiempo y la atención, competencias esenciales en el aprendizaje moderno \citep{Loh2025Plugging}.
+		
+		\subsection{Fomento de la Autorregulación y la Autorreflexión}
+			La autorregulación, definida como la capacidad de los estudiantes para gestionar y evaluar su proceso de aprendizaje, es una competencia esencial para el desarrollo educativo. Torddis promueve activamente esta habilidad mediante un sistema de retroalimentación inmediata que detecta distracciones en tiempo real, como cambios en expresiones faciales, objetos no autorizados y signos de somnolencia. Las alertas visuales y sonoras emitidas por el sistema permiten a los estudiantes redirigir su atención hacia sus actividades académicas, mejorando su concentración y reforzando la autorreflexión para identificar y superar barreras de aprendizaje \citep{Ackermans2025Young,Li2024Systematic}.
+		
+			El uso de tecnologías y enfoques pedagógicos ha demostrado ser efectivo para fortalecer la autorregulación. Desde lenguajes de programación visual hasta metodologías activas en el aula, estas estrategias promueven la interacción autónoma y reflexiva de los estudiantes, desarrollando hábitos sólidos para gestionar recursos y tiempo de manera eficaz \citep{SaezLopez2016Visual,Mohamed2018Implementing,Palioura2025Storylling}.
+		
+		\subsection{Importancia de la Autorregulación en el Aprendizaje}
+			El desarrollo de la autorregulación es fundamental para la autonomía académica. Los estudiantes que adquieren estas habilidades logran gestionar su aprendizaje mediante la definición de metas, la evaluación de su progreso y el ajuste continuo de estrategias \citep{Taber2024Developing}. Herramientas como Torddis contribuyen a este proceso al brindar retroalimentación inmediata y al apoyar enfoques pedagógicos activos, como el uso de lenguajes de programación visual y el aula invertida \citep{Mohamed2018Implementing,SaezLopez2016Visual}.
+			
+			Además, el uso de dinámicas lúdicas y colaborativas refuerza las competencias de autorregulación, consolidando habilidades esenciales como el autocontrol y la gestión del tiempo. Estas prácticas no solo optimizan el aprendizaje autónomo, sino que también preparan a los estudiantes para enfrentar de manera adaptativa los desafíos educativos futuros \citep{Echeverria2011AFramework}.
+
+		\subsection{Impacto en el Desarrollo Cognitivo y Socioemocional}		
+			El sistema Torddis contribuye al desarrollo de competencias como la atención sostenida, la gestión del tiempo y el autocontrol, esenciales para afrontar los retos del aprendizaje en contextos dinámicos. Además, al proporcionar supervisión constante y personalizada, fomenta el bienestar emocional de los estudiantes, creando un entorno educativo estructurado que apoya tanto el desarrollo cognitivo como el socioemocional \citep{SaezLopez2016Visual,Mohamed2018Implementing,Navarro2024}.
+		
+			La personalización del aprendizaje con Torddis fortalece la motivación intrínseca, apoyando la autorregulación mediante el análisis de expresiones faciales y otros indicadores en tiempo real. Estas capacidades permiten a los estudiantes mantener el enfoque en sus tareas escolares, desarrollando hábitos esenciales para el aprendizaje autónomo \citep{Ackermans2025Young}.
+		
+		\subsection{Rol de los Tutores y Padres}
+			El sistema Torddis proporciona a los tutores y padres una herramienta tecnológica que complementa la supervisión educativa en el hogar. Al registrar y analizar datos históricos sobre distracciones y patrones de comportamiento, facilita la identificación de áreas específicas donde los estudiantes necesitan apoyo adicional para mejorar su rendimiento. Esto fortalece el rol activo de los tutores, permitiéndoles intervenir de manera informada y reforzar el vínculo familiar \citep{Loh2025Plugging,Navarro2024}.
+		
+			El diseño integral de Torddis permite a los padres observar patrones de aprendizaje y ajustar estrategias educativas personalizadas. Además, promueve un entorno colaborativo donde la tecnología actúa como un puente entre la autonomía del estudiante y el soporte parental, optimizando el tiempo y recursos invertidos en el proceso educativo \citep{Ackermans2025Young}.
+				
+		\subsection{Torddis y su Contribución al Aprendizaje Autónomo}
+			Diseñado para apoyar el aprendizaje autónomo, Torddis integra herramientas de supervisión y retroalimentación que permiten a los estudiantes desarrollar habilidades de autorregulación en tiempo real. Esto incluye el análisis de distracciones y la emisión de alertas inmediatas que ayudan a los estudiantes a mantener su atención en las actividades académicas \citep{Li2024Systematic}.
+		
+			Al facilitar experiencias personalizadas, Torddis fomenta la motivación intrínseca y mejora los resultados educativos. Su capacidad para registrar datos históricos y proporcionar retroalimentación constante lo convierte en una herramienta confiable para tutores y estudiantes, promoviendo una educación centrada en la autonomía y la autogestión \citep{Ackermans2025Young}.
+		
+		\subsection{Relación de Torddis con las Competencias Digitales}
+			En un mundo cada vez más digitalizado, Torddis contribuye al desarrollo de competencias digitales necesarias para maximizar las oportunidades educativas. Al facilitar actividades interactivas y autónomas, el sistema fomenta habilidades críticas como la resolución de problemas y el uso efectivo de tecnologías educativas \citep{Mohamed2018Implementing,Echeverria2011AFramework}.
+		
+			Implementaciones como el aula invertida y plataformas colaborativas demuestran que los entornos digitales promueven el aprendizaje autodirigido y la motivación intrínseca, áreas donde Torddis tiene un impacto significativo \citep{Coffman2024Developing}.
+		
+	
+	
+	\section{Dimensión Pedagógica de Torddis}
 	\label{seccion:Dos}	
 		Torddis no solo ofrece soluciones tecnológicas para monitorizar la concentración de los estudiantes, sino que también fomenta habilidades pedagógicas clave como la autorregulación y el aprendizaje autónomo. Al proporcionar retroalimentación inmediata y personalizada, el sistema ayuda a los estudiantes a desarrollar estrategias efectivas para gestionar su tiempo y su atención, competencias esenciales en el aprendizaje moderno \cite{Loh2025Plugging}
 		
-		La autorregulación, entendida como la capacidad de los estudiantes para gestionar y evaluar su propio proceso de aprendizaje, se convierte en una competencia esencial en el desarrollo educativo \cite{Palioura2025Storylling}. Diversas investigaciones, que abarcan desde la implementación de lenguajes de programación visual en la educación primaria \citep{SaezLopez2016Visual} hasta la incorporación de metodologías activas en el aula \citep{Mohamed2018Implementing}, resaltan que los entornos tecnológicos y las estrategias pedagógicas pueden promover significativamente la autorregulación en los estudiantes.
+		\subsection{Fomento de la Autorregulación y la Autorreflexión}
+			La autorregulación, entendida como la capacidad de los estudiantes para gestionar y evaluar su propio proceso de aprendizaje, constituye una competencia esencial en el desarrollo educativo. Torddis promueve activamente esta habilidad mediante un sistema de retroalimentación inmediata y personalizada. Al detectar distracciones en tiempo real, como cambios en expresiones faciales, objetos no autorizados o signos de somnolencia, el sistema emite alertas visuales y sonoras que ayudan a los estudiantes a redirigir su atención hacia sus actividades académicas. Este mecanismo no solo mejora la concentración, sino que también refuerza la autorreflexión al permitir que los estudiantes identifiquen barreras para su rendimiento y apliquen estrategias correctivas \citep{Ackermans2025Young,Li2024Systematic}.
+			
+			Diversas investigaciones respaldan la efectividad de los enfoques tecnológicos en el fortalecimiento de la autorregulación. Desde el uso de lenguajes de programación visual en la educación primaria hasta la incorporación de metodologías activas en el aula, estos enfoques destacan cómo los entornos digitales y las estrategias pedagógicas pueden potenciar significativamente esta competencia \citep{SaezLopez2016Visual,Mohamed2018Implementing,Palioura2025Storylling}. Estas prácticas permiten a los niños interactuar de manera autónoma y reflexiva, desarrollando hábitos que fortalecen su capacidad para gestionar el tiempo y los recursos de forma eficaz.
+			
+			En este contexto, Torddis no es solo una herramienta de monitorización, sino un aliado pedagógico que apoya el desarrollo integral de los estudiantes. Además de fomentar habilidades metacognitivas esenciales, refuerza el papel del tutor o docente al facilitarles datos que orientan intervenciones educativas más efectivas y personalizadas, promoviendo un entorno que favorece la autorregulación como pilar del aprendizaje autónomo.
+			
+		\subsection{Impacto en el Desarrollo Cognitivo y Socioemocional}
+			El sistema Torddis contribuye significativamente al desarrollo de competencias clave como la atención sostenida, la gestión del tiempo y el autocontrol. Estas habilidades son fundamentales no solo para mejorar el rendimiento académico, sino también para preparar a los estudiantes para afrontar de manera reflexiva y adaptativa los retos que surgen en su proceso educativo. La supervisión constante y personalizada que ofrece Torddis refuerza además el bienestar emocional de los estudiantes, promoviendo un entorno estructurado incluso en contextos domésticos, lo que favorece su estabilidad cognitiva y socioemocional \citep{SaezLopez2016Visual,Mohamed2018Implementing,Navarro2024}.
+			
+			La personalización del aprendizaje, facilitada por el uso de herramientas tecnológicas como Torddis, fomenta la motivación intrínseca y fortalece la autorregulación, elementos esenciales en el éxito académico. Mediante el análisis en tiempo real de expresiones faciales, detección de objetos distractores y reconocimiento de estados de somnolencia, Torddis apoya a los estudiantes en el desarrollo de hábitos que promueven la concentración y el autocontrol, competencias críticas para el aprendizaje autónomo \citep{Ackermans2025Young}.
+			
+			Una característica distintiva de Torddis es su capacidad para proporcionar retroalimentación inmediata a través de alertas visuales y sonoras. Este mecanismo no solo ayuda a los estudiantes a redirigir su atención hacia actividades académicas, sino que también refuerza la autorreflexión y la autoevaluación, componentes esenciales de la autorregulación del aprendizaje. Al incorporar a los tutores en el proceso educativo, Torddis fomenta un entorno de aprendizaje colaborativo que facilita la intervención oportuna de los padres, fortaleciendo su rol activo y permitiéndoles identificar barreras específicas que puedan obstaculizar el progreso académico de sus hijos \citep{Li2024Systematic}.
 		
-		Estos enfoques permiten a los niños interactuar de forma autónoma y reflexiva, generando hábitos que fortalecen su capacidad para mantener la concentración y gestionar su tiempo y sus recursos de manera efectiva. En este contexto, Torddis se presenta no solo como una herramienta de monitorización, sino como un aliado pedagógico que contribuye al desarrollo de habilidades de autorregulación y refuerza el rol del tutor o profesor en el proceso de aprendizaje.
-		
+		\subsubsection{Rol de los Tutores y Padres}
+			
+			El sistema Torddis empodera a los tutores y padres al proporcionarles una herramienta tecnológica que complementa la supervisión tradicional en el entorno doméstico. Al registrar y analizar datos históricos sobre distracciones, patrones de comportamiento y otras métricas relacionadas con el proceso de aprendizaje, Torddis facilita la identificación de áreas específicas donde los estudiantes necesitan apoyo para mejorar su autorregulación. Esta funcionalidad permite a los tutores intervenir de manera informada y oportuna, fortaleciendo tanto el vínculo familiar como su rol activo en el aprendizaje de sus hijos \citep{Loh2025Plugging}.
+			
+			El diseño integral de Torddis permite a los tutores realizar un seguimiento constante del progreso de los estudiantes, incluso en ausencia de supervisión directa. Este enfoque no solo optimiza los recursos y el tiempo dedicado al aprendizaje, sino que también asegura que los padres y tutores puedan observar patrones de comportamiento y tomar decisiones basadas en datos para adaptar estrategias educativas personalizadas \citep{Navarro2024}. La capacidad del sistema para registrar y visualizar estas interacciones fomenta un proceso educativo colaborativo, donde la tecnología actúa como un puente entre la autonomía del estudiante y el soporte del tutor.
+			
+			Además, Torddis facilita la comprensión de los factores que influyen en las distracciones del estudiante, como la falta de motivación intrínseca o la presencia de objetos distractores. Este conocimiento permite a los tutores desarrollar estrategias más efectivas para ayudar a los estudiantes a mantener el enfoque en sus actividades académicas y superar barreras específicas que obstaculizan su progreso \citep{Ackermans2025Young}. En este contexto, Torddis se convierte en una herramienta indispensable para promover un entorno educativo equilibrado que fomente la autogestión y refuerce la interacción positiva entre padres e hijos.
+			
 		\subsection{Importancia de la autorregulación en el aprendizaje}
 			El desarrollo de la autorregulación en el aprendizaje resulta fundamental para la autonomía académica, ya que permite a los estudiantes tomar control sobre su propio proceso de aprendizaje, estableciendo metas, evaluando sus avances y ajustando sus estrategias. La investigación de \cite{Taber2024Developing} ejemplifica cómo la autorregulación es esencial en disciplinas que demandan habilidades de gestión autónoma, permitiendo a los estudiantes monitorizar y mejorar continuamente su rendimiento.
 			
@@ -988,7 +1046,7 @@
 				
 						\begin{itemize}
 							\item Se evaluaron un total de 12 familias: 8 madres y 4 padres, todos pertenecientes a la zona geográfica de Quevedo, Ecuador.
-							\item La edad promedio de los participantes es de 39 años, con un rango de edad entre 18 y 65 años.
+							\item La edad promedio de los participantes es de 39 años, con un rango de edad entre 25 y 65 años.
 							\item El 58\% de los tutores solo completaron la educación primaria, mientras que el 42\% estudiaron hasta la educación secundaria.
 						\end{itemize}
 						
@@ -1414,7 +1472,7 @@
 					\caption{Estadísticas Descriptivas}
 					\begin{tabularx}{0.85\textwidth}{Xcccccccc}
 						\toprule
-						\textbf{Estadística} & \textbf{Horas de Supervisión} & \textbf{(1)} & \textbf{(2)} & \textbf{(3)} & \textbf{(4)} & \textbf{(5)} & \textbf{(6)} & \textbf{(7)} \\
+						\textbf{Estadística} & \textbf{Tiempo de Supervisión} & \textbf{(1)} & \textbf{(2)} & \textbf{(3)} & \textbf{(4)} & \textbf{(5)} & \textbf{(6)} & \textbf{(7)} \\
 						\midrule
 						Media & 2.00 & 4.42 & 4.42 & 2.67 & 3.58 & 4.00 & 4.42 & 4.42 \\
 						Mediana & 2.00 & 5.00 & 4.00 & 3.00 & 4.00 & 4.00 & 5.00 & 5.00 \\
@@ -1425,9 +1483,8 @@
 					\end{tabularx}
 					\label{table:DescriptiveStatistics}
 					\vspace{0.3em} % Espaciado entre la tabla y el pie
-					\parbox{0.85\textwidth}{\footnotesize \centering
-						(1): Afirmación (1), Afirmación (2),..., Afirmación (7).\\
-						\textit{Horas de supervisión} representa el tiempo diario que los tutores dedican a la supervisión de sus hijos en cuánto a la realización de tareas escolares. Las \textit{Afirmaciones de la (1) a la (7)} corresponden a los ítems evaluados en la escala de Likert relacionada con la efectividad del prototipo (ver anexo \ref{Appendix:Effectivity}).
+					\parbox{0.85\textwidth}{\footnotesize
+						(1): Afirmación (1), (2): Afirmación (2),..., y (7): Afirmación (7) corresponden a los ítems evaluados en la escala de Likert relacionada con la efectividad del prototipo (ver anexo \ref{Appendix:Effectivity}). \textit{Tiempo de supervisión} representa el número de horas diarias que los tutores dedican a supervisar la realización de las tareas escolares de sus hijos.
 					}
 				\end{table}
 				
@@ -1438,46 +1495,44 @@
 				Estos resultados permiten identificar no solo el nivel de aceptación general del sistema, sino también las áreas que podrían beneficiarse de intervenciones específicas. En conjunto, las estadísticas descriptivas proporcionan un marco para validar el diseño del dispositivo y fundamentar la discusión sobre su potencial pedagógico y práctico.
 				
 				\subsubsection{Análisis de la Normalidad de los Datos}
-					Para evaluar si las variables continuas, como la edad del tutor, horas de supervisión y edad del estudiante, siguen una distribución normal se realizó la prueba de Shapiro-Wilk. Los resultados se muestra en la Tabla \ref{table:Shaphiro-Wilk}.
+					Para determinar si las variables continuas (numéricas) siguen una distribución normal, se aplicaron dos pruebas complementarias: la prueba de Shapiro-Wilk (SW) y la prueba de Kolmogorov-Smirnov (KS). La prueba de Shapiro-Wilk es altamente sensible a la normalidad y es adecuada para muestras pequeñas, mientras que la prueba de Kolmogorov-Smirnov compara la distribución empírica de los datos con una distribución teórica (en este caso, normal) y es más robusta ante datos con varianza heterogénea o tamaños de muestra mayores. Ambas pruebas se utilizaron para garantizar un análisis completo, evaluando diferentes aspectos de la normalidad en los datos. Los resultados se presentan en la Tabla \ref{table:NormalityTest}.
 					
-					\begin{table}[h!]
+					\begin{table}[ht]
 						\centering
-						\caption{Resultados del análisis de normalidad mediante la prueba de Shapiro-Wilk}
-						\begin{tabularx}{0.75\textwidth}{Xccc}
-							\toprule
-							\textbf{Variable} & \textbf{Estadístico} &  \textbf{p-valor} & \textbf{Distribución Normal} \\
-							\midrule
-							Edad del tutor & 0.912 & 0.228 & \(\checkmark\) \\
-							Localización de la vivienda & 0.640 & 0.000 & \(\times\) \\
-							Horas de supervisión & 0.809 & 0.012 & \(\times\) \\
-							Edad del estudiante & 0.903 & 0.174 & \(\checkmark\) \\
-							Afirmación (1) & 0.729 & 0.002 & \(\times\) \\
-							Afirmación (2) & 0.784 & 0.002 & \(\times\) \\
-							Afirmación (3) & 0.863 & 0.053 & \(\checkmark\) \\
-							Afirmación (4) & 0.867 & 0.060 & \(\checkmark\) \\
-							Afirmación (5) & 0.828 & 0.020 & \(\times\) \\
-							Afirmación (6) & 0.828 & 0.020 & \(\times\) \\
-							Afirmación (7) & 0.729 & 0.002 & \(\times\) \\
-							\bottomrule
+						\caption{Resultados del análisis de normalidad para cada columna}
+						\begin{tabularx}{0.85\textwidth}{Xcccc}
+							\hline
+							\textbf{Variable} & \textbf{SW$_{p-valor}$} & \textbf{Conclusión SW} & \textbf{KS$_{p-valor}$} & \textbf{Conclusión KS} \\
+							\hline
+							Edad del tutor & 0.2277 & \(\checkmark\) & 0.9289 & \(\checkmark\) \\
+							Tiempo de supervisión & 0.0119 & \(\times\) & 0.1885 & \(\checkmark\) \\
+							Edad del Estudiante & 0.1736 & \(\checkmark\) & 0.6257 & \(\checkmark\) \\
+							Afirmación (1) & 0.0016 & \(\times\) & 0.0775 & \(\checkmark\) \\
+							Afirmación (2) & 0.0063 & \(\times\) & 0.2562 & \(\checkmark\) \\
+							Afirmación (3) & 0.0528 & \(\checkmark\) & 0.1898 & \(\checkmark\) \\
+							Afirmación (4) & 0.0598 & \(\checkmark\) & 0.2081 & \(\checkmark\) \\
+							Afirmación (5) & 0.0199 & \(\times\) & 0.3779 & \(\checkmark\) \\
+							Afirmación (6) & 0.0016 & \(\times\) & 0.0775 & \(\checkmark\) \\
+							Afirmación (7) & 0.0016 & \(\times\) & 0.0775 & \(\checkmark\) \\
+							\hline
 						\end{tabularx}
-						\label{table:Shaphiro-Wilk}
+						\label{table:NormalityTest}
 						\vspace{0.3em} % Espaciado entre la tabla y el pie
-						\parbox{0.75\textwidth}{\footnotesize \centering
+						\parbox{0.75\textwidth}{\footnotesize
 							\(\times\): No sigue una distribución normal. \(\checkmark\): Sigue una distribución normal.\\
-							La variable "\textit{localización de la vivienda}", representa si la vivienda está en el sector rural o urbano. La columna \textit{Estadístico} muestra los valores de los coeficientes obtenidos mediante la prueba de Shapiro-Wilk. El \textit{p-valor} representa el nivel de significancia de la prueba.
+							SW = Shapiro-Wilk. KS = Kolmogorov-Smirnov.
 						}
 					\end{table}
 					
-					El \textit{p-valor} de la Tabla \ref{table:Shaphiro-Wilk}, indica si se acepta o rechaza la hipótesis nula, es decir, si las variables siguen o no una distribución normal. En la columna \textit{Distribución Normal}, muestran la conclusión de las pruebas de hipótesis (H0 : La variable sigue una distribución normal. H1: la variable no sigue una distribución normal.)
+					Los resultados muestran que las pruebas de Shapiro-Wilk y Kolmogorov-Smirnov no siempre coinciden en sus conclusiones, ya que evalúan diferentes aspectos de la normalidad. Sin embargo, para este análisis, la prueba de Shapiro-Wilk es más adecuada para muestras pequeñas, debido a su sensibilidad específica a la normalidad. No obstante, en muestras más grandes o cuando se espera una mayor variabilidad en los datos, los resultados de la prueba de Kolmogorov-Smirnov pueden ser más confiables. Por lo tanto, se ha interpretado los resultados de ambas pruebas de manera complementaria para una evaluación más robusta de la normalidad en los datos.
+				
+					El \textit{p-valor} en ambas pruebas de la Tabla \ref{table:NormalityTest}, indica si se acepta o rechaza la hipótesis nula, es decir, si las variables siguen o no una distribución normal. En las columnas \textit{Conclusión SW} y \textit{Conclusión KS} , muestran los resultados de las pruebas de hipótesis (H0 : La variable sigue una distribución normal. H1: la variable no sigue una distribución normal).
 					
-					Los resultados de la prueba de Shapiro-Wilk indicaron que algunas variables seguían una distribución normal, mientras que otras no lo hacían. Para garantizar la validez de los análisis posteriores, se seleccionaron pruebas estadísticas adecuadas en función de estos resultados.
+					Mientras la prueba Kolmogorov-Smirnov da como resultado que todas las variables siguen una distribución normal, la de prueba de Shapiro-Wilk indica que algunas variables siguen una distribución normal, mientras que otras no lo hacen. Para garantizar la validez de los análisis posteriores, se seleccionaron pruebas estadísticas adecuadas en función de estos resultados. Aunque la prueba de los coeficientes de correlación de Pearson fue aplicada a todas las variables.
 					
-					\paragraph{\textbf{Variables con distribución normal:}}
-					Las variables "Edad del tutor", "Edad del estudiante", "Afirmación \textit{(3) Su tutorado tomó desapercibida la presencia del dispositivo}" y "Afirmación (4) \textit{Utilizó el dispositivo todo el tiempo efectivo dedicado para hacer las tareas}" mostraron un p-valor mayor a 0.05, lo que permitió emplear pruebas paramétricas. Se utilizaron pruebas de correlación de Pearson y análisis de varianza (ANOVA) para explorar las relaciones y diferencias significativas entre estas variables y los factores correspondientes.
-					
-					\paragraph*{Coeficientes de Correlación de Pearson:}
-					En la Tabla \ref{table:Pearson-Correlation} se presentan los resultados de la relación entre la afirmación (5) y las variables con distribución normal, utilizando los coeficientes de correlación de Pearson.
-					
+				\subsubsection{Coeficientes de Correlación de Pearson:}
+					Se utilizaron pruebas de correlación de Pearson y análisis de varianza (ANOVA) para explorar las relaciones y diferencias significativas entre estas variables y los factores correspondientes. En la Tabla \ref{table:Pearson-Correlation} se presentan los resultados de la relación entre la \textit{Afirmación (5)} y las variables numéricas.
+						
 					\begin{table}[h!]
 						\centering
 						\caption{Correlaciones entre las variables con distribución normal}
@@ -1485,115 +1540,174 @@
 							\toprule
 							\textbf{Variable} & \textbf{Correlación con Afirmación (5)} &  \textbf{p-valor} & \textbf{Tipo de relación} \\
 							\midrule
-							Edad del tutor & 0.272 & 0.392 & \(\times\) \\ % Sin relación significativa
-							Edad del estudiante & -0.141 & 0.663 & \(\times\) \\ % Sin relación significativa
-							Afirmación (3) & 0.750 & 0.005 & \(\bigtriangleup\) \\ % Relación moderada
-							Afirmación (4) & 0.816 & 0.001 & \(\checkmark\) \\ % Relación fuerte
+							Edad del tutor$^{sw}$ & -0.2725 & 0.3916 & \(\bigtriangleup\) \\ % Débil
+							Tiempo de supervisión & -0.1841, & 0.5668 & \(\bigtriangleup\) \\ % Débil
+							Edad del estudiante$^{sw}$ & -0.1407 & 0.6627 & \(\bigtriangleup\) \\ % Débil
+							Afirmación (1) & 0.7762 & 0.0030 & \(\bigstar\) \\ % Muy Fuerte
+							Afirmación (2) & 0.5669 & 0.0546 & \(\checkmark\) \\ % Fuerte
+							Afirmación (3)$^{sw}$ & 0.7500 & 0.0050 & \(\bigstar\) \\ % Muy fuerte
+							Afirmación (4)$^{sw}$ & 0.8165 & 0.0012 & \(\bigstar\) \\ % Muy fuerte
+							Afirmación (6) & 0.7762 & 0.0030 & \(\bigstar\) \\ % Muy fuerte
+							Afirmación (7) & 0.7762 & 0.0030 & \(\bigstar\) \\ % Muy fuerte
 							\bottomrule
 						\end{tabularx}
 						\label{table:Pearson-Correlation}
 						\vspace{0.3em} % Espaciado entre la tabla y el pie
-						\parbox{0.75\textwidth}{\footnotesize \centering
-							\(\times\): Sin relación significativa. \(\bigtriangleup\): Relación moderada. \(\checkmark\): Relación fuerte
+						\parbox{0.75\textwidth}{\footnotesize
+							$^{sw}$ Variables normales según la prueba de Shapiro-Wilk\\
+							\(\bigtriangleup\): Débil. \(\checkmark\): Fuerte. \(\bigstar\): Muy fuerte
 						}
 					\end{table}
-					
-					El análisis de \textit{\textbf{correlaciones de Pearson}} permitió identificar las relaciones entre las variables con distribución normal y la afirmación (5), "\textit{Después de dejar de usar el dispositivo, su tutorado mejoró el nivel de autorregulación y concentración en la realización de tareas}". Las correlaciones observadas fueron estadísticamente significativas en varios casos, lo que destaca patrones importantes sobre el impacto del dispositivo.
-					
-					En primer lugar, las variables de las afirmaciones (3) \textit{"Su tutorado tomó desapercibida la presencia del dispositivo"} y (4) "\textit{Utilizó el dispositivo todo el tiempo efectivo dedicado para hacer las tareas}" presentaron correlaciones positivas fuertes con la \textit{afirmación (5)}, con valores de \textbf{0.750} y \textbf{0.816} respectivamente. Esto sugiere que el diseño no intrusivo del dispositivo (afirmación 3) y su uso efectivo durante el tiempo dedicado a las tareas (afirmación 4) son factores clave que contribuyen a la mejora percibida en la autorregulación. La fortaleza de estas correlaciones resalta la importancia de la usabilidad y la funcionalidad del dispositivo en la experiencia del usuario.
-					
-					La edad suele percibirse como un indicador de mayor responsabilidad \citep{Moss2018Why}. Sin embargo, en este estudio, las variables "\textit{Edad del tutor}" y "\textit{Edad del estudiante}" mostraron correlaciones débiles y no significativas, con valores de \textbf{0.272} y \textbf{-0.141}, respectivamente. Estos hallazgos sugieren que la efectividad percibida del dispositivo no está influenciada ni por la edad de los tutores ni por la de los estudiantes. Este resultado resalta la versatilidad del sistema, demostrando su aplicabilidad en diversos grupos demográficos sin verse limitado por factores relacionados con la edad.
-					
+						
+					Al considerar a todas las variables con variables normales, el análisis de \textit{\textbf{correlaciones de Pearson}} permitió identificar las relaciones entre la variable "Afirmación (5): \textit{Después de dejar de usar el dispositivo, su tutorado mejoró el nivel de autorregulación y concentración en la realización de tareas}", y las demás variables numéricas. Las correlaciones observadas fueron estadísticamente significativas en varios casos, lo que destaca patrones importantes sobre el impacto del dispositivo.
+						
+					En primer lugar, las variables de las afirmaciones "Afirmación \textit{(1): El dispositivo fue tomado por su tutorado como algo atractivo}", "Afirmación (3): \textit{"Su tutorado tomó desapercibida la presencia del dispositivo"}, "Afirmación (4): \textit{Utilizó el dispositivo todo el tiempo efectivo dedicado para hacer las tareas}", "Afirmación (6): \textit{Aunque es poco tiempo de utilización del dispositivo, mejoraría considerablemente el cumplimiento de tareas, por ende el nivel de aprovechamiento de los estudios de su tutorado.}" y "Afirmación (7): \textit{Está dispuesto a seguir utilizando el dispositivo}", presentaron correlaciones positivas \textit{muy fuertes} con la \textit{afirmación (5)}, con valores comprendidos en el intervalo [0.5669, 0.8165]. Además con la variable "Afirmación (2): La aplicación móvil mostró correctamente los eventos que sucedieron", arrojó una correlación fuerte.
+						
+					Aunque la edad suele percibirse como un indicador de mayor responsabilidad \citep{Moss2018Why}, en este estudio, las variables "\textit{Edad del tutor}" y "\textit{Edad del estudiante}" mostraron correlaciones débiles y no significativas, con valores de \textbf{-0.2725} y \textbf{-0.1407}, respectivamente. Estos hallazgos sugieren que la efectividad percibida del dispositivo no está influenciada ni por la edad de los tutores ni por la de los estudiantes. Este resultado resalta la versatilidad del sistema, demostrando su aplicabilidad en diversos grupos demográficos sin verse limitado por factores relacionados con la edad.
+						
 					Finalmente, los resultados obtenidos subrayan que las características directamente relacionadas con el uso del dispositivo, como su diseño y efectividad operativa, tienen un mayor impacto en la mejora de la autorregulación que los factores demográficos. Esto proporciona evidencia sólida para el diseño centrado en el usuario como una estrategia clave en el desarrollo de sistemas educativos basados en tecnología.
-					
-					\paragraph*{Análisis ANOVA:}
-					
-					\begin{table}[h!]
+						
+				\subsubsection{Análisis ANOVA}
+					El análisis ANOVA realizado sobre las variables relacionadas con la \textit{Afirmación (5)} mostró diferencias significativas en varias afirmaciones relacionadas con la efectividad del dispositivo Torddis, mientras que otras variables no presentaron diferencias notables. Los resultados obtenidos tienen implicaciones importantes para evaluar el impacto del sistema en diferentes dimensiones.
+						
+					\begin{table}[ht]
 						\centering
 						\caption{Resultados del Análisis ANOVA}
-						\begin{tabularx}{0.75\textwidth}{Xcrrrrc}
-							\toprule
-							\textbf{Variable} & \textbf{df} &  \textbf{sum\_sq} & \textbf{mean\_sq} & \textbf{F} & \textbf{PR(>F)} & \textbf{Conclusión}\\
-							\midrule
-							Edad del tutor & 1 & 0.445 & 0.445 & 2.984 & 0.128 & \(\times\)  \\ %No hay diferencias significativas.
-							Edad del estudiante & 1 & 0.006 & 0.006 & 0.041 & 0.846 & \textit{NS}\\ % Sin efecto significativo.\\ 
-							Afirmación (3) & 1 & 3.031 & 3.031 & 20.306 & 0.003 & \(\bigstar\) \\ % Relación altamente significativa.
-							Afirmación (4) & 1 & 1.473 & 1.473 & 9.868 & 0.016 & \(\checkmark\) \\ %Relación significativa.
-							Residual & 7 & 1.045 & 0.149 & NaN & NaN & \faExclamationTriangle \\ %Contribución acumulada de la variabilidad no explicada.
-							\bottomrule
+						\begin{tabularx}{0.75\textwidth}{Xccc}
+							\hline
+							\textbf{Variable} & \textbf{F-Estadístico} & \textbf{p-valor} & \textbf{Conclusión}\\
+							\hline
+							Edad del tutor$^{sw}$ & 0.8162 & 0.4723 & \(\times\) \\ % No hay diferencias significativas
+							Tiempo de supervisión & 0.2411 & 0.7907 & \(\times\) \\ % No hay diferencias significativas
+							Edad del Estudiante$^{sw}$ & 1.6419 & 0.2467 & \(\times\) \\ % No hay diferencias significativas
+							Afirmación (1) & 11.0625 & 0.0038 & \(\bigstar\) \\ % Diferencia altamente significativa
+							Afirmación (2) & 2.9118 & 0.1059 & \textit{NS} \\ % Sin efecto significativo
+							Afirmación (3)$^{sw}$ & 5.7857 & 0.0242 & \(\checkmark\) \\ % Diferencia significativa
+							Afirmación (4)$^{sw}$ & 10.6875 & 0.0042 & \(\bigstar\) \\ % Diferencia altamente significativa
+							Afirmación (6) & 11.0625 & 0.0038 & \(\bigstar\) \\ % Diferencia altamente significativa
+							Afirmación (7) & 11.0625 & 0.0038 & \(\bigstar\) \\ % Diferencia altamente significativa
+							\hline
 						\end{tabularx}
 						\label{table:ANOVA-Results}
 						\vspace{0.3em} % Espaciado entre la tabla y el pie
-						\parbox{0.75\textwidth}{\footnotesize 
-							\(\times\): No hay diferencias significativas. \textit{NS}: Sin efecto significativo. \(\checkmark\): Relación significativa. \(\bigstar\): Relación altamente significativa. \faExclamationTriangle: Contribución acumulada de la variabilidad no explicada: Modelo mejorable.
+						\parbox{0.75\textwidth}{\footnotesize
+							$^{sw}$ Variables que siguen una distribución normal según la prueba de Shapiro-Wilk.\\
+							\(\times\): No hay diferencias significativas. \textit{NS}: Sin efecto significativo. \(\checkmark\): Diferencia significativa. \(\bigstar\): Diferencia altamente significativa.
 						}
 					\end{table}
-					
-					El valor residual refleja la porción de variabilidad en los datos que no ha sido explicada por las variables consideradas en el modelo. Este valor indica que, aunque algunas variables, como las afirmaciones (3) y (4), muestran efectos significativos en la afirmación (5), existe una parte de la variabilidad que no puede atribuirse directamente a las variables incluidas.
-					
-					En este caso, el residual sugiere que hay factores adicionales, posiblemente no considerados en este modelo, que también influyen en la percepción de mejora en la autorregulación tras el uso del dispositivo. Estos factores podrían estar relacionados con características individuales de los tutores o estudiantes, el contexto específico de las pruebas, o incluso aspectos técnicos del dispositivo que no fueron directamente medidos.
-					
-					\paragraph{\textbf{Variables sin distribución normal:}}
-					Para las variables "Horas de supervisión", "Afirmación \textit{(1) El dispositivo fue tomado por su tutorado como algo atractivo}", "Afirmación \textit{(2) La aplicación móvil mostró correctamente los eventos que sucedieron}", "Afirmación \textit{(6) Aunque es poco tiempo de utilización del dispositivo, mejoraría considerablemente el cumplimiento de tareas, por ende el nivel de aprovechamiento de los estudios de su tutorado.}" y "Afirmación \textit{(7) Está dispuesto a seguir utilizando el dispositivo}", cuyo p-valor fue menor a 0.05, se realizaron pruebas no paramétricas. En este caso, se aplicó el coeficiente de correlación de Spearman para evaluar las relaciones entre estas variables y se utilizó la prueba de Kruskal-Wallis para analizar diferencias entre grupos categóricos.
-					
-					\paragraph*{Coeficientes de Correlación de Spearman: }
-					En la Tabla \ref{table:Spearman-Correlation} se muestran los resultados del coeficiente de Spearman.
+					La Afirmación (1), que evalúa la percepción del atractivo del dispositivo, y las Afirmaciones (4), (6) y (7), que abordan aspectos sobre el uso del dispositivo, mostraron \textit{diferencias altamente significativas}, lo que refuerza la versatilidad y efectividad del sistema. La Afirmación (3), relacionada con la discreción del dispositivo, presentaron valores de p<0.05, indicando diferencias significativas entre los grupos evaluados. Esto respalda que el diseño del dispositivo tiene un impacto diferenciado en su aceptación y percepción, posiblemente dependiendo de factores contextuales como la edad o el entorno del tutorado. 
 						
+					Por otro lado, variables como la edad del tutor y del estudiante, así como el tiempo de supervisión, no mostraron diferencias significativas (p>0.05), lo que sugiere que el impacto del sistema Torddis no está condicionado por estas variables demográficas. Esto refuerza la idea de que el sistema es inclusivo y adaptable a diversos perfiles de usuarios.
+						
+				\subsubsection{Pruebas Post Hoc para Variables con Diferencias Significativas:}
+					Las pruebas Post Hoc permitieron identificar los grupos específicos donde se observaron diferencias significativas:
+						
+					\begin{itemize}
+						\item \textbf{Afirmación (1):} Los resultados revelaron diferencias significativas entre los grupos 3 y 4 (p=0.0079) y entre los grupos 3 y 5 (p=0.0049). Esto indica que el atractivo del dispositivo es percibido de manera diferente entre algunos subgrupos de usuarios, lo que puede estar relacionado con preferencias individuales o contextuales.
+							\begin{table}[ht]
+								\centering
+								\caption{Pruebas Post Hoc para 'Afirmación (1)'.}
+								\begin{tabularx}{0.75\textwidth}{ccccccc}
+									\hline
+									\textbf{Grupo 1} & \textbf{Grupo 2} & \textbf{Dif. de Media} & \textbf{p-valor} & \textbf{Lím. Inf.} & \textbf{Lím. Sup.} & \textbf{Rechazo} \\
+									\hline
+									3 & 4 & 1.3333 & 0.0079 & 0.4027 & 2.264 & Sí \\
+									3 & 5 & 1.6667 & 0.0049 & 0.5920 & 2.7413 & Sí \\
+									4 & 5 & 0.3333 & 0.5951 & -0.5973 & 1.264 & No \\
+									\hline
+								\end{tabularx}
+								\label{table:posthoc_1}
+							\end{table}
+						\item \textbf{Afirmación (3):} Aunque la afirmación mostró diferencias significativas en ANOVA, las pruebas Post Hoc identificaron significancia solo entre los grupos 3 y 5 (p=0.0194), lo que sugiere que no todos los subgrupos perciben igual la discreción del dispositivo.
+							\begin{table}[ht]
+								\centering
+								\caption{Pruebas Post Hoc para 'Afirmación (3)'.}
+								\begin{tabularx}{0.75\textwidth}{ccccccc}
+									\hline
+									\textbf{Grupo 1} & \textbf{Grupo 2} & \textbf{Dif. de Media} & \textbf{p-valor} & \textbf{Lím. Inf.} & \textbf{Lím. Sup.} & \textbf{Rechazo} \\
+									\hline
+									3 & 4 & 1.0000 & 0.1769 & -0.4216 & 2.4216 & No \\
+									3 & 5 & 2.0000 & 0.0194 & 0.3585 & 3.6415 & Sí \\
+									4 & 5 & 1.0000 & 0.1769 & -0.4216 & 2.4216 & No \\
+									\hline
+								\end{tabularx}
+								\label{table:posthoc_3}
+							\end{table}
+								
+						\item \textbf{Afirmación (4):} Se observaron diferencias significativas entre los grupos 3 y 4 (p=0.0176) y entre los grupos 3 y 5 (p=0.0038). Esto refuerza que el uso efectivo del dispositivo varía dependiendo del grupo, lo que puede estar relacionado con factores como el nivel de supervisión o las condiciones del entorno.
+							\begin{table}[ht]
+								\centering
+								\caption{Pruebas Post Hoc para 'Afirmación (4)'.}
+								\begin{tabularx}{0.75\textwidth}{ccccccc}
+									\hline
+									\textbf{Grupo 1} & \textbf{Grupo 2} & \textbf{Dif. de Media} & \textbf{p-valor} & \textbf{Lím. Inf.} & \textbf{Lím. Sup.} & \textbf{Rechazo} \\
+									\hline
+									3 & 4 & 1.3333 & 0.0176 & 0.2587 & 2.408 & Sí \\
+									3 & 5 & 2.0000 & 0.0038 & 0.7591 & 3.2409 & Sí \\
+									4 & 5 & 0.6667 & 0.2461 & -0.408 & 1.7413 & No \\
+									\hline
+								\end{tabularx}
+								\label{table:posthoc_4}
+							\end{table}
+						\item \textbf{Afirmaciones (6) y (7):} Las pruebas Post Hoc reflejaron patrones similares a los observados en la afirmación (1), con diferencias significativas entre los grupos 3 y 4 y entre los grupos 3 y 5. Esto respalda la percepción positiva sobre el impacto del dispositivo en la autorregulación y la intención de seguir utilizándolo.
+							\begin{table}[ht]
+								\centering
+								\caption{Pruebas Post Hoc para 'Afirmación (6) y (7)'}
+								\begin{tabularx}{0.75\textwidth}{ccccccc}
+									\hline
+									\textbf{Grupo 1} & \textbf{Grupo 2} & \textbf{Dif. de Media} & \textbf{p-valor} & \textbf{Lím. Inf.} & \textbf{Lím. Sup.} & \textbf{Rechazo} \\
+									\hline
+									3 & 4 & 1.3333 & 0.0079 & 0.4027 & 2.264 & Sí \\
+									3 & 5 & 1.6667 & 0.0049 & 0.5920 & 2.7413 & Sí \\
+									4 & 5 & 0.3333 & 0.5951 & -0.5973 & 1.264 & No \\
+									\hline
+								\end{tabularx}
+								\label{table:posthoc_6y7}
+							\end{table}
+					\end{itemize}
+					
+					Estos resultados destacan que Torddis es una herramienta efectiva y versátil, pero cuyo impacto puede variar dependiendo de factores contextuales como el entorno y las preferencias de los usuarios. La identificación de diferencias entre grupos específicos resalta la necesidad de personalizar ciertos aspectos del diseño y la implementación del dispositivo para maximizar su efectividad en diversos contextos educativos.
+						
+					En general, las afirmaciones relacionadas con el uso y la aceptación del dispositivo demostraron su relevancia en la evaluación de Torddis, mientras que las variables demográficas y contextuales no condicionaron significativamente su efectividad, lo que refuerza la robustez y aplicabilidad general del sistema.
+					
+				\subsubsection{Coeficientes de Correlación de Spearman y Prueba de Kruskal-Wallis}
+					Para las variables \textit{Horas de supervisión}, \textit{Afirmación (1)}, \textit{Afirmación (2)}, \textit{Afirmación (6)} y \textit{Afirmación (7)}, cuyo p-valor fue menor a 0.05 en la prueba de Shapiro-Wilk, se realizaron pruebas no paramétricas. En este caso, se utilizó el coeficiente de correlación de Spearman para analizar las relaciones entre estas variables y se aplicó la prueba de Kruskal-Wallis tanto a variables categóricas como a variables numéricas que no siguen una distribución normal, con el objetivo de evaluar diferencias significativas entre grupos.
+					
+					En la Tabla \ref{table:kruskal-spearman-results} se presentan los resultados del coeficiente de correlación de Spearman y las diferencias encontradas entre las variables con respecto a la variable \textit{Afirmación (5)}.
+					
 					\begin{table}[h!]
 						\centering
-						\caption{Correlaciones entre las variables con distribución No normal}
-						\begin{tabularx}{0.85\textwidth}{Xccc}
+						\caption{Resultados de las Pruebas de Kruskal-Wallis y Correlación de Spearman respecto a la Afirmación (5)}
+						\begin{tabularx}{\textwidth}{Xccccc}
 							\toprule
-							\textbf{Variable} & \textbf{Correlación con Afirmación (5)} &  \textbf{p-valor} & \textbf{Tipo de relación} \\
+							\textbf{Variable} & \textbf{Spearman$_{Correlación}$} & \textbf{Spearman$_{p-valor}$} & \textbf{KW$_{Estadístico}$} & \textbf{KW$_{p-valor}$} & \textbf{Conclusiones} \\
 							\midrule
-							Tiempo de supervisión de tareas & 0.192 & 0.549 & \(\times\)  \\ % (Sin relación significativa) \\
-							Afirmación (1) & 0.770 & 0.003 & \(\checkmark\) \\ %(Relación fuerte)
-							Afirmación (2) & 0.551 & 0.063 & \(\bigtriangleup\)  \\ %(Relación moderada)
-							Afirmación (6) & 1.000 & 0.000 & \(\bigstar\)  \\ %(Relación perfecta)
-							Afirmación (7) & 0.770 & 0.003 & \(\checkmark\)  \\ %(Relación fuerte)
+							Formación del tutor & 0.0000 & 1.0000 & 0.0000 & 1.0000 & \(\times\) \(\emptyset\) \\ % Sin correlación, no hay diferencias significativas
+							Género del tutor & -0.2500 & 0.4332 & 0.6875 & 0.4070 & \(\vartriangle\) \(\emptyset\) \\ % Correlación débil, no hay diferencias significativas
+							Sector de la Residencia & 0.0000 & 1.0000 & 0.0000 & 1.0000 & \(\times\) \(\emptyset\) \\ % Sin correlación, no hay diferencias significativas
+							Ocupación & 0.0000 & 1.0000 & 0.0000 & 1.0000 & \(\times\) \(\emptyset\) \\ % Sin correlación, no hay diferencias significativas
+							Tipo de señal de Internet & -0.2500 & 0.4332 & 0.6875 & 0.4070 & \(\vartriangle\) \(\emptyset\) \\ % Correlación débil, no hay diferencias significativas
+							Horas de supervisión de tareas & 0.1925 & 0.5490 & 0.8730 & 0.6463 & \(\vartriangle\) \(\triangleleft\) \\ % Correlación débil, sin efecto significativo
+							Afirmación (1) & 0.7698 & 0.0034 & 6.6349 & 0.0362 & \(\bigstar\) \(\checkmark\) \\ % Correlación fuerte, diferencia significativa
+							Afirmación (2) & 0.5508 & 0.0635 & 3.6056 & 0.1648 & \(\triangle\) \(\times\) \\ % Correlación moderada, no hay diferencias significativas
+							Afirmación (6) & 0.7698 & 0.0034 & 6.6349 & 0.0362 & \(\bigstar\) \(\checkmark\) \\ % Correlación fuerte, diferencia significativa
+							Afirmación (7) & 0.7698 & 0.0034 & 6.6349 & 0.0362 & \(\bigstar\) \(\checkmark\) \\ % Correlación fuerte, diferencia significativa
 							\bottomrule
 						\end{tabularx}
-						\label{table:Spearman-Correlation}
-						\vspace{0.3em} % Espaciado entre la tabla y el pie
-						\parbox{0.75\textwidth}{\footnotesize 
-							\(\times\): Sin relación significativa. \(\bigtriangleup\): Relación moderada. \(\bigstar\): Relación perfecta. \(\checkmark\): Relación fuerte.
+						\label{table:kruskal-spearman-results}
+						\parbox{\textwidth}{\footnotesize 
+							\(\times\): Sin correlación. \(\vartriangle\): Correlación débil. \(\triangle\): Correlación moderada. \(\bigstar\): Correlación fuerte. \(\emptyset\): No hay diferencias significativas.  \(\triangleleft\): Sin efecto significativo. \(\checkmark\): Diferencia significativa.
 						}
 					\end{table}
 					
-					Los resultados del análisis de \textit{\textbf{correlación de Spearman}} proporcionaron información valiosa sobre las relaciones entre las variables con distribución no normal y la Afirmación (5).
+					Los resultados presentados en la Tabla \ref{table:kruskal-spearman-results} reflejan un análisis detallado sobre la relación de diversas variables respecto a la \textit{Afirmación (5)}, que evalúa la percepción de mejora en la autorregulación y concentración del tutorado después de utilizar el sistema \textbf{Torddis}.
 					
-					La Afirmación (1) mostró una correlación fuerte y significativa (\textbf{0.770}, \textit{p}=0.003), lo que indica que la percepción positiva inicial del dispositivo está altamente relacionada con la mejora percibida en la autorregulación del estudiante. Esto subraya la importancia del diseño atractivo y funcional del dispositivo como factor clave para fomentar el uso y obtener resultados positivos.
+					Las variables categóricas como \textit{Formación del tutor}, \textit{Género del tutor}, \textit{Sector de la residencia}, \textit{Ocupación} y \textit{Tipo de señal de Internet} no mostraron diferencias significativas según la prueba de Kruskal-Wallis (\(\emptyset\)), lo que indica que estas características no influyen de manera significativa en la percepción de efectividad del dispositivo. Además, sus coeficientes de correlación de Spearman oscilaron entre -0.2500 y 0.0000, lo que refuerza la ausencia de relaciones significativas con la variable de respuesta.
 					
-					Por otro lado, la Afirmación (2) presentó una correlación moderada pero no significativa (\textbf{0.551, p=0.063}). Aunque los resultados no permiten confirmar una relación estadísticamente significativa, la tendencia observada sugiere que la precisión en la detección de eventos puede contribuir a generar confianza en el sistema, lo que podría tener un impacto indirecto en la percepción de su efectividad.
+					En contraste, las variables \textit{Afirmación (1)}, \textit{Afirmación (6)} y \textit{Afirmación (7)} demostraron diferencias significativas (\(\checkmark\)) y correlaciones fuertes (\(\bigstar\)) con la \textit{Afirmación (5)}. Estos resultados sugieren que las percepciones positivas sobre la utilidad del dispositivo, la disposición a seguir utilizándolo, y su impacto en el cumplimiento de tareas están directamente relacionadas con la mejora percibida en la autorregulación y concentración del tutorado. Este hallazgo resalta la relevancia de estas variables en la evaluación de la efectividad de \textbf{Torddis}.
 					
-					En el caso de la Afirmación (6), se observó una correlación perfecta (\textbf{1.00, p=0.000}). Esto refleja una dependencia completa entre esta variable y la mejora percibida en la autorregulación, lo cual puede interpretarse como una validación directa de la efectividad del dispositivo en contextos específicos.
-					
-					Finalmente, la Afirmación (7) mostró una correlación fuerte y significativa (\textbf{0.770, p=0.003}). Este resultado resalta la aceptación general del sistema entre los usuarios y su disposición a continuar utilizándolo, lo que puede ser un indicador de la sostenibilidad del dispositivo en el tiempo.
-					
-					\paragraph*{Prueba de Kruskal-Wallis para Determinar las Diferencias entre Grupos Categóricos: }
-					Al aplicar la \textbf{\textit{prueba de Kruskal-Wallis}} se determinó la relación entre grupos categóricos con la Afirmación (5). Los resultados que se obtuvieron en la prueba de Kruskal-Wallis se muestran en la Tabla \ref{table:Kruskal-Wallis}.
-					
-					\begin{table}[h!]
-						\centering
-						\caption{Resultados de la Prueba de Kruskal-Wallis para Variables Categóricas}
-						\begin{tabularx}{0.75\textwidth}{Xccc}
-							\toprule
-							\textbf{Variable} & \textbf{Estadístico} &  \textbf{p-valor} & \textbf{Conclusión} \\
-							\midrule
-							Localización de la residencia & 18.223 & 1.965 & \(\times\) \\ % No se encontraron diferencias significativas.
-							Formación del tutor & 18.223 & 1.965 & \(\times\) \\ % No se encontraron diferencias significativas. \\
-							Género del tutor & 18.374 & 1.814 &  \(\times\) \\ % No se encontraron diferencias significativas.
-							\bottomrule
-						\end{tabularx}
-						\label{table:Kruskal-Wallis}
-						\vspace{0.3em} % Espaciado entre la tabla y el pie
-						\parbox{0.75\textwidth}{\footnotesize 
-							\(\times\): No se encontraron diferencias significativas.
-						}
-					\end{table}
-					
-					Que no existan diferencias significativas en un análisis estadístico, como en este caso con la prueba de Kruskal-Wallis, significa que no se puede rechazar la hipótesis nula, que establece que las medianas de los grupos comparados son iguales. En otras palabras, los datos no proporcionan evidencia suficiente para afirmar que existe una diferencia real entre los grupos categóricos analizados en relación con la variable de interés, en este caso, la Afirmación (5).
-						
+					Por otro lado, \textit{Horas de supervisión de tareas} y \textit{Afirmación (2)} presentaron correlaciones débiles (\(\vartriangle\)) y no mostraron diferencias significativas (\(\emptyset\) y \(\triangleleft\)), lo que sugiere un efecto limitado de estas variables sobre la percepción de mejora en la autorregulación. Estos resultados indican que, aunque estas variables tienen cierta influencia, no son determinantes en la percepción de efectividad del sistema.
+											
 	\section{Conclusiones}
 	\label{seccion:Seis}
 		El sistema prototipo Torddis aporta un avance significativo en el campo de la pedagogía tecnológica, combinando IoT e IA para abordar desafíos críticos en el aprendizaje autónomo \citep{DiPietro2025Meta}. A diferencia de propuestas previas, el sistema integra análisis de comportamiento en tiempo real con retroalimentación activa, destacando su contribución al desarrollo de teorías sobre autorregulación y aprendizaje personalizado en entornos domésticos. Las evaluaciones, que incluyen pruebas funcionales y cuestionarios de usabilidad, revelaron que el sistema cumple con los requisitos técnicos esperados y es altamente valorado por los usuarios finales, es decir, los tutores.
@@ -1607,10 +1721,8 @@
 		Además, los comentarios de las preguntas abiertas muestran un fuerte respaldo al diseño y funcionalidad del sistema, con valiosas sugerencias para futuros desarrollos. Los tutores destacaron la importancia de las alertas visuales y auditivas para mantener a los estudiantes alertas y la conveniencia de las opciones de configuración y monitorización del sistema.
 		
 		En conclusión, Torddis ha superado las expectativas en términos de funcionalidad y usabilidad, demostrando ser una solución viable y efectiva para mantener la concentración de los estudiantes en entornos de aprendizaje. El éxito de este proyecto subraya la importancia de la innovación tecnológica en la educación y sienta las bases para futuras mejoras y expansiones del sistema.
-	
-		(ANOVA) La presencia de un residual notable refuerza la idea de que, aunque el modelo es útil para identificar relaciones significativas, no agota todas las explicaciones posibles, lo que abre la puerta a investigaciones futuras para explorar otras variables que puedan complementar el análisis actual.
-		
-		En resumen, los resultados del análisis de Spearman destacan cómo factores como la percepción inicial del dispositivo, su precisión y su aceptación por parte de los usuarios influyen en la efectividad percibida. Este enfoque refuerza la importancia de integrar estos elementos en el diseño y evaluación de tecnologías educativas para garantizar su éxito en contextos diversos.
+			
+		En conclusión, los datos muestran que \textbf{Torddis} es percibido como efectivo independientemente de características categóricas como el género o la ocupación del tutor, pero su efectividad es más evidente en aspectos relacionados con las afirmaciones específicas de utilidad, disposición para el uso continuo y cumplimiento de tareas, que refuerzan la experiencia positiva del tutorado en su interacción con el dispositivo.	
 		
 	\section*{Agradecimientos}
 	
